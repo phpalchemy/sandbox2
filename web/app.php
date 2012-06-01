@@ -9,7 +9,7 @@ $t = microtime(true);
 define('APPLICATION_PATH', realpath(dirname(__FILE__) . '/../app') . DIRECTORY_SEPARATOR);
 define('HOME_PATH', realpath(APPLICATION_PATH . '/../') . DIRECTORY_SEPARATOR);
 
-require_once __DIR__ . '/../framework/Iron-G/IronG/autoload.php';
+require_once HOME_PATH . 'framework/Iron-G/autoload.php';
 
 try {
     // Create Application Config Object
@@ -19,19 +19,12 @@ try {
 
     // Create application and run
     $application = new IronG\Application($config);
-    //$application->bootstrap();
-
-    //$bootstrap = $application->getBootstrap();
     $application->run();
-    //sleep(1);
 }
 catch (Exception $e) {
   echo $e->getMessage();
 }
 
-echo '<br/>';
-echo microtime(true) - $t . 'seg';;
-echo '<br>';
-echo (microtime(true) - $t)*1000 . 'ms';
-echo '<br>';
-echo (microtime(true) - $t)*1000*1000 . 'us';
+echo '<br/>----<br/>';
+echo 'Process time: '.round((microtime(true) - $t)*1000, 2) . ' ms';
+

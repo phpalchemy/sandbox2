@@ -1,5 +1,5 @@
 <?php
-namespace Sandobox\Controller;
+namespace Sandbox\Controller;
 
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
