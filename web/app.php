@@ -16,7 +16,7 @@ try {
     require_once HOME_PATH . 'framework/Iron-G/autoload.php';
 
     // Create Application Config Object
-    $config = new IronG\EnvConfig();
+    $config = new IronG\Config();
     $config->set('app.home_path', HOME_PATH);
 
     // Create application and run
