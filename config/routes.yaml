@@ -1,0 +1,14 @@
+# routes.yml
+# Specify the routes that the framework should match for url requests
+
+root_route:
+    pattern: "/"
+    defaults: {_controller: sample, _action: index}
+
+to_index_route:
+    pattern: "/{_controller}"
+    defaults: {_action: index}
+
+complete_route:
+    pattern: "/{_controller}/{_action}"
+    defaults: {}

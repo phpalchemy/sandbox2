@@ -1,0 +1,33 @@
+<?php
+use Symfony\Component\Routing\Route;
+use Symfony\Component\Routing\RouteCollection;
+
+$routes = new RouteCollection();
+
+$routes->add(
+    'root_route',
+    new Route(
+        '/',
+        array(
+            '_controller' => 'sample',
+            '_action' => 'index'
+        )
+    )
+);
+
+$routes->add(
+    'to_index_route',
+    new Route(
+        '/{_controller}',
+        array('_action' => 'index')
+    )
+);
+
+$routes->add(
+    'complete_route',
+    new Route(
+        '/{_controller}/{_action}'
+    )
+);
+
+return $routes;
