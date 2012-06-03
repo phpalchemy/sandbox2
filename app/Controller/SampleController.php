@@ -4,7 +4,7 @@ namespace Sandbox\Controller;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 
-class SampleController //extends \IronG\Mvc\Controller
+class SampleController extends \IronG\Mvc\Controller
 {
     function indexAction()
     {
@@ -15,8 +15,6 @@ class SampleController //extends \IronG\Mvc\Controller
 
     function helloAction()
     {
-        $response = new Response('hello action');
-
-        return $response;
+        $this->response->setContent('hello action');
     }
 }
