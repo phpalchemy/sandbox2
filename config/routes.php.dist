@@ -5,7 +5,7 @@ use Symfony\Component\Routing\RouteCollection;
 $routes = new RouteCollection();
 
 $routes->add(
-    'root_route',
+    'home_route',
     new Route(
         '/',
         array(

@@ -1,0 +1,12 @@
+;
+; Application ini file configuration
+;
+
+[app]
+  namespace = Sandbox
+  cache_dir = %project_dir%/cache
+
+[templating]
+  default_engine = smarty
+  cache_dir = %project_dir%/cache
+

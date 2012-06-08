@@ -1,7 +1,9 @@
+#
 # routes.yml
 # Specify the routes that the framework should match for url requests
+#
 
-root_route:
+home_route:
     pattern: "/"
     defaults: {_controller: sample, _action: index}
 
