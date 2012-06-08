@@ -7,25 +7,25 @@ ini_set('display_errors', 'On');
 ini_set('error_reporting', E_ALL);
 $t = microtime(true);
 
-define('HOME_PATH', realpath(dirname(__FILE__) . '/../') . DIRECTORY_SEPARATOR);
+define('APPLICATION_PATH', realpath(dirname(__FILE__) . '/../') . DIRECTORY_SEPARATOR);
 
 try {
-    if (!is_dir(HOME_PATH . 'framework/Iron-G')) {
+    if (!is_dir(APPLICATION_PATH . 'framework/Iron-G')) {
         throw new Exception("The 'Iron G' framework is not installed!");
     }
 
-    require_once HOME_PATH . 'framework/Iron-G/autoload.php';
+    require_once APPLICATION_PATH . 'framework/Iron-G/autoload.php';
 
     // Create Application Config Object
     $config = new IronG\Config();
-    $config->set('app.home_path', HOME_PATH);
+    $config->setAppPath(APPLICATION_PATH);
 
     // Create application and run
     $application = new IronG\Application($config);
     $application->run();
 }
 catch (Exception $e) {
-  echo $e->getMessage();
+  echo '<pre>'.$e->getMessage().'<br/><br/>'.$e->getTraceAsString().'</pre>';
 }
 
 echo '<br/>----<br/>';
