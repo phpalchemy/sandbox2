@@ -1,12 +1,14 @@
-;
-; Application ini file configuration
-;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; Application ini file configuration ;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 [app]
   namespace = Sandbox
-  cache_dir = %project_dir%/cache
+  cache_dir = "%project_dir%/cache"
 
 [templating]
   default_engine = smarty
-  cache_dir = %project_dir%/cache
+  cache_dir = "%project_dir%/cache"
 
+[framework]
+  home_path = "../../phpalchemy/"

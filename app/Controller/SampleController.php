@@ -1,14 +1,14 @@
 <?php
 namespace Sandbox\Controller;
 
-class SampleController extends \IronG\Mvc\Controller
+class SampleController extends \Alchemy\Mvc\Controller
 {
     /**
      * @view(sample/index.tpl)
      */
     function indexAction()
     {
-        $response = new Response('index action');
+        $response = new \Alchemy\Net\Http\Response('index action');
 
         return $response;
     }
@@ -18,12 +18,12 @@ class SampleController extends \IronG\Mvc\Controller
         $this->response->setContent('hello action');
     }
 
-    function action1Action(\IronG\Net\Http\Request $request)
+    function action1Action(\Alchemy\Net\Http\Request $request)
     {
         $this->response->setContent('sample #1 action  - data' . $request->server->get('HTTP_USER_AGENT'));
     }
 
-    function action2Action(\IronG\Net\Http\Request $request, $name)
+    function action2Action(\Alchemy\Net\Http\Request $request, $name)
     {
         $this->response->setContent('sample #2 action - hello ' . $name);
     }
