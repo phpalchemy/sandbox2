@@ -4,11 +4,11 @@
 
 [app]
   namespace = Sandbox
-  cache_dir = "%project_dir%/cache"
+  cache_dir = "%app.root_dir%/cache"
 
 [templating]
   default_engine = smarty
-  cache_dir = "%project_dir%/cache/smarty"
+  cache_dir = "%app.root_dir%/cache/smarty"
 
-[framework]
-  home_path = "../../phpalchemy/"
+[phpalchemy]
+  ;root_dir = "../../phpalchemy"
