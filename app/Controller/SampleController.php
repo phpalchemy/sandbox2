@@ -4,13 +4,15 @@ namespace Sandbox\Controller;
 class SampleController extends \Alchemy\Mvc\Controller
 {
     /**
-     * @view(sample/index.tpl)
+     * @view("sample/index.tpl")
      */
     function indexAction()
     {
-        $response = new \Alchemy\Net\Http\Response('index action');
+        //1st option.- setting controller attribute 'view'
+        //$this->view->title = 'Hello Word 1';
 
-        return $response;
+        //2nd option.- returning a associative array
+        return array('title' => 'Hello Word 2');
     }
 
     function helloAction()

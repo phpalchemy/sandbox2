@@ -2,3 +2,4 @@
 framework/Iron-G
 config/application.ini
 config/env.ini
+cache
