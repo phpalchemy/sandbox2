@@ -7,24 +7,12 @@ ini_set('display_errors', 'On');
 ini_set('error_reporting', E_ALL);
 $t = microtime(true);
 
-define('APPLICATION_PATH', realpath(dirname(__FILE__) . '/../') . DIRECTORY_SEPARATOR);
-
 try {
-    if (!file_exists(APPLICATION_PATH . 'config/application.ini')) {
-        throw new Exception("File 'config/application.ini' is missing.");
-    }
-    
-    $config = parse_ini_file(APPLICATION_PATH . 'config/application.ini', true);
-
-    if (!is_dir($config['framework']['home_path'])) {
-        throw new Exception("The 'PHP Alchemy' Framework is not installed!");
-    }
-
-    require_once $config['framework']['home_path'] . '/autoload.php';
+    $appIniConf = include __DIR__ . '/../autoload.php';
+    $appIniConf['app']['root_dir'] = __DIR__ . '/../';
 
     // Create Application Config Object
-    $config = new Alchemy\Config();
-    $config->setAppPath(APPLICATION_PATH);
+    $config = new Alchemy\Config($appIniConf);
 
     // Create application and run
     $application = new Alchemy\Application($config);

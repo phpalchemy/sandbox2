@@ -1,6 +1,6 @@
 #
-# routes.yml
-# Specify the routes that the framework should match for url requests
+# routes.yaml
+# Specify routes to match all url requests
 #
 
 home_route:
