@@ -1,5 +1,4 @@
 .DS_Store
-framework/Iron-G
-config/application.ini
+*.ini
 config/env.ini
 cache
