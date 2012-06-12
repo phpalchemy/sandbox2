@@ -37,3 +37,9 @@ function memory_usage() {
         return round($mem_usage/1048576, 2)." Mb";
 }
 
+function pr($v){
+    echo '<pre>';
+    print_r($v);
+    echo '</pre>';
+}
+

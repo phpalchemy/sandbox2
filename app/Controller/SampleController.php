@@ -4,15 +4,67 @@ namespace Sandbox\Controller;
 class SampleController extends \Alchemy\Mvc\Controller
 {
     /**
-     * @view("sample/index.tpl")
+     * test passing the template file name to view() annotation (with complete path)
+     *
+     * @view("Sample/index.tpl")
      */
     function indexAction()
     {
         //1st option.- setting controller attribute 'view'
-        //$this->view->title = 'Hello Word 1';
+        //$this->view->title = 'Hello Word';
 
         //2nd option.- returning a associative array
-        return array('title' => 'Hello Word 2');
+        return array('title' => 'Hello Word');
+    }
+
+    /**
+     * test passing the template file name to view() annotation (without path)
+     * it is mapped with controller and action names without suffix
+     *
+     * @view()
+     */
+    function testAction()
+    {
+        return array('title' => 'Hello Test');
+    }
+
+    /**
+     * test passing the template file name (any) to view() annotation
+     *
+     * @view("Sample/someTemplate.tpl")
+     */
+    function test2Action()
+    {
+        return array('title' => 'Hello Test');
+    }
+
+    /**
+     * test passing the template file name to view() annotation (without extension)
+     * it is provided by configuration (on application.ini)
+     *
+     * @view("Sample/someTemplate")
+     */
+    function test3Action()
+    {
+        return array('title' => 'Hello Test');
+    }
+
+    /**
+     * test using template engine
+     * @view(file="Sample/twigTest.twig", engine="twig")
+     */
+    function twigTestAction()
+    {
+        return array('title' => 'Hello Test, using twig template engine');
+    }
+
+    /**
+     * test using template engine
+     * @view(file="Sample/twigTest.twig", engine="haanga")
+     */
+    function haangaTestAction()
+    {
+        return array('title' => 'Hello Test, using haanga template engine');
     }
 
     function helloAction()
