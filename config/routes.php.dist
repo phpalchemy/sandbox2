@@ -1,10 +1,10 @@
 <?php
-use Symfony\Component\Routing\Route;
-use Symfony\Component\Routing\RouteCollection;
+use Alchemy\Component\Routing\Mapper;
+use Alchemy\Component\Routing\Route;
 
-$routes = new RouteCollection();
+$mapper = new Mapper();
 
-$routes->add(
+$mapper->connect(
     'home_route',
     new Route(
         '/',
@@ -15,7 +15,7 @@ $routes->add(
     )
 );
 
-$routes->add(
+$mapper->connect(
     'to_index_route',
     new Route(
         '/{_controller}',
@@ -23,11 +23,11 @@ $routes->add(
     )
 );
 
-$routes->add(
+$mapper->connect(
     'complete_route',
     new Route(
         '/{_controller}/{_action}'
     )
 );
 
-return $routes;
+return $mapper;

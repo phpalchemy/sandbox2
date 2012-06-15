@@ -21,11 +21,12 @@ class SampleController extends \Alchemy\Mvc\Controller
      * test passing the template file name to view() annotation (without path)
      * it is mapped with controller and action names without suffix
      *
-     * @view()
+     * view()
      */
     function testAction()
     {
-        return array('title' => 'Hello Test');
+        //return array('title' => 'Hello Test');
+        return new \Alchemy\Net\Http\Response('<h1>Hello World</h1>');
     }
 
     /**

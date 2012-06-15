@@ -1,4 +1,5 @@
 .DS_Store
 *.ini
 config/env.ini
+config/routes.php
 cache
