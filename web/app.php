@@ -12,18 +12,16 @@ try {
     $appIniConf = include __DIR__ . '/../autoload.php';
     $appIniConf['app']['root_dir'] = __DIR__ . '/../';
 
-    // Create Application Config Object
-    $config = new Alchemy\Config($appIniConf);
-
     // Create application and run
-    $application = new Alchemy\Application($config);
+    $application = new Alchemy\Application($appIniConf);
+
     $application->run();
 }
 catch (Exception $e) {
   echo '<pre>'.$e->getMessage().'<br/><br/>'.$e->getTraceAsString().'</pre>';
 }
 die;
-$archivos_incluidos = get_included_files();
+$archivos_incluidos = get_included_files(5);
 echo '<br>';
 foreach ($archivos_incluidos as $i=>$nombre_archivo) {
     echo "$i.- $nombre_archivo<br/>";
