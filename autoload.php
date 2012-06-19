@@ -5,30 +5,41 @@ if (!file_exists($appIniFile)) {
     throw new Exception("File '$appIniFile' is missing.");
 }
 
-$appIniConfig = @parse_ini_file($appIniFile, true);
+$config = @parse_ini_file($appIniFile, true);
+$config['__autoload__'] = md5(__DIR__);
 
-if (empty($appIniConfig)) {
-    throw new Exception("Parse Error: '$appIniFile' has errors.");
+if (empty($config)) {
+    throw new Exception("Parse Error: '$appIniFile' is empty or has errors.");
 }
 
-if (empty($appIniConfig['phpalchemy']['root_dir'])) {
+if (empty($config['phpalchemy']['root_dir'])) {
     throw new Exception("Configuration Missing: 'phpalchemy.root_dir' conf. is missing");
 }
 
-if (!is_dir($appIniConfig['phpalchemy']['root_dir'])) {
-    throw new Exception(
-        "Configuration Error: phpalchemy home directory not found on: " .
-        "'{$appIniConfig['phpalchemy']['root_dir']}'"
+if (substr($config['phpalchemy']['root_dir'], 0, 2) === '..') { // is relative path
+    $phpalchemyRootDir = realpath(
+        dirname(__FILE__) . DIRECTORY_SEPARATOR . $config['phpalchemy']['root_dir']
     );
 }
 
-if (!file_exists($appIniConfig['phpalchemy']['root_dir'] . '/autoload.php')) {
+if (!is_dir($phpalchemyRootDir)) {
+    throw new Exception(
+        "Configuration Error: phpalchemy root directory not found on: " .
+        "'{$config['phpalchemy']['root_dir']}'"
+    );
+}
+
+empty($phpalchemyRootDir) || $config['phpalchemy']['root_dir'] = $phpalchemyRootDir;
+
+if (!file_exists($config['phpalchemy']['root_dir'] . DIRECTORY_SEPARATOR.'autoload.php')) {
     throw new Exception(
         "PhpAlchemy File Not Found: Autoloader is missing, maybe phpalchemy " .
-        "is not installed property on: '{$appIniConfig['phpalchemy']['root_dir']}'"
+        "is not installed property on: '{$config['phpalchemy']['root_dir']}'"
     );
 }
 
-require_once $appIniConfig['phpalchemy']['root_dir'] . '/autoload.php';
+$config['app']['root_dir'] = realpath(__DIR__);
 
-return $appIniConfig;
+require_once $config['phpalchemy']['root_dir'] . '/autoload.php';
+
+return $config;

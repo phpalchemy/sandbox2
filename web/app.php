@@ -9,11 +9,14 @@ $t = microtime(true);
 $m = memory_get_usage(true);
 
 try {
-    $appIniConf = include __DIR__ . '/../autoload.php';
-    $appIniConf['app']['root_dir'] = __DIR__ . '/../';
+    $conf = include __DIR__ . '/../autoload.php';
 
     // Create application and run
-    $application = new Alchemy\Application($appIniConf);
+    //$application = new Alchemy\Application();
+    //$application['config']->set('phpalchemy.root_dir', $conf['phpalchemy']['root_dir']);
+    //$application['config']->set('app.root_dir', $conf['app']['root_dir']);
+
+    $application = new Alchemy\Application($conf);
 
     $application->run();
 }
