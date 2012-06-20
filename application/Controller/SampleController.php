@@ -26,7 +26,7 @@ class SampleController extends \Alchemy\Mvc\Controller
     function testAction()
     {
         //return array('title' => 'Hello Test');
-        return new \Alchemy\Net\Http\Response('<h1>Hello World</h1>');
+        return new \Alchemy\Component\Http\Response('<h1>Hello World</h1>');
     }
 
     /**
@@ -73,12 +73,12 @@ class SampleController extends \Alchemy\Mvc\Controller
         $this->getResponse()->setContent('hello action');
     }
 
-    function action1Action(\Alchemy\Net\Http\Request $request)
+    function action1Action(\Alchemy\Component\Http\Request $request)
     {
         $this->getResponse()->setContent('sample #1 action  - data' . $request->server->get('HTTP_USER_AGENT'));
     }
 
-    function action2Action(\Alchemy\Net\Http\Request $request, $name)
+    function action2Action(\Alchemy\Component\Http\Request $request, $name)
     {
         $this->getResponse()->setContent('sample #2 action - hello ' . $name);
     }
