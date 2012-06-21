@@ -18,6 +18,8 @@ try {
 
     $application = new Alchemy\Application($conf);
 
+    //$application['dispatcher']->addSubscriber(new Sandbox\Event\FilterRequestListener());
+
     $application->run();
 }
 catch (Exception $e) {
