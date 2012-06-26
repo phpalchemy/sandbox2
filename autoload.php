@@ -6,7 +6,6 @@ if (!file_exists($appIniFile)) {
 }
 
 $config = @parse_ini_file($appIniFile, true);
-$config['__autoload__'] = md5(__DIR__);
 
 if (empty($config)) {
     throw new Exception("Parse Error: '$appIniFile' is empty or has errors.");

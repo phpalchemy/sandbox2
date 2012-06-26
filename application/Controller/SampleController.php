@@ -26,7 +26,7 @@ class SampleController extends \Alchemy\Mvc\Controller
     function testAction()
     {
         //return array('title' => 'Hello Test');
-        return new \Alchemy\Component\Http\Response('<h1>Hello World</h1>');
+        return new \Alchemy\Component\Http\Response('<h1>Hello World (Plain)</h1>');
     }
 
     /**
