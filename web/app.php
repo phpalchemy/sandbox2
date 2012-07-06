@@ -8,7 +8,7 @@ ini_set('error_reporting', E_ALL);
 $t = microtime(true);
 $m = memory_get_usage(true);
 
-try {
+//try {
     $conf = include __DIR__ . '/../autoload.php';
 
     $application = new Alchemy\Application($conf);
@@ -16,10 +16,10 @@ try {
     //$application['dispatcher']->addSubscriber(new Sandbox\Event\FilterRequestListener());
 
     $application->run();
-}
-catch (Exception $e) {
-  echo '<pre>'.$e->getMessage().'<br/><br/>'.$e->getTraceAsString().'</pre>';
-}
+//} catch (Exception $e) {
+    //new Alchemy\Exception\Handler($exception);
+    //echo '<pre>'.$e->getMessage().'<br/><br/>'.$e->getTraceAsString().'</pre>';
+//}
 die;
 /*
 $archivos_incluidos = get_included_files();
