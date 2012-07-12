@@ -72,5 +72,21 @@ class TestController extends \Alchemy\Mvc\Controller
     public function contact3Action()
     {
     }
+
+    /**
+     * @Request(GET)
+     */
+    public function onlyGetAction()
+    {
+        echo 'action that is being displayed "Only" by a request with GET method';
+    }
+
+    /**
+     * @Request(allow_methods = [GET, POST])
+     */
+    public function onlyGetAndPostAction()
+    {
+        echo 'action that is being displayed "Only" by a request with GET method';
+    }
 }
 

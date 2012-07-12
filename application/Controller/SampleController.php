@@ -10,7 +10,7 @@ class SampleController extends \Alchemy\Mvc\Controller
      */
     function indexAction()
     {
-        //1st option.- setting controller attribute 'view'
+        //1st option.- setting controller attribute
         //$this->view->title = 'Hello Word';
 
         //2nd option.- returning a associative array
