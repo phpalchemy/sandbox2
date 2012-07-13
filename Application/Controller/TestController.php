@@ -1,5 +1,5 @@
 <?php
-namespace Sandbox\Controller;
+namespace Sandbox\Application\Controller;
 
 class TestController extends \Alchemy\Mvc\Controller
 {

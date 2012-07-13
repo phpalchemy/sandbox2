@@ -6,10 +6,13 @@
  */
 
 $conf = include __DIR__ . '/../autoload.php';
-$application = new Alchemy\Application();
-$application->init($conf);
+$app = new Alchemy\Application();
+$app->init($conf);
 
-//$application['dispatcher']->addSubscriber(new Sandbox\Event\FilterRequestListener());
+//Sample, registering a event subscriber
+//$app['dispatcher']->addSubscriber(new Sandbox\Event\FilterRequestListener());
 
-$application->run();
+//$app->register(new Sandbox\Application\Service\SampleServiceProvider());
+
+$app->run();
 
