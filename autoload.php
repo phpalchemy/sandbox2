@@ -36,6 +36,7 @@ if (!file_exists($config['phpalchemy']['root_dir'] . DIRECTORY_SEPARATOR.'autolo
         "is not installed property on: '{$config['phpalchemy']['root_dir']}'"
     );
 }
+function pr($v){echo "<pre>".print_r($v, true)."</pre>";}
 
 $config['app']['root_dir'] = realpath(__DIR__);
 
