@@ -14,7 +14,7 @@ class SampleController extends \Alchemy\Mvc\Controller
         //$this->view->title = 'Hello Word';
 
         //2nd option.- returning a associative array
-        return array('title' => 'Hello Word');
+        return array('title' => 'Hello Word (smarty)');
     }
 
     /**
