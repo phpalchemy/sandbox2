@@ -1,0 +1,11 @@
+{% extends 'master.djt' %}
+
+{% block body %}
+    {% include 'navbar.djt' %}
+
+    <div class="container">
+        {{ title }}
+        <hr />
+        {% include 'footer.djt' %}
+    </div>
+{% endblock %}

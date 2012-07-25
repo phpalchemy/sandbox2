@@ -1,0 +1,1653 @@
+2012-07-06 23:12:47: (log.c.166) server started 
+2012-07-06 23:17:54: (server.c.1211) logfiles cycled UID = 501 PID = 291 
+2012-07-06 23:18:17: (server.c.1527) server stopped by UID = 0 PID = 1 
+2012-07-07 10:42:47: (log.c.166) server started 
+2012-07-07 17:30:33: (server.c.1211) logfiles cycled UID = 501 PID = 337 
+2012-07-07 17:30:57: (server.c.1527) server stopped by UID = 0 PID = 1 
+2012-07-10 09:45:31: (log.c.166) server started 
+2012-07-10 09:46:08: (mod_fastcgi.c.2699) FastCGI-stderr: PHP Fatal error:  Cannot redeclare Sandbox\Controller\TestController::contactAction() in /Users/erik/www/project/Sandbox/application/Controller/TestController.php on line 52
+PHP Stack trace:
+PHP   1. {main}() /Users/erik/www/project/Sandbox/web/app.php:0
+PHP   2. Alchemy\Application->run() /Users/erik/www/project/Sandbox/web/app.php:18
+PHP   3. Alchemy\Application->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:163
+PHP   4. Alchemy\Kernel\Kernel->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:174
+PHP   5. Alchemy\Mvc\ControllerResolver->getController() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:126
+PHP   6. Alchemy\Mvc\ControllerResolver->createController() /Users/erik/www/project/phpalchemy/Alchemy/Mvc/ControllerResolver.php:73
+PHP   7. class_exists() /Users/erik/www/project/phpalchemy/Alchemy/Mvc/ControllerResolver.php:161
+PHP   8. Alchemy\Component\ClassLoader\ClassLoader->loadClass() /Users/erik/www/project/phpalchemy/Alchemy/Mvc/ControllerResolver.php:0
+ 
+2012-07-10 11:38:26: (server.c.1211) logfiles cycled UID = 501 PID = 272 
+2012-07-10 12:49:15: (mod_fastcgi.c.2699) FastCGI-stderr: PHP Fatal error:  Class 'Alchemy\Engine' not found in /Users/erik/www/project/phpalchemy/Alchemy/Application.php on line 147
+PHP Stack trace:
+PHP   1. {main}() /Users/erik/www/project/Sandbox/web/app.php:0
+PHP   2. Alchemy\Application->run() /Users/erik/www/project/Sandbox/web/app.php:18
+PHP   3. Alchemy\Application->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:179
+PHP   4. DiContainer->offsetGet() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:190
+PHP   5. {closure}() /Users/erik/www/project/phpalchemy/Alchemy/Component/DiContainer/DiContainer.php:66
+PHP   6. Alchemy\{closure}() /Users/erik/www/project/phpalchemy/Alchemy/Component/DiContainer/DiContainer.php:105
+PHP   7. DiContainer->offsetGet() /Users/erik/www/project/phpalchemy/Alchemy/Component/DiContainer/DiContainer.php:155
+PHP   8. {closure}() /Users/erik/www/project/phpalchemy/Alchemy/Component/DiContainer/DiContainer.php:66
+PHP   9. Alchemy\{closure}() /Users/erik/www/project/phpalchemy/Alchemy/Component/DiContainer/DiContainer.php:105
+ 
+2012-07-10 12:50:29: (mod_fastcgi.c.2699) FastCGI-stderr: PHP Notice:  Undefined variable: this in /Users/erik/www/project/phpalchemy/Alchemy/Application.php on line 152
+PHP Stack trace:
+PHP   1. {main}() /Users/erik/www/project/Sandbox/web/app.php:0
+PHP   2. Alchemy\Application->run() /Users/erik/www/project/Sandbox/web/app.php:18
+PHP   3. Alchemy\Application->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:183
+PHP   4. DiContainer->offsetGet() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:194
+PHP   5. {closure}() /Users/erik/www/project/phpalchemy/Alchemy/Component/DiContainer/DiContainer.php:66
+PHP   6. Alchemy\{closure}() /Users/erik/www/project/phpalchemy/Alchemy/Component/DiContainer/DiContainer.php:105
+PHP   7. DiContainer->offsetGet() /Users/erik/www/project/phpalchemy/Alchemy/Component/DiContainer/DiContainer.php:159
+PHP   8. {closure}() /Users/erik/www/project/phpalchemy/Alchemy/Component/DiContainer/DiContainer.php:66
+PHP   9. Alchemy\{closure}() /Users/erik/www/project/phpalchemy/Alchemy/Component/DiContainer/DiContainer.php:105
+PHP Notice:  Undefined variable: this in /Users/erik/www/project/phpalchemy/Alchemy/Application.php on line 153
+PHP Stack trace:
+PHP   1. {main}() /Users/erik/www/project/Sandbox/web/app.php:0
+PHP   2. Alchemy\Application->run() /Users/erik/www/project/Sandbox/web/app.php:18
+PHP   3. Alchemy\Application->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:183
+PHP   4. DiContainer->offsetGet() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:194
+PHP   5. {closure}() /Users/erik/www/project/phpalchemy/Alchemy/Component/DiContainer/DiContainer.php:66
+PHP   6. Alchemy\{closure}() /Users/erik/www/project/phpalchemy/Alchemy/Component/DiContainer/DiContainer.php:105
+PHP   7. DiContainer->offsetGet() /Users/erik/www/project/phpalchemy/Alchemy/Component/DiContainer/DiContainer.php:159
+PHP   8. {closure}() /Users/erik/www/project/phpalchemy/Alchemy/Component/DiContainer/DiContainer.php:66
+PHP   9. Alchemy\{closure}() /Users/erik/www/project/phpalchemy/Alchemy/Component/DiContainer/DiContainer.php:105
+ 
+2012-07-10 12:50:29: (mod_fastcgi.c.2699) FastCGI-stderr: PHP Catchable fatal error:  Argument 1 passed to Alchemy\Component\UI\Engine::__construct() must be an instance of Alchemy\Component\UI\ReaderFactory, null given, called in /Users/erik/www/project/phpalchemy/Alchemy/Application.php on line 154 and defined in /Users/erik/www/project/phpalchemy/Alchemy/Component/UI/Engine.php on line 38
+PHP Stack trace:
+PHP   1. {main}() /Users/erik/www/project/Sandbox/web/app.php:0
+PHP   2. Alchemy\Application->run() /Users/erik/www/project/Sandbox/web/app.php:18
+PHP   3. Alchemy\Application->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:183
+PHP   4. DiContainer->offsetGet() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:194
+PHP   5. {closure}() /Users/erik/www/project/phpalchemy/Alchemy/Component/DiContainer/DiContainer.php:66
+PHP   6. Alchemy\{closure}() /Users/erik/www/project/phpalchemy/Alchemy/Component/DiContainer/DiContainer.php:105
+PHP   7. DiContainer->offsetGet() /Users/erik/www/project/phpalchemy/Alchemy/Component/DiContainer/DiContainer.php:159
+PHP   8. {closure}() /Users/erik/www/project/phpalchemy/Alchemy/Component/DiContainer/DiContainer.php:66
+PHP   9. Alchemy\{closure}() /Users/erik/www/project/phpalchemy/Alchemy/Component/DiContainer/DiContainer.php:105
+PHP  10. Alchemy\Component\UI\Engine->__construct() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:154
+ 
+2012-07-10 13:25:40: (server.c.1527) server stopped by UID = 501 PID = 1470 
+2012-07-10 15:49:23: (log.c.166) server started 
+2012-07-10 15:59:22: (server.c.1411) [note] graceful shutdown started 
+2012-07-10 15:59:22: (server.c.1527) server stopped by UID = 501 PID = 136 
+2012-07-10 15:59:25: (log.c.166) server started 
+2012-07-10 15:59:35: (server.c.1411) [note] graceful shutdown started 
+2012-07-10 15:59:35: (server.c.1527) server stopped by UID = 501 PID = 136 
+2012-07-10 16:00:36: (log.c.166) server started 
+2012-07-10 16:00:40: (server.c.1411) [note] graceful shutdown started 
+2012-07-10 16:00:40: (server.c.1527) server stopped by UID = 501 PID = 136 
+2012-07-10 16:00:50: (log.c.166) server started 
+2012-07-10 16:00:56: (server.c.1411) [note] graceful shutdown started 
+2012-07-10 16:00:56: (server.c.1527) server stopped by UID = 501 PID = 136 
+2012-07-10 16:02:24: (log.c.166) server started 
+2012-07-10 16:02:40: (server.c.1411) [note] graceful shutdown started 
+2012-07-10 16:02:40: (server.c.1527) server stopped by UID = 501 PID = 136 
+2012-07-10 16:02:41: (log.c.166) server started 
+2012-07-10 16:03:00: (server.c.1411) [note] graceful shutdown started 
+2012-07-10 16:03:00: (server.c.1527) server stopped by UID = 501 PID = 136 
+2012-07-10 16:03:01: (log.c.166) server started 
+2012-07-10 16:03:09: (server.c.1411) [note] graceful shutdown started 
+2012-07-10 16:03:09: (server.c.1527) server stopped by UID = 501 PID = 136 
+2012-07-10 16:05:21: (log.c.166) server started 
+2012-07-10 16:05:37: (server.c.1411) [note] graceful shutdown started 
+2012-07-10 16:05:37: (server.c.1527) server stopped by UID = 501 PID = 136 
+2012-07-10 16:05:38: (log.c.166) server started 
+2012-07-10 16:05:52: (server.c.1411) [note] graceful shutdown started 
+2012-07-10 16:05:52: (server.c.1527) server stopped by UID = 501 PID = 136 
+2012-07-10 16:06:24: (log.c.166) server started 
+2012-07-10 17:23:54: (mod_fastcgi.c.2699) FastCGI-stderr: PHP Fatal error:  Class 'DependencyInjectionContainer' not found in /Users/erik/www/project/phpalchemy/Alchemy/Component/UI/Element/Element.php on line 20
+PHP Stack trace:
+PHP   1. {main}() /Users/erik/www/project/Sandbox/web/app.php:0
+PHP   2. Alchemy\Application->run() /Users/erik/www/project/Sandbox/web/app.php:18
+PHP   3. Alchemy\Application->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:189
+PHP   4. Alchemy\Kernel\Kernel->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:200
+PHP   5. Alchemy\Kernel\Kernel->handleMetaUi() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:218
+PHP   6. Alchemy\Component\UI\Engine->build() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:273
+PHP   7. Alchemy\Component\UI\Engine->prepare() /Users/erik/www/project/phpalchemy/Alchemy/Component/UI/Engine.php:127
+PHP   8. Alchemy\Component\UI\ReaderFactory->load() /Users/erik/www/project/phpalchemy/Alchemy/Component/UI/Engine.php:81
+PHP   9. Alchemy\Component\UI\ReaderFactory::loadReader() /Users/erik/www/project/phpalchemy/Alchemy/Component/UI/ReaderFactory.php:11
+PHP  10. Alchemy\Component\UI\XmlReader->__construct() /Users/erik/www/project/phpalchemy/Alchemy/Component/UI/ReaderFactory.php:29
+PHP  11. Alchemy\Component\UI\XmlReader->parse() /Users/erik/www/project/phpalchemy/Alchemy/Component/UI/XmlReader.php:25
+PHP  12. class_exists() /Users/erik/www/project/phpalchemy/Alchemy/Component/UI/XmlReader.php:44
+PHP  13. Alchemy\Component\ClassLoader\ClassLoader->loadClass() /Users/erik/www/project/phpalchemy/Alchemy/Component/UI/XmlReader.php:0
+PHP  14. require_once() /Users/erik/www/project/phpalchemy/Alchemy/Component/ClassLoader/ClassLoader.php:107
+PHP  15. Alchemy\Component\ClassLoader\ClassLoader->loadClass() /Users/erik/www/project/phpalchemy/Alchemy/Component/ClassLoader/ClassLoader.php:0
+PHP  16. require_once() /Users/erik/www/project/phpalchemy/Alchemy/Component/ClassLoader/ClassLoader.php:107
+ 
+2012-07-10 17:24:14: (mod_fastcgi.c.2699) FastCGI-stderr: PHP Fatal error:  Class Alchemy\Component\UI\Element\Form contains 1 abstract method and must therefore be declared abstract or implement the remaining methods (Alchemy\Component\UI\Element\Element::getOutput) in /Users/erik/www/project/phpalchemy/Alchemy/Component/UI/Element/Form.php on line 15
+PHP Stack trace:
+PHP   1. {main}() /Users/erik/www/project/Sandbox/web/app.php:0
+PHP   2. Alchemy\Application->run() /Users/erik/www/project/Sandbox/web/app.php:18
+PHP   3. Alchemy\Application->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:189
+PHP   4. Alchemy\Kernel\Kernel->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:200
+PHP   5. Alchemy\Kernel\Kernel->handleMetaUi() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:218
+PHP   6. Alchemy\Component\UI\Engine->build() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:273
+PHP   7. Alchemy\Component\UI\Engine->prepare() /Users/erik/www/project/phpalchemy/Alchemy/Component/UI/Engine.php:127
+PHP   8. Alchemy\Component\UI\ReaderFactory->load() /Users/erik/www/project/phpalchemy/Alchemy/Component/UI/Engine.php:81
+PHP   9. Alchemy\Component\UI\ReaderFactory::loadReader() /Users/erik/www/project/phpalchemy/Alchemy/Component/UI/ReaderFactory.php:11
+PHP  10. Alchemy\Component\UI\XmlReader->__construct() /Users/erik/www/project/phpalchemy/Alchemy/Component/UI/ReaderFactory.php:29
+PHP  11. Alchemy\Component\UI\XmlReader->parse() /Users/erik/www/project/phpalchemy/Alchemy/Component/UI/XmlReader.php:25
+PHP  12. class_exists() /Users/erik/www/project/phpalchemy/Alchemy/Component/UI/XmlReader.php:44
+PHP  13. Alchemy\Component\ClassLoader\ClassLoader->loadClass() /Users/erik/www/project/phpalchemy/Alchemy/Component/UI/XmlReader.php:0
+PHP  14. require_once() /Users/erik/www/project/phpalchemy/Alchemy/Component/ClassLoader/ClassLoader.php:107
+ 
+2012-07-10 17:24:46: (mod_fastcgi.c.2699) FastCGI-stderr: PHP Fatal error:  Cannot access protected property Alchemy\Component\UI\Widget\Textbox::$id in /Users/erik/www/project/phpalchemy/Alchemy/Component/UI/Element/Element.php on line 47
+PHP Stack trace:
+PHP   1. {main}() /Users/erik/www/project/Sandbox/web/app.php:0
+PHP   2. Alchemy\Application->run() /Users/erik/www/project/Sandbox/web/app.php:18
+PHP   3. Alchemy\Application->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:189
+PHP   4. Alchemy\Kernel\Kernel->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:200
+PHP   5. Alchemy\Kernel\Kernel->handleMetaUi() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:218
+PHP   6. Alchemy\Component\UI\Engine->build() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:273
+PHP   7. Alchemy\Component\UI\Engine->prepare() /Users/erik/www/project/phpalchemy/Alchemy/Component/UI/Engine.php:127
+PHP   8. Alchemy\Component\UI\ReaderFactory->load() /Users/erik/www/project/phpalchemy/Alchemy/Component/UI/Engine.php:81
+PHP   9. Alchemy\Component\UI\ReaderFactory::loadReader() /Users/erik/www/project/phpalchemy/Alchemy/Component/UI/ReaderFactory.php:11
+PHP  10. Alchemy\Component\UI\XmlReader->__construct() /Users/erik/www/project/phpalchemy/Alchemy/Component/UI/ReaderFactory.php:29
+PHP  11. Alchemy\Component\UI\XmlReader->parse() /Users/erik/www/project/phpalchemy/Alchemy/Component/UI/XmlReader.php:25
+PHP  12. Alchemy\Component\UI\Element\Element->add() /Users/erik/www/project/phpalchemy/Alchemy/Component/UI/XmlReader.php:110
+ 
+2012-07-10 17:25:14: (mod_fastcgi.c.2699) FastCGI-stderr: PHP Fatal error:  Call to undefined method Alchemy\Component\UI\Element\Form::getWidgets() in /Users/erik/www/project/phpalchemy/Alchemy/Component/UI/Engine.php on line 131
+PHP Stack trace:
+PHP   1. {main}() /Users/erik/www/project/Sandbox/web/app.php:0
+PHP   2. Alchemy\Application->run() /Users/erik/www/project/Sandbox/web/app.php:18
+PHP   3. Alchemy\Application->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:189
+PHP   4. Alchemy\Kernel\Kernel->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:200
+PHP   5. Alchemy\Kernel\Kernel->handleMetaUi() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:218
+PHP   6. Alchemy\Component\UI\Engine->build() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:273
+ 
+2012-07-10 17:39:31: (mod_fastcgi.c.2699) FastCGI-stderr: PHP Notice:  Undefined variable: w in /Users/erik/www/project/phpalchemy/Alchemy/Component/UI/Element/Element.php on line 70
+PHP Stack trace:
+PHP   1. {main}() /Users/erik/www/project/Sandbox/web/app.php:0
+PHP   2. Alchemy\Application->run() /Users/erik/www/project/Sandbox/web/app.php:18
+PHP   3. Alchemy\Application->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:189
+PHP   4. Alchemy\Kernel\Kernel->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:200
+PHP   5. Alchemy\Kernel\Kernel->handleMetaUi() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:218
+PHP   6. Alchemy\Component\UI\Engine->build() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:273
+PHP   7. Alchemy\Component\UI\Engine->prepare() /Users/erik/www/project/phpalchemy/Alchemy/Component/UI/Engine.php:127
+PHP   8. Alchemy\Component\UI\ReaderFactory->load() /Users/erik/www/project/phpalchemy/Alchemy/Component/UI/Engine.php:81
+PHP   9. Alchemy\Component\UI\ReaderFactory::loadReader() /Users/erik/www/project/phpalchemy/Alchemy/Component/UI/ReaderFactory.php:11
+PHP  10. Alchemy\Component\UI\XmlReader->__construct() /Users/erik/www/project/phpalchemy/Alchemy/Component/UI/ReaderFactory.php:29
+PHP  11. Alchemy\Component\UI\XmlReader->parse() /Users/erik/www/project/phpalchemy/Alchemy/Component/UI/XmlReader.php:25
+PHP  12. Alchemy\Component\UI\Element\Element->add() /Users/erik/www/project/phpalchemy/Alchemy/Component/UI/XmlReader.php:110
+ 
+2012-07-10 17:39:31: (mod_fastcgi.c.2699) FastCGI-stderr: PHP Fatal error:  Call to a member function getId() on a non-object in /Users/erik/www/project/phpalchemy/Alchemy/Component/UI/Element/Element.php on line 70
+PHP Stack trace:
+PHP   1. {main}() /Users/erik/www/project/Sandbox/web/app.php:0
+PHP   2. Alchemy\Application->run() /Users/erik/www/project/Sandbox/web/app.php:18
+PHP   3. Alchemy\Application->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:189
+PHP   4. Alchemy\Kernel\Kernel->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:200
+PHP   5. Alchemy\Kernel\Kernel->handleMetaUi() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:218
+PHP   6. Alchemy\Component\UI\Engine->build() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:273
+PHP   7. Alchemy\Component\UI\Engine->prepare() /Users/erik/www/project/phpalchemy/Alchemy/Component/UI/Engine.php:127
+PHP   8. Alchemy\Component\UI\ReaderFactory->load() /Users/erik/www/project/phpalchemy/Alchemy/Component/UI/Engine.php:81
+PHP   9. Alchemy\Component\UI\ReaderFactory::loadReader() /Users/erik/www/project/phpalchemy/Alchemy/Component/UI/ReaderFactory.php:11
+PHP  10. Alchemy\Component\UI\XmlReader->__construct() /Users/erik/www/project/phpalchemy/Alchemy/Component/UI/ReaderFactory.php:29
+PHP  11. Alchemy\Component\UI\XmlReader->parse() /Users/erik/www/project/phpalchemy/Alchemy/Component/UI/XmlReader.php:25
+PHP  12. Alchemy\Component\UI\Element\Element->add() /Users/erik/www/project/phpalchemy/Alchemy/Component/UI/XmlReader.php:110
+ 
+2012-07-10 17:39:56: (mod_fastcgi.c.2699) FastCGI-stderr: PHP Fatal error:  Call to a member function getId() on a non-object in /Users/erik/www/project/phpalchemy/Alchemy/Component/UI/Engine.php on line 132
+PHP Stack trace:
+PHP   1. {main}() /Users/erik/www/project/Sandbox/web/app.php:0
+PHP   2. Alchemy\Application->run() /Users/erik/www/project/Sandbox/web/app.php:18
+PHP   3. Alchemy\Application->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:189
+PHP   4. Alchemy\Kernel\Kernel->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:200
+PHP   5. Alchemy\Kernel\Kernel->handleMetaUi() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:218
+PHP   6. Alchemy\Component\UI\Engine->build() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:273
+ 
+2012-07-10 17:49:06: (mod_fastcgi.c.2699) FastCGI-stderr: PHP Fatal error:  Class 'Alchemy\Component\UI\Element' not found in /Users/erik/www/project/phpalchemy/Alchemy/Component/UI/Widget/Widget.php on line 17
+PHP Stack trace:
+PHP   1. {main}() /Users/erik/www/project/Sandbox/web/app.php:0
+PHP   2. Alchemy\Application->run() /Users/erik/www/project/Sandbox/web/app.php:18
+PHP   3. Alchemy\Application->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:189
+PHP   4. Alchemy\Kernel\Kernel->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:200
+PHP   5. Alchemy\Kernel\Kernel->handleMetaUi() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:218
+PHP   6. Alchemy\Component\UI\Engine->build() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:273
+PHP   7. Alchemy\Component\UI\Engine->prepare() /Users/erik/www/project/phpalchemy/Alchemy/Component/UI/Engine.php:127
+PHP   8. Alchemy\Component\UI\ReaderFactory->load() /Users/erik/www/project/phpalchemy/Alchemy/Component/UI/Engine.php:81
+PHP   9. Alchemy\Component\UI\ReaderFactory::loadReader() /Users/erik/www/project/phpalchemy/Alchemy/Component/UI/ReaderFactory.php:11
+PHP  10. Alchemy\Component\UI\XmlReader->__construct() /Users/erik/www/project/phpalchemy/Alchemy/Component/UI/ReaderFactory.php:29
+PHP  11. Alchemy\Component\UI\XmlReader->parse() /Users/erik/www/project/phpalchemy/Alchemy/Component/UI/XmlReader.php:25
+PHP  12. class_exists() /Users/erik/www/project/phpalchemy/Alchemy/Component/UI/XmlReader.php:58
+PHP  13. Alchemy\Component\ClassLoader\ClassLoader->loadClass() /Users/erik/www/project/phpalchemy/Alchemy/Component/UI/XmlReader.php:0
+PHP  14. require_once() /Users/erik/www/project/phpalchemy/Alchemy/Component/ClassLoader/ClassLoader.php:107
+PHP  15. Alchemy\Component\ClassLoader\ClassLoader->loadClass() /Users/erik/www/project/phpalchemy/Alchemy/Component/ClassLoader/ClassLoader.php:0
+PHP  16. require_once() /Users/erik/www/project/phpalchemy/Alchemy/Component/ClassLoader/ClassLoader.php:107
+ 
+2012-07-10 17:49:43: (mod_fastcgi.c.2699) FastCGI-stderr: PHP Fatal error:  Class Alchemy\Component\UI\Widget\Textbox contains 1 abstract method and must therefore be declared abstract or implement the remaining methods (Alchemy\Component\UI\Widget\WidgetInterface::prepare) in /Users/erik/www/project/phpalchemy/Alchemy/Component/UI/Widget/Textbox.php on line 17
+PHP Stack trace:
+PHP   1. {main}() /Users/erik/www/project/Sandbox/web/app.php:0
+PHP   2. Alchemy\Application->run() /Users/erik/www/project/Sandbox/web/app.php:18
+PHP   3. Alchemy\Application->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:189
+PHP   4. Alchemy\Kernel\Kernel->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:200
+PHP   5. Alchemy\Kernel\Kernel->handleMetaUi() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:218
+PHP   6. Alchemy\Component\UI\Engine->build() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:273
+PHP   7. Alchemy\Component\UI\Engine->prepare() /Users/erik/www/project/phpalchemy/Alchemy/Component/UI/Engine.php:127
+PHP   8. Alchemy\Component\UI\ReaderFactory->load() /Users/erik/www/project/phpalchemy/Alchemy/Component/UI/Engine.php:81
+PHP   9. Alchemy\Component\UI\ReaderFactory::loadReader() /Users/erik/www/project/phpalchemy/Alchemy/Component/UI/ReaderFactory.php:11
+PHP  10. Alchemy\Component\UI\XmlReader->__construct() /Users/erik/www/project/phpalchemy/Alchemy/Component/UI/ReaderFactory.php:29
+PHP  11. Alchemy\Component\UI\XmlReader->parse() /Users/erik/www/project/phpalchemy/Alchemy/Component/UI/XmlReader.php:25
+PHP  12. class_exists() /Users/erik/www/project/phpalchemy/Alchemy/Component/UI/XmlReader.php:58
+PHP  13. Alchemy\Component\ClassLoader\ClassLoader->loadClass() /Users/erik/www/project/phpalchemy/Alchemy/Component/UI/XmlReader.php:0
+PHP  14. require_once() /Users/erik/www/project/phpalchemy/Alchemy/Component/ClassLoader/ClassLoader.php:107
+ 
+2012-07-10 17:50:12: (mod_fastcgi.c.2699) FastCGI-stderr: PHP Catchable fatal error:  Argument 1 passed to Alchemy\Component\UI\Element\Form::add() must be an instance of Alchemy\Component\UI\Element\WidgetInterface, instance of Alchemy\Component\UI\Widget\Textbox given, called in /Users/erik/www/project/phpalchemy/Alchemy/Component/UI/XmlReader.php on line 110 and defined in /Users/erik/www/project/phpalchemy/Alchemy/Component/UI/Element/Form.php on line 25
+PHP Stack trace:
+PHP   1. {main}() /Users/erik/www/project/Sandbox/web/app.php:0
+PHP   2. Alchemy\Application->run() /Users/erik/www/project/Sandbox/web/app.php:18
+PHP   3. Alchemy\Application->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:189
+PHP   4. Alchemy\Kernel\Kernel->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:200
+PHP   5. Alchemy\Kernel\Kernel->handleMetaUi() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:218
+PHP   6. Alchemy\Component\UI\Engine->build() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:273
+PHP   7. Alchemy\Component\UI\Engine->prepare() /Users/erik/www/project/phpalchemy/Alchemy/Component/UI/Engine.php:127
+PHP   8. Alchemy\Component\UI\ReaderFactory->load() /Users/erik/www/project/phpalchemy/Alchemy/Component/UI/Engine.php:81
+PHP   9. Alchemy\Component\UI\ReaderFactory::loadReader() /Users/erik/www/project/phpalchemy/Alchemy/Component/UI/ReaderFactory.php:11
+PHP  10. Alchemy\Component\UI\XmlReader->__construct() /Users/erik/www/project/phpalchemy/Alchemy/Component/UI/ReaderFactory.php:29
+PHP  11. Alchemy\Component\UI\XmlReader->parse() /Users/erik/www/project/phpalchemy/Alchemy/Component/UI/XmlReader.php:25
+PHP  12. Alchemy\Component\UI\Element\Form->add() /Users/erik/www/project/phpalchemy/Alchemy/Component/UI/XmlReader.php:110
+ 
+2012-07-10 18:15:53: (mod_fastcgi.c.2699) FastCGI-stderr: PHP Notice:  Undefined index: template in /Users/erik/www/project/phpalchemy/Alchemy/Component/UI/Parser.php on line 407
+PHP Stack trace:
+PHP   1. {main}() /Users/erik/www/project/Sandbox/web/app.php:0
+PHP   2. Alchemy\Application->run() /Users/erik/www/project/Sandbox/web/app.php:18
+PHP   3. Alchemy\Application->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:189
+PHP   4. Alchemy\Kernel\Kernel->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:200
+PHP   5. Alchemy\Kernel\Kernel->handleMetaUi() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:218
+PHP   6. Alchemy\Component\UI\Engine->build() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:273
+PHP   7. Alchemy\Component\UI\Parser->generate() /Users/erik/www/project/phpalchemy/Alchemy/Component/UI/Engine.php:159
+PHP   8. Alchemy\Component\UI\Parser->buildIterators() /Users/erik/www/project/phpalchemy/Alchemy/Component/UI/Parser.php:123
+PHP   9. preg_replace_callback() /Users/erik/www/project/phpalchemy/Alchemy/Component/UI/Parser.php:365
+PHP  10. Alchemy\Component\UI\Parser->parseTemplate() /Users/erik/www/project/phpalchemy/Alchemy/Component/UI/Parser.php:365
+ 
+2012-07-10 18:51:22: (mod_fastcgi.c.2699) FastCGI-stderr: PHP Warning:  Missing argument 2 for Alchemy\Component\UI\Element\Element::setGenerated(), called in /Users/erik/www/project/phpalchemy/Alchemy/Component/UI/Engine.php on line 142 and defined in /Users/erik/www/project/phpalchemy/Alchemy/Component/UI/Element/Element.php on line 90
+PHP Stack trace:
+PHP   1. {main}() /Users/erik/www/project/Sandbox/web/app.php:0
+PHP   2. Alchemy\Application->run() /Users/erik/www/project/Sandbox/web/app.php:18
+PHP   3. Alchemy\Application->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:189
+PHP   4. Alchemy\Kernel\Kernel->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:200
+PHP   5. Alchemy\Kernel\Kernel->handleMetaUi() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:218
+PHP   6. Alchemy\Component\UI\Engine->build() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:273
+PHP   7. Alchemy\Component\UI\Element\Element->setGenerated() /Users/erik/www/project/phpalchemy/Alchemy/Component/UI/Engine.php:142
+PHP Notice:  Undefined variable: output in /Users/erik/www/project/phpalchemy/Alchemy/Component/UI/Engine.php on line 144
+PHP Stack trace:
+PHP   1. {main}() /Users/erik/www/project/Sandbox/web/app.php:0
+PHP   2. Alchemy\Application->run() /Users/erik/www/project/Sandbox/web/app.php:18
+PHP   3. Alchemy\Application->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:189
+PHP   4. Alchemy\Kernel\Kernel->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:200
+PHP   5. Alchemy\Kernel\Kernel->handleMetaUi() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:218
+PHP   6. Alchemy\Component\UI\Engine->build() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:273
+ 
+2012-07-10 18:51:22: (mod_fastcgi.c.2699) FastCGI-stderr: PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /Users/erik/www/project/phpalchemy/Alchemy/Component/UI/Engine.php on line 144
+PHP Stack trace:
+PHP   1. {main}() /Users/erik/www/project/Sandbox/web/app.php:0
+PHP   2. Alchemy\Application->run() /Users/erik/www/project/Sandbox/web/app.php:18
+PHP   3. Alchemy\Application->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:189
+PHP   4. Alchemy\Kernel\Kernel->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:200
+PHP   5. Alchemy\Kernel\Kernel->handleMetaUi() /Users/erik/www/project/phpalchemy/Alchemy/Kerne 
+2012-07-10 18:51:22: (mod_fastcgi.c.2699) FastCGI-stderr: l/Kernel.php:218
+PHP   6. Alchemy\Component\UI\Engine->build() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:273
+PHP   7. array_key_exists() /Users/erik/www/project/phpalchemy/Alchemy/Component/UI/Engine.php:144
+PHP Notice:  Undefined variable: output in /Users/erik/www/project/phpalchemy/Alchemy/Component/UI/Engine.php on line 152
+PHP Stack trace:
+PHP   1. {main}() /Users/erik/www/project/Sandbox/web/app.php:0
+PHP   2. Alchemy\Application->run() /Users/erik/www/project/Sandbox/web/app.php:18
+PHP   3. Alchemy\Application->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:189
+PHP   4. Alchemy\Kernel\Kernel->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:200
+PHP   5. Alchemy\Kernel\Kernel->handleMetaUi() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:218
+PHP   6. Alchemy\Component\UI\Engine->build() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:273
+ 
+2012-07-10 18:51:22: (mod_fastcgi.c.2699) FastCGI-stderr: PHP Warning:  Missing argument 2 for Alchemy\Component\UI\Element\Element::setGenerated(), called in /Users/erik/www/project/phpalchemy/Alchemy/Component/UI/Engine.php on line 142 and defined in /Users/erik/www/project/phpalchemy/Alchemy/Component/UI/Element/Element.php on line 90
+PHP Stack trace:
+PHP   1. {main}() /Users/erik/www/project/Sandbox/web/app.php:0
+PHP   2. Alchemy\Application->run() /Users/erik/www/project/Sandbox/web/app.php:18
+PHP   3. Alchemy\Application->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:189
+PHP   4. Alchemy\Kernel\Kernel->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:200
+PHP   5. Alchemy\Kernel\Kernel->handleMetaUi() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:218
+PHP   6. Alchemy\Component\UI\Engine->build() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:273
+PHP   7. Alchemy\Component\UI\Element\Element->setGenerated() /Users/erik/www/project/phpalchemy/Alchemy/Component/UI/Engine.php:142
+PHP Notice:  Undefined variable: output in /Users/erik/www/project/phpalchemy/Alchemy/Component/UI/Engine.php on line 144
+PHP Stack trace:
+PHP   1. {main}() /Users/erik/www/project/Sandbox/web/app.php:0
+PHP   2. Alchemy\Application->run() /Users/erik/www/project/Sandbox/web/app.php:18
+PHP   3. Alchemy\Application->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:189
+PHP   4. Alchemy\Kernel\Kernel->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:200
+PHP   5. Alchemy\Kernel\Kernel->handleMetaUi() /User 
+2012-07-10 18:51:22: (mod_fastcgi.c.2699) FastCGI-stderr: s/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:218
+PHP   6. Alchemy\Component\UI\Engine->build() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:273
+ 
+2012-07-10 18:51:22: (mod_fastcgi.c.2699) FastCGI-stderr: PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /Users/erik/www/project/phpalchemy/Alchemy/Component/UI/Engine.php on line 144
+PHP Stack trace:
+PHP   1. {main}() /Users/erik/www/project/Sandbox/web/app.php:0
+PHP   2. Alchemy\Application->run() /Users/erik/www/project/Sandbox/web/app.php:18
+PHP   3. Alchemy\Application->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:189
+PHP   4. Alchemy\Kernel\Kernel->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:200
+PHP   5. Alchemy\Kernel\Kernel->handleMetaUi() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:218
+PHP   6. Alchemy\Component\UI\Engine->build() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:273
+PHP   7. array_key_exists() /Users/erik/www/project/phpalchemy/Alchemy/Component/UI/Engine.php:144
+PHP Notice:  Undefined variable: output in /Users/erik/www/project/phpalchemy/Alchemy/Component/UI/Engine.php on line 152
+PHP Stack trace:
+PHP   1. {main}() /Users/erik/www/project/Sandbox/web/app.php:0
+PHP   2. Alchemy\Application->run() /Users/erik/www/project/Sandbox/web/app.php:18
+PHP   3. Alchemy\Application->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:189
+PHP   4. Alchemy\Kernel\Kernel->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:200
+PHP   5. Alchemy\Kernel\Kernel->handleMetaUi() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:218
+PHP   6. Alchemy\Component\UI\Engine->build() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:273
+ 
+2012-07-10 18:51:22: (mod_fastcgi.c.2699) FastCGI-stderr: PHP Warning:  Missing argument 2 for Alchemy\Component\UI\Element\Element::setGenerated(), called in /Users/erik/www/project/phpalchemy/Alchemy/Component/UI/Engine.php on line 142 and defined in /Users/erik/www/project/phpalchemy/Alchemy/Component/UI/Element/Element.php on line 90
+PHP Stack trace:
+PHP   1. {main}() /Users/erik/www/project/Sandbox/web/app.php:0
+PHP   2. Alchemy\Application->run() /Users/erik/www/project/Sandbox/web/app.php:18
+PHP   3. Alchemy\Application->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:189
+PHP   4. Alchemy\Kernel\Kernel->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:200
+PHP   5. Alchemy\Kernel\Kernel->handleMetaUi() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:218
+PHP   6. Alchemy\Component\UI\Engine->build() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:273
+PHP   7. Alchemy\Component\UI\Element\Element->setGenerated() /Users/erik/www/project/phpalchemy/Alchemy/Component/UI/Engine.php:142
+PHP Notice:  Undefined variable: output in /Users/erik/www/project/phpalchemy/Alchemy/Component/UI/Engine.php on line 144
+PHP Stack trace:
+PHP   1. {main}() /Users/erik/www/project/Sandbox/web/app.php:0
+PHP   2. Alchemy\Application->run() /Users/erik/www/project/Sandbox/web/app.php:18
+PHP   3. Alchemy\Application->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:189
+PHP   4. Alchemy\Kernel\Kernel->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:200
+PHP   5. Alchemy\Kernel\Kernel->handleMetaUi() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:218
+PHP   6. Alchemy\Component\UI\Engine->build() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:273
+ 
+2012-07-10 18:51:22: (mod_fastcgi.c.2699) FastCGI-stderr: PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /Users/erik/www/project/phpalchemy/Alchemy/Component/UI/Engine.php on line 144
+PHP Stack trace:
+PHP   1. {main}() /Users/erik/www/project/Sandbox/web/app.php:0
+PHP   2. Alchemy\Application->run() /Users/erik/www/project/Sandbox/web/app.php:18
+PHP   3. Alchemy\Application->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:189
+PHP   4. Alchemy\Kernel\Kernel->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:200
+PHP   5. Alchemy\Kernel\Kernel->handleMetaUi() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:218
+PHP   6. Alchemy\Component\UI\Engine->build() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:273
+PHP   7. array_key_exists() /Users/erik/www/project/phpalchemy/Alchemy/Component/UI/Engine.php:144
+PHP Notice:  Undefined variable: output in /Users/erik/www/project/phpalchemy/Alchemy/Component/UI/Engine.php on line 152
+PHP Stack trace:
+PHP   1. {main}() /Users/erik/www/project/Sandbox/web/app.php:0
+PHP   2. Alchemy\Application->run() /Users/erik/www/project/Sandbox/web/app.php:18
+PHP   3. Alchemy\Application->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:189
+PHP   4. Alchemy\Kernel\Kernel->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:200
+PHP   5. Alchemy\Kernel\Kernel->handleMetaUi() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:218
+PHP   6. Alchemy\Component\UI\Engine->build() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:273
+ 
+2012-07-10 18:51:22: (mod_fastcgi.c.2699) FastCGI-stderr: PHP Warning:  Missing argument 2 for Alchemy\Component\UI\Element\Element::setGenerated(), called in /Users/erik/www/project/phpalchemy/Alchemy/Component/UI/Engine.php on line 142 and defined in /Users/erik/www/project/phpalchemy/Alchemy/Component/UI/Element/Element.php on line 90
+PHP Stack trace:
+PHP   1. {main}() /Users/erik/www/project/Sandbox/web/app.php:0
+PHP   2. Alchemy\Application->run() /Users/erik/www/project/Sandbox/web/app.php:18
+PHP   3. Alchemy\Application->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:189
+PHP   4. Alchemy\Kernel\Kernel->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:200
+PHP   5. Alchemy\Kernel\Kernel->handleMetaUi() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:218
+PHP   6. Alchemy\Component\UI\Engine->build() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:273
+PHP   7. Alchemy\Component\UI\Element\Element->setGenerated() /Users/erik/www/project/phpalchemy/Alchemy/Component/UI/Engine.php:142
+PHP Notice:  Undefined variable: output in /Users/erik/www/project/phpalchemy/Alchemy/Component/UI/Engine.php on line 144
+PHP Stack trace:
+PHP   1. {main}() /Users/erik/www/project/Sandbox/web/app.php:0
+PHP   2. Alchemy\Application->run() /Users/erik/www/project/Sandbox/web/app.php:18
+PHP   3. Alchemy\Application->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:189
+PHP   4. Alchemy\Kernel\Kernel->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:200
+PHP   5. Alchemy\Kernel\Kernel->handleMetaUi() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:218
+PHP   6. Alchemy\Component\UI\Engine->build() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:273
+ 
+2012-07-10 18:51:22: (mod_fastcgi.c.2699) FastCGI-stderr: PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /Users/erik/www/project/phpalchemy/Alchemy/Component/UI/Engine.php on line 144
+PHP Stack trace:
+PHP   1. {main}() /Users/erik/www/project/Sandbox/web/app.php:0
+PHP   2. Alchemy\Application->run() /Users/erik/www/project/Sandbox/web/app.php:18
+PHP   3. Alchemy\Application->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:189
+PHP   4. Alchemy\Kernel\Kernel->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:200
+PHP   5. Alchemy\Kernel\Kernel->handleMetaUi() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:218
+PHP   6. Alchemy\Component\UI\Engine->build() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:273
+PHP   7. array_key_exists() /Users/erik/www/project/phpalchemy/Alchemy/Component/UI/Engine.php:144
+PHP Notice:  Undefined variable: output in /Users/erik/www/project/phpalchemy/Alchemy/Component/UI/Engine.php on line 152
+PHP Stack trace:
+PHP   1. {main}() /Users/erik/www/project/Sandbox/web/app.php:0
+PHP   2. Alchemy\Application->run() /Users/erik/www/project/Sandbox/web/app.php:18
+PHP   3. Alchemy\Application->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:189
+PHP   4. Alchemy\Kernel\Kernel->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:200
+PHP   5. Alchemy\Kernel\Kernel->handleMetaUi() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:218
+PHP   6. Alchemy\Component\UI\Engine->build() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:273
+ 
+2012-07-10 18:51:22: (mod_fastcgi.c.2699) FastCGI-stderr: PHP Warning:  Missing argument 2 for Alchemy\Component\UI\Element\Element::setGenerated(), called in /Users/erik/www/project/phpalchemy/Alchemy/Component/UI/Engine.php on line 142 and defined in /Users/erik/www/project/phpalchemy/Alchemy/Component/UI/Element/Element.php on line 90
+PHP Stack trace:
+PHP   1. {main}() /Users/erik/www/project/Sandbox/web/app.php:0
+PHP   2. Alchemy\Application->run() /Users/erik/www/project/Sandbox/web/app.php:18
+PHP   3. Alchemy\Application->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:189
+PHP   4. Alchemy\Kernel\Kernel->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:200
+PHP   5. Alchemy\Kernel\Kernel->handleMetaUi() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:218
+PHP   6. Alchemy\Component\UI\Engine->build() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:273
+PHP   7. Alchemy\Component\UI\Element\Element->setGenerated() /Users/erik/www/project/phpalchemy/Alchemy/Component/UI/Engine.php:142
+PHP Notice:  Undefined variable: output in /Users/erik/www/project/phpalchemy/Alchemy/Component/UI/Engine.php on line 144
+PHP Stack trace:
+PHP   1. {main}() /Users/erik/www/project/Sandbox/web/app.php:0
+PHP   2. Alchemy\Application->run() /Users/erik/www/project/Sandbox/web/app.php:18
+PHP   3. Alchemy\Application->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:189
+PHP   4. Alchemy\Kernel\Kernel->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:200
+PHP   5. Alchemy\Kernel\Kernel->handleMetaUi() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:218
+PHP   6. Alchemy\Component\UI\Engine->build() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:273
+ 
+2012-07-10 18:51:22: (mod_fastcgi.c.2699) FastCGI-stderr: PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /Users/erik/www/project/phpalchemy/Alchemy/Component/UI/Engine.php on line 144
+PHP Stack trace:
+PHP   1. {main}() /Users/erik/www/project/Sandbox/web/app.php:0
+PHP   2. Alchemy\Application->run() /Users/erik/www/project/Sandbox/web/app.php:18
+PHP   3. Alchemy\Application->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:189
+PHP   4. Alchemy\Kernel\Kernel->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:200
+PHP   5. Alchemy\Kernel\Kernel->handleMetaUi() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:218
+PHP   6. Alchemy\Component\UI\Engine->build() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:273
+PHP   7. array_key_exists() /Users/erik/www/project/phpalchemy/Alchemy/Component/UI/Engine.php:144
+PHP Notice:  Undefined variable: output in /Users/erik/www/project/phpalchemy/Alchemy/Component/UI/Engine.php on line 152
+PHP Stack trace:
+PHP   1. {main}() /Users/erik/www/project/Sandbox/web/app.php:0
+PHP   2. Alchemy\Application->run() /Users/erik/www/project/Sandbox/web/app.php:18
+PHP   3. Alchemy\Application->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:189
+PHP   4. Alchemy\Kernel\Kernel->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:200
+PHP   5. Alchemy\Kernel\Kernel->handleMetaUi() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:218
+PHP   6. Alchemy\Component\UI\Engine->build() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:273
+ 
+2012-07-10 18:51:22: (mod_fastcgi.c.2699) FastCGI-stderr: PHP Warning:  Missing argument 2 for Alchemy\Component\UI\Element\Element::setGenerated(), called in /Users/erik/www/project/phpalchemy/Alchemy/Component/UI/Engine.php on line 165 and defined in /Users/erik/www/project/phpalchemy/Alchemy/Component/UI/Element/Element.php on line 90
+PHP Stack trace:
+PHP   1. {main}() /Users/erik/www/project/Sandbox/web/app.php:0
+PHP   2. Alchemy\Application->run() /Users/erik/www/project/Sandbox/web/app.php:18
+PHP   3. Alchemy\Application->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:189
+PHP   4. Alchemy\Kernel\Kernel->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:200
+PHP   5. Alchemy\Kernel\Kernel->handleMetaUi() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:218
+PHP   6. Alchemy\Component\UI\Engine->build() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:273
+PHP   7. Alchemy\Component\UI\Element\Element->setGenerated() /Users/erik/www/project/phpalchemy/Alchemy/Component/UI/Engine.php:165
+ 
+2012-07-10 18:51:44: (mod_fastcgi.c.2699) FastCGI-stderr: PHP Notice:  Undefined variable: output in /Users/erik/www/project/phpalchemy/Alchemy/Component/UI/Engine.php on line 144
+PHP Stack trace:
+PHP   1. {main}() /Users/erik/www/project/Sandbox/web/app.php:0
+PHP   2. Alchemy\Application->run() /Users/erik/www/project/Sandbox/web/app.php:18
+PHP   3. Alchemy\Application->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:189
+PHP   4. Alchemy\Kernel\Kernel->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:200
+PHP   5. Alchemy\Kernel\Kernel->handleMetaUi() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:218
+PHP   6. Alchemy\Component\UI\Engine->build() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:273
+PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /Users/erik/www/project/phpalchemy/Alchemy/Component/UI/Engine.php on line 144
+PHP Stack trace:
+PHP   1. {main}() /Users/erik/www/project/Sandbox/web/app.php:0
+PHP   2. Alchemy\Application->run() /Users/erik/www/project/Sandbox/web/app.php:18
+PHP   3. Alchemy\Application->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:189
+PHP   4. Alchemy\Kernel\Kernel->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:200
+PHP   5. Alchemy\Kernel\Kernel->handleMetaUi() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:218
+PHP   6. Alchemy\Component\UI\Engine->build() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:273
+PHP   7. array_key_exists() /Users/erik/www/project/phpalchemy/Alchemy/Component/UI/Engine.php:144
+ 
+2012-07-10 18:51:44: (mod_fastcgi.c.2699) FastCGI-stderr: PHP Notice:  Undefined variable: output in /Users/erik/www/project/phpalchemy/Alchemy/Component/UI/Engine.php on line 152
+PHP Stack trace:
+PHP   1. {main}() /Users/erik/www/project/Sandbox/web/app.php:0
+PHP   2. Alchemy\Application->run() /Users/erik/www/project/Sandbox/web/app.php:18
+PHP   3. Alchemy\Application->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:189
+PHP   4. Alchemy\Kernel\Kernel->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:200
+PHP   5. Alchemy\Kernel\Kernel->handleMetaUi() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:218
+PHP   6. Alchemy\Component\UI\Engine->build() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:273
+PHP Notice:  Undefined variable: output in /Users/erik/www/project/phpalchemy/Alchemy/Component/UI/Engine.php on line 144
+PHP Stack trace:
+PHP   1. {main}()  
+2012-07-10 18:51:44: (mod_fastcgi.c.2699) FastCGI-stderr: /Users/erik/www/project/Sandbox/web/app.php:0
+PHP   2. Alchemy\Application->run() /Users/erik/www/project/Sandbox/web/app.php:18
+PHP   3. Alchemy\Application->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:189
+PHP   4. Alchemy\Kernel\Kernel->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:200
+PHP   5. Alchemy\Kernel\Kernel->handleMetaUi() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:218
+PHP   6. Alchemy\Component\UI\Engine->build() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:273
+ 
+2012-07-10 18:51:44: (mod_fastcgi.c.2699) FastCGI-stderr: PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /Users/erik/www/project/phpalchemy/Alchemy/Component/UI/Engine.php on line 144
+PHP Stack trace:
+PHP   1. {main}() /Users/erik/www/project/Sandbox/web/app.php:0
+PHP   2. Alchemy\Application->run() /Users/erik/www/project/Sandbox/web/app.php:18
+PHP   3. Alchemy\Application->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:189
+PHP   4. Alchemy\Kernel\Kernel->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:200
+PHP   5. Alchemy\Kernel\Kernel->handleMetaUi() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:218
+PHP   6. Alchemy\Component\UI\Engine->build() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:273
+PHP   7. array_key_exists() /Users/erik/www/project/phpalchemy/Alchemy/Component/UI/Engine.php:144
+PHP Notice:  Undefined variable: output in /Users/erik/www/project/phpalchemy/Alchemy/Component/UI/Engine.php on line 152
+PHP Stack trace:
+PHP   1. {main}() /Users/erik/www/project/Sandbox/web/app.php:0
+PHP   2. Alchemy\Application->run() /Users/erik/www/project/Sandbox/web/app.php:18
+PHP   3. Alchemy\Application->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:189
+PHP   4. Alchemy\Kernel\Kernel->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:200
+PHP   5. Alchemy\Kernel\Kernel->handleMetaUi() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:218
+PHP   6. Alchemy\Component\UI\Engine->build() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:273
+ 
+2012-07-10 18:51:44: (mod_fastcgi.c.2699) FastCGI-stderr: PHP Notice:  Undefined variable: output in /Users/erik/www/project/phpalchemy/Alchemy/Component/UI/Engine.php on line 144
+PHP Stack trace:
+PHP   1. {main}() /Users/erik/www/project/Sandbox/web/app.php:0
+PHP   2. Alchemy\Application->run() /Users/erik/www/project/Sandbox/web/app.php:18
+PHP   3. Alchemy\Application->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:189
+PHP   4. Alchemy\Kernel\Kernel->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:200
+PHP   5. Alchemy\Kernel\Kernel->handleMetaUi() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:218
+PHP   6. Alchemy\Component\UI\Engine->build() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:273
+PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /Users/erik/www/project/phpalchemy/Alchemy/Component/UI/Engine.php on line 144
+PHP Stack trace:
+PHP   1. {main}() /Users/erik/www/project/Sandbox/web/app.php:0
+PHP   2. Alchemy\Application->run() /Users/erik/www/project/Sandbox/web/app.php:18
+PHP   3. Alchemy\Application->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:189
+PHP   4. Alchemy\Kernel\Kernel->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:200
+PHP   5. Alchemy\Kernel\Kernel->handleMetaUi() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:218
+PHP   6. Alchemy\Component\UI\Engine->build() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:273
+PHP   7. array_key_exists() /Users/erik/www/project/phpalchemy/Alchemy/Component/UI/Engine.php:144
+ 
+2012-07-10 18:51:44: (mod_fastcgi.c.2699) FastCGI-stderr: PHP Notice:  Undefined variable: output in /Users/erik/www/project/phpalchemy/Alchemy/Component/UI/Engine.php on line 152
+PHP Stack trace:
+PHP   1. {main}() /Users/erik/www/project/Sandbox/web/app.php:0
+PHP   2. Alchemy\Application->run() /Users/erik/www/project/Sandbox/web/app.php:18
+PHP   3. Alchemy\Application->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:189
+PHP   4. Alchemy\Kernel\Kernel->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:200
+PHP   5. Alchemy\Kernel\Kernel->handleMetaUi() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:218
+PHP   6. Alchemy\Component\UI\Engine->build() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:273
+PHP Notice:  Undefined variable: output in /Users/erik/www/project/phpalchemy/Alchemy/Component/UI/Engine.php on line 144
+PHP Stack trace:
+PHP   1. {main}() /Users/erik/www/project/Sandbox/web/app.php:0
+PHP   2. Alchemy\Application->run() /Users/erik/www/project/Sandbox/web/app.php:18
+PHP   3. Alchemy\Application->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:189
+PHP   4. Alchemy\Kernel\Kernel->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:200
+PHP   5. Alchemy\Kernel\Kernel->handleMetaUi() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:218
+PHP   6. Alchemy\Component\UI\Engine->build() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:273
+ 
+2012-07-10 18:51:44: (mod_fastcgi.c.2699) FastCGI-stderr: PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /Users/erik/www/project/phpalchemy/Alchemy/Component/UI/Engine.php on line 144
+PHP Stack trace:
+PHP   1. {main}() /Users/erik/www/project/Sandbox/web/app.php:0
+PHP   2. Alchemy\Application->run() /Users/erik/www/project/Sandbox/web/app.php:18
+PHP   3. Alchemy\Application->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:189
+PHP   4. Alchemy\Kernel\Kernel->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:200
+PHP   5. Alchemy\Kernel\Kernel->handleMetaUi() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:218
+PHP   6. Alchemy\Component\UI\Engine->build() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:273
+PHP   7. array_key_exists() /Users/erik/www/project/phpalchemy/Alchemy/Component/UI/Engine.php:144
+PHP Notice:  Undefined variable: output in /Users/erik/www/project/phpalchemy/Alchemy/Component/UI/Engine.php on line 152
+PHP Stack trace:
+PHP   1. {main}() /Users/erik/www/project/Sandbox/web/app.php:0
+PHP   2. Alchemy\Application->run() /Users/erik/www/project/Sandbox/web/app.php:18
+PHP   3. Alchemy\Application->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:189
+PHP   4. Alchemy\Kernel\Kernel->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:200
+PHP   5. Alchemy\Kernel\Kernel->handleMetaUi() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:218
+PHP   6. Alchemy\Component\UI\Engine->build() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:273
+ 
+2012-07-10 18:51:44: (mod_fastcgi.c.2699) FastCGI-stderr: PHP Notice:  Undefined variable: output in /Users/erik/www/project/phpalchemy/Alchemy/Component/UI/Engine.php on line 144
+PHP Stack trace:
+PHP   1. {main}() /Users/erik/www/project/Sandbox/web/app.php:0
+PHP   2. Alchemy\Application->run() /Users/erik/www/project/Sandbox/web/app.php:18
+PHP   3. Alchemy\Application->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:189
+PHP   4. Alchemy\Kernel\Kernel->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:200
+PHP   5. Alchemy\Kernel\Kernel->handleMetaUi() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:218
+PHP   6. Alchemy\Component\UI\Engine->build() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:273
+PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /Users/erik/www/project/phpalchemy/Alchemy/Component/UI/Engine.php on line 144
+PHP Stack trace:
+PHP   1. {main}() /Users/erik/www/project/Sandbox/web/app.php:0
+PHP   2. Alchemy\Application->run() /Users/erik/www/project/Sandbox/web/app.php:18
+PHP   3. Alchemy\Application->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:189
+PHP   4. Alchemy\Kernel\Kernel->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:200
+PHP   5. Alchemy\Kernel\Kernel->handleMetaUi() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:218
+PHP   6. Alchemy\Component\UI\Engine->build() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:273
+PHP   7. array_key_exists() /Users/erik/www/project/phpalchemy/Alchemy/Component/UI/Engine.php:144
+ 
+2012-07-10 18:51:44: (mod_fastcgi.c.2699) FastCGI-stderr: PHP Notice:  Undefined variable: output in /Users/erik/www/project/phpalchemy/Alchemy/Component/UI/Engine.php on line 152
+PHP Stack trace:
+PHP   1. {main}() /Users/erik/www/project/Sandbox/web/app.php:0
+PHP   2. Alchemy\Application->run() /Users/erik/www/project/Sandbox/web/app.php:18
+PHP   3. Alchemy\Application->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:189
+PHP   4. Alchemy\Kernel\Kernel->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:200
+PHP   5. Alchemy\Kernel\Kernel->handleMetaUi() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:218
+PHP   6. Alchemy\Component\UI\Engine->build() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:273
+ 
+2012-07-10 18:52:03: (mod_fastcgi.c.2699) FastCGI-stderr: PHP Notice:  Undefined variable: output in /Users/erik/www/project/phpalchemy/Alchemy/Component/UI/Engine.php on line 152
+PHP Stack trace:
+PHP   1. {main}() /Users/erik/www/project/Sandbox/web/app.php:0
+PHP   2. Alchemy\Application->run() /Users/erik/www/project/Sandbox/web/app.php:18
+PHP   3. Alchemy\Application->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:189
+PHP   4. Alchemy\Kernel\Kernel->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:200
+PHP   5. Alchemy\Kernel\Kernel->handleMetaUi() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:218
+PHP   6. Alchemy\Component\UI\Engine->build() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:273
+PHP Notice:  Undefined variable: output in /Users/erik/www/project/phpalchemy/Alchemy/Component/UI/Engine.php on line 152
+PHP Stack trace:
+PHP   1. {main}() /Users/erik/www/project/Sandbox/web/app.php:0
+PHP   2. Alchemy\Application->run() /Users/erik/www/project/Sandbox/web/app.php:18
+PHP   3. Alchemy\Application->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:189
+PHP   4. Alchemy\Kernel\Kernel->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:200
+PHP   5. Alchemy\Kernel\Kernel->handleMetaUi() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:218
+PHP   6. Alchemy\Component\UI\Engine->build() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:273
+ 
+2012-07-10 18:52:03: (mod_fastcgi.c.2699) FastCGI-stderr: PHP Notice:  Undefined variable: output in /Users/erik/www/project/phpalchemy/Alchemy/Component/UI/Engine.php on line 152
+PHP Stack trace:
+PHP   1. {main}() /Users/erik/www/project/Sandbox/web/app.php:0
+PHP   2. Alchemy\Application->run() /Users/erik/www/project/Sandbox/web/app.php:18
+PHP   3. Alchemy\Application->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:189
+PHP   4. Alchemy\Kernel\Kernel->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:200
+PHP   5. Alchemy\Kernel\Kernel->handleMetaUi() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:218
+PHP   6. Alchemy\Component\UI\Engine->build() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:273
+PHP Notice:  Undefined variable: output in /Users/erik/www/project/phpalchemy/Alchemy/Component/UI/Engine.php on line 152
+PHP Stack trace:
+PHP   1. {main}() /Users/erik/www/project/Sandbox/web/app.php:0
+PHP   2. Alchemy\Application->run() /Users/erik/www/project/Sandbox/web/app.php:18
+PHP   3. Alchemy\Application->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:189
+PHP   4. Alchemy\Kernel\Kernel->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:200
+PHP   5. Alchemy\Kernel\Kernel->handleMetaUi() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:218
+PHP   6. Alchemy\Component\UI\Engine->build() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:273
+ 
+2012-07-10 18:52:03: (mod_fastcgi.c.2699) FastCGI-stderr: PHP Notice:  Undefined variable: output in /Users/erik/www/project/phpalchemy/Alchemy/Component/UI/Engine.php on line 152
+PHP Stack trace:
+PHP   1. {main}() /Users/erik/www/project/Sandbox/web/app.php:0
+PHP   2. Alchemy\Application->run() /Users/erik/www/project/Sandbox/web/app.php:18
+PHP   3. Alchemy\Application->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:189
+PHP   4. Alchemy\Kernel\Kernel->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:200
+PHP   5. Alchemy\Kernel\Kernel->handleMetaUi() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:218
+PHP   6. Alchemy\Component\UI\Engine->build() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:273
+ 
+2012-07-10 19:09:42: (mod_fastcgi.c.2699) FastCGI-stderr: PHP Fatal error:  Cannot use object of type Alchemy\Component\UI\Element\Form as array in /Users/erik/www/project/Sandbox/cache/templates/compiled/10a2f742e8b6c6dcab76b6369e57e31bf6980260.file.form.tpl.php on line 26
+PHP Stack trace:
+PHP   1. {main}() /Users/erik/www/project/Sandbox/web/app.php:0
+PHP   2. Alchemy\Application->run() /Users/erik/www/project/Sandbox/web/app.php:18
+PHP   3. Alchemy\Application->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:189
+PHP   4. Alchemy\Kernel\Kernel->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:200
+PHP   5. Alchemy\Kernel\Kernel->handleMetaUi() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:218
+PHP   6. Alchemy\Mvc\View->getOutput() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:324
+PHP   7. Alchemy\Adapter\SmartyView->render() /Users/erik/www/project/phpalchemy/Alchemy/Mvc/View.php:239
+PHP   8. Smarty_Internal_TemplateBase->display() /Users/erik/www/project/phpalchemy/Alchemy/Adapter/SmartyView.php:84
+PHP   9. Smarty_Internal_TemplateBase->fetch() /Users/erik/www/project/phpalchemy/vendor/3rd-party/smarty/libs/sysplugins/smarty_internal_templatebase.php:374
+PHP  10. content_4ffcb63672a473_50704780() /Users/erik/www/project/phpalchemy/vendor/3rd-party/smarty/libs/sysplugins/smarty_internal_templatebase.php:180
+ 
+2012-07-10 19:11:48: (mod_fastcgi.c.2699) FastCGI-stderr: PHP Notice:  Undefined property: Alchemy\Component\UI\Element\Form::$action in /Users/erik/www/project/Sandbox/cache/templates/compiled/10a2f742e8b6c6dcab76b6369e57e31bf6980260.file.form.tpl.php on line 27
+PHP Stack trace:
+PHP   1. {main}() /Users/erik/www/project/Sandbox/web/app.php:0
+PHP   2. Alchemy\Application->run() /Users/erik/www/project/Sandbox/web/app.php:18
+PHP   3. Alchemy\Application->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:189
+PHP   4. Alchemy\Kernel\Kernel->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:200
+PHP   5. Alchemy\Kernel\Kernel->handleMetaUi() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:218
+PHP   6. Alchemy\Mvc\View->getOutput() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:324
+PHP   7. Alchemy\Adapter\SmartyView->render() /Users/erik/www/project/phpalchemy/Alchemy/Mvc/View.php:239
+PHP   8. Smarty_Internal_TemplateBase->display() /Users/erik/www/project/phpalchemy/Alchemy/Adapter/SmartyView.php:84
+PHP   9. Smarty_Internal_TemplateBase->fetch() /Users/erik/www/project/phpalchemy/vendor/3rd-party/smarty/libs/sysplugins/smarty_internal_templatebase.php:374
+PHP  10. content_4ffcb63672a473_50704780() /Users/erik/www/project/phpalchemy/vendor/3rd-party/smarty/libs/sysplugins/smarty_internal_templatebase.php:180
+PHP Fatal error:  Cannot access private property Alchemy\Component\UI\Element\Form::$widgets in /Users/erik/www/project/Sandbox/cache/templates/compiled/10a2f742e8b6c6dcab76b6369e57e31bf6980260.file.form.tpl.php on line 30
+PHP Stack trace:
+PHP   1. {main}() /Users/erik/www/project/Sandbox/web/app.php:0
+PHP   2. Alchemy\Application->run() /Users/erik/www/project/Sandbox/web/app.php:18
+PHP   3. Alchemy\Application->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:189
+PHP   4. Alchemy\Kernel\Kernel->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:200
+PHP   5. Alchemy\Kernel\Kernel->handleMetaUi() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:218
+PHP   6. Alchemy\Mvc\View->getOutput() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:324
+PHP   7. Alchemy\Adapter\SmartyView->render() /Users/erik/www/project/phpalchemy/Alchemy/Mvc/View.php:239
+PHP   8. Smarty_Internal_TemplateBase->display() /Users/erik/www/project/phpalchemy/Alchemy/Adapter/SmartyView.php:84
+PHP   9. Smarty_Internal_TemplateBase->fetch() /Users/erik/www/project/phpalchemy/vendor/3rd-party/smarty/libs/sysplugins/smarty_internal_templatebase.php:374
+PHP  10. content_4ffcb63672a473_50704780() /Users/erik/www/project/phpalchemy/vendor/3rd-party/smarty/libs/sysplugins/smarty_internal_templatebase.php:180
+ 
+2012-07-10 19:12:12: (mod_fastcgi.c.2699) FastCGI-stderr: PHP Notice:  Undefined property: Alchemy\Component\UI\Element\Form::$action in /Users/erik/www/project/Sandbox/cache/templates/compiled/10a2f742e8b6c6dcab76b6369e57e31bf6980260.file.form.tpl.php on line 27
+PHP Stack trace:
+PHP   1. {main}() /Users/erik/www/project/Sandbox/web/app.php:0
+PHP   2. Alchemy\Application->run() /Users/erik/www/project/Sandbox/web/app.php:18
+PHP   3. Alchemy\Application->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:189
+PHP   4. Alchemy\Kernel\Kernel->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:200
+PHP   5. Alchemy\Kernel\Kernel->handleMetaUi() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:218
+PHP   6. Alchemy\Mvc\View->getOutput() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:324
+PHP   7. Alchemy\Adapter\SmartyView->render() /Users/erik/www/project/phpalchemy/Alchemy/Mvc/View.php:239
+PHP   8. Smarty_Internal_TemplateBase->display() /Users/erik/www/project/phpalchemy/Alchemy/Adapter/SmartyView.php:84
+PHP   9. Smarty_Internal_TemplateBase->fetch() /Users/erik/www/project/phpalchemy/vendor/3rd-party/smarty/libs/sysplugins/smarty_internal_templatebase.php:374
+PHP  10. content_4ffcb63672a473_50704780() /Users/erik/www/project/phpalchemy/vendor/3rd-party/smarty/libs/sysplugins/smarty_internal_templatebase.php:180
+PHP Notice:  Undefined property: Alchemy\Component\UI\Element\Form::$getWidgets in /Users/erik/www/project/Sandbox/cache/templates/compiled/10a2f742e8b6c6dcab76b6369e57e31bf6980260.file.form.tpl.php on line 30
+PHP Stack trace:
+PHP   1. {main}() /Users/erik/www/project/Sandbox/web/app.php:0
+PHP   2. Alchemy\Application->run() /Users/erik/www/project/Sandbox/web/app.php:18
+PHP   3. Alchemy\Application->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:189
+PHP   4. Alchemy\Kernel\Kernel->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:200
+PHP   5. Alchemy\Kernel\Kernel->handleMetaUi() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:218
+PHP   6. Alchemy\Mvc\View->getOutput() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:324
+PHP   7. Alchemy\Adapter\SmartyView->render() /Users/erik/www/project/phpalchemy/Alchemy/Mvc/View.php:239
+PHP   8. Smarty_Internal_TemplateBase->display() /Users/erik/www/project/phpalchemy/Alchemy/Adapter/SmartyView.php:84
+PHP   9. Smarty_Internal_TemplateBase->fetch() /Users/erik/www/project/phpalchemy/vendor/3rd-party/smarty/libs/sysplugins/smarty_internal_templatebase.php:374
+PHP  10. content_4ffcb63672a473_50704780() /Users/erik/www/project/phpalchemy/vendor/3rd-party/smarty/libs/sysplugins/smarty_internal_templatebase.php:180
+ 
+2012-07-10 19:12:46: (mod_fastcgi.c.2699) FastCGI-stderr: PHP Notice:  Undefined property: Alchemy\Component\UI\Element\Form::$action in /Users/erik/www/project/Sandbox/cache/templates/compiled/10a2f742e8b6c6dcab76b6369e57e31bf6980260.file.form.tpl.php on line 27
+PHP Stack trace:
+PHP   1. {main}() /Users/erik/www/project/Sandbox/web/app.php:0
+PHP   2. Alchemy\Application->run() /Users/erik/www/project/Sandbox/web/app.php:18
+PHP   3. Alchemy\Application->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:189
+PHP   4. Alchemy\Kernel\Kernel->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:200
+PHP   5. Alchemy\Kernel\Kernel->handleMetaUi() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:218
+PHP   6. Alchemy\Mvc\View->getOutput() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:324
+PHP   7. Alchemy\Adapter\SmartyView->render() /Users/erik/www/project/phpalchemy/Alchemy/Mvc/View.php:239
+PHP   8. Smarty_Internal_TemplateBase->display() /Users/erik/www/project/phpalchemy/Alchemy/Adapter/SmartyView.php:84
+PHP   9. Smarty_Internal_TemplateBase->fetch() /Users/erik/www/project/phpalchemy/vendor/3rd-party/smarty/libs/sysplugins/smarty_internal_templatebase.php:374
+PHP  10. content_4ffcb63672a473_50704780() /Users/erik/www/project/phpalchemy/vendor/3rd-party/smarty/libs/sysplugins/smarty_internal_templatebase.php:180
+ 
+2012-07-10 19:20:27: (mod_fastcgi.c.2699) FastCGI-stderr: PHP Notice:  Undefined variable: e in /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php on line 274
+PHP Stack trace:
+PHP   1. {main}() /Users/erik/www/project/Sandbox/web/app.php:0
+PHP   2. Alchemy\Application->run() /Users/erik/www/project/Sandbox/web/app.php:18
+PHP   3. Alchemy\Application->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:189
+PHP   4. Alchemy\Kernel\Kernel->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:200
+PHP   5. Alchemy\Kernel\Kernel->handleMetaUi() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:218
+ 
+2012-07-10 19:35:03: (server.c.1211) logfiles cycled UID = 501 PID = 189 
+2012-07-10 19:35:28: (server.c.1527) server stopped by UID = 0 PID = 1 
+2012-07-11 11:13:21: (log.c.166) server started 
+2012-07-11 12:40:26: (server.c.1527) server stopped by UID = 0 PID = 0 
+2012-07-11 20:23:50: (log.c.166) server started 
+2012-07-12 00:08:09: (server.c.1211) logfiles cycled UID = 501 PID = 379 
+2012-07-12 00:08:27: (server.c.1527) server stopped by UID = 0 PID = 1 
+2012-07-21 12:21:41: (log.c.166) server started 
+2012-07-21 12:29:37: (server.c.1211) logfiles cycled UID = 501 PID = 1100 
+2012-07-21 12:41:56: (log.c.166) server started 
+2012-07-21 16:03:44: (mod_fastcgi.c.2699) FastCGI-stderr: PHP Fatal error:  Cannot redeclare class Haanga in /Users/erik/www/project/phpalchemy/vendor/crodas/Haanga/lib/Haanga.php on line 54
+PHP Stack trace:
+PHP   1. {main}() /Users/erik/www/project/Sandbox/web/app.php:0
+PHP   2. Alchemy\Application->run() /Users/erik/www/project/Sandbox/web/app.php:17
+PHP   3. Alchemy\Application->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:236
+PHP   4. Alchemy\Kernel\Kernel->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:244
+PHP   5. Alchemy\Exception\Handler->getOutput() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:281
+PHP   6. Alchemy\Mvc\Adapter\HaangaView->__construct() /Users/erik/www/project/phpalchemy/Alchemy/Exception/Handler.php:31
+PHP   7. require() /Users/erik/www/project/phpalchemy/Alchemy/Mvc/Adapter/HaangaView.php:12
+ 
+2012-07-21 16:04:35: (mod_fastcgi.c.2699) FastCGI-stderr: PHP Fatal error:  Class 'Haanga' not found in /Users/erik/www/project/phpalchemy/Alchemy/Mvc/Adapter/HaangaView.php on line 30
+PHP Stack trace:
+PHP   1. {main}() /Users/erik/www/project/Sandbox/web/app.php:0
+PHP   2. Alchemy\Application->run() /Users/erik/www/project/Sandbox/web/app.php:17
+PHP   3. Alchemy\Application->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:236
+PHP   4. Alchemy\Kernel\Kernel->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:244
+PHP   5. Alchemy\Mvc\View->getOutput() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:262
+PHP   6. Alchemy\Mvc\Adapter\HaangaView->render() /Users/erik/www/project/phpalchemy/Alchemy/Mvc/View.php:241
+ 
+2012-07-21 16:04:36: (mod_fastcgi.c.2699) FastCGI-stderr: PHP Fatal error:  Class 'Haanga' not found in /Users/erik/www/project/phpalchemy/Alchemy/Mvc/Adapter/HaangaView.php on line 30
+PHP Stack trace:
+PHP   1. {main}() /Users/erik/www/project/Sandbox/web/app.php:0
+PHP   2. Alchemy\Application->run() /Users/erik/www/project/Sandbox/web/app.php:17
+PHP   3. Alchemy\Application->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:236
+PHP   4. Alchemy\Kernel\Kernel->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:244
+PHP   5. Alchemy\Mvc\View->getOutput() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:262
+PHP   6. Alchemy\Mvc\Adapter\HaangaView->render() /Users/erik/www/project/phpalchemy/Alchemy/Mvc/View.php:241
+ 
+2012-07-21 16:04:36: (mod_fastcgi.c.2699) FastCGI-stderr: PHP Fatal error:  Class 'Haanga' not found in /Users/erik/www/project/phpalchemy/Alchemy/Mvc/Adapter/HaangaView.php on line 30
+PHP Stack trace:
+PHP   1. {main}() /Users/erik/www/project/Sandbox/web/app.php:0
+PHP   2. Alchemy\Application->run() /Users/erik/www/project/Sandbox/web/app.php:17
+PHP   3. Alchemy\Application->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:236
+PHP   4. Alchemy\Kernel\Kernel->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:244
+PHP   5. Alchemy\Mvc\View->getOutput() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:262
+PHP   6. Alchemy\Mvc\Adapter\HaangaView->render() /Users/erik/www/project/phpalchemy/Alchemy/Mvc/View.php:241
+ 
+2012-07-21 16:04:43: (mod_fastcgi.c.2699) FastCGI-stderr: PHP Fatal error:  Cannot redeclare class Haanga in /Users/erik/www/project/phpalchemy/vendor/crodas/Haanga/lib/Haanga.php on line 54
+PHP Stack trace:
+PHP   1. {main}() /Users/erik/www/project/Sandbox/web/app.php:0
+PHP   2. Alchemy\Application->run() /Users/erik/www/project/Sandbox/web/app.php:17
+PHP   3. Alchemy\Application->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:236
+PHP   4. Alchemy\Kernel\Kernel->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:244
+PHP   5. Alchemy\Exception\Handler->getOutput() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:281
+PHP   6. Alchemy\Mvc\Adapter\HaangaView->__construct() /Users/erik/www/project/phpalchemy/Alchemy/Exception/Handler.php:31
+PHP   7. require() /Users/erik/www/project/phpalchemy/Alchemy/Mvc/Adapter/HaangaView.php:12
+ 
+2012-07-21 16:04:43: (mod_fastcgi.c.2699) FastCGI-stderr: PHP Fatal error:  Cannot redeclare class Haanga in /Users/erik/www/project/phpalchemy/vendor/crodas/Haanga/lib/Haanga.php on line 54
+PHP Stack trace:
+PHP   1. {main}() /Users/erik/www/project/Sandbox/web/app.php:0
+PHP   2. Alchemy\Application->run() /Users/erik/www/project/Sandbox/web/app.php:17
+PHP   3. Alchemy\Application->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:236
+PHP   4. Alchemy\Kernel\Kernel->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:244
+PHP   5. Alchemy\Exception\Handler->getOutput() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:281
+PHP   6. Alchemy\Mvc\Adapter\HaangaView->__construct() /Users/erik/www/project/phpalchemy/Alchemy/Exception/Handler.php:31
+PHP   7. require() /Users/erik/www/project/phpalchemy/Alchemy/Mvc/Adapter/HaangaView.php:12
+ 
+2012-07-21 16:04:44: (mod_fastcgi.c.2699) FastCGI-stderr: PHP Fatal error:  Cannot redeclare class Haanga in /Users/erik/www/project/phpalchemy/vendor/crodas/Haanga/lib/Haanga.php on line 54
+PHP Stack trace:
+PHP   1. {main}() /Users/erik/www/project/Sandbox/web/app.php:0
+PHP   2. Alchemy\Application->run() /Users/erik/www/project/Sandbox/web/app.php:17
+PHP   3. Alchemy\Application->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:236
+PHP   4. Alchemy\Kernel\Kernel->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:244
+PHP   5. Alchemy\Exception\Handler->getOutput() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:281
+PHP   6. Alchemy\Mvc\Adapter\HaangaView->__construct() /Users/erik/www/project/phpalchemy/Alchemy/Exception/Handler.php:31
+PHP   7. require() /Users/erik/www/project/phpalchemy/Alchemy/Mvc/Adapter/HaangaView.php:12
+ 
+2012-07-21 16:05:17: (mod_fastcgi.c.2699) FastCGI-stderr: PHP Fatal error:  Class 'Haanga' not found in /Users/erik/www/project/phpalchemy/Alchemy/Mvc/Adapter/HaangaView.php on line 30
+PHP Stack trace:
+PHP   1. {main}() /Users/erik/www/project/Sandbox/web/app.php:0
+PHP   2. Alchemy\Application->run() /Users/erik/www/project/Sandbox/web/app.php:17
+PHP   3. Alchemy\Application->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:236
+PHP   4. Alchemy\Kernel\Kernel->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:244
+PHP   5. Alchemy\Mvc\View->getOutput() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:262
+PHP   6. Alchemy\Mvc\Adapter\HaangaView->render() /Users/erik/www/project/phpalchemy/Alchemy/Mvc/View.php:241
+ 
+2012-07-21 16:05:17: (mod_fastcgi.c.2699) FastCGI-stderr: PHP Fatal error:  Class 'Haanga' not found in /Users/erik/www/project/phpalchemy/Alchemy/Mvc/Adapter/HaangaView.php on line 30
+PHP Stack trace:
+PHP   1. {main}() /Users/erik/www/project/Sandbox/web/app.php:0
+PHP   2. Alchemy\Application->run() /Users/erik/www/project/Sandbox/web/app.php:17
+PHP   3. Alchemy\Application->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:236
+PHP   4. Alchemy\Kernel\Kernel->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:244
+PHP   5. Alchemy\Mvc\View->getOutput() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:262
+PHP   6. Alchemy\Mvc\Adapter\HaangaView->render() /Users/erik/www/project/phpalchemy/Alchemy/Mvc/View.php:241
+ 
+2012-07-21 16:05:17: (mod_fastcgi.c.2699) FastCGI-stderr: PHP Fatal error:  Class 'Haanga' not found in /Users/erik/www/project/phpalchemy/Alchemy/Mvc/Adapter/HaangaView.php on line 30
+PHP Stack trace:
+PHP   1. {main}() /Users/erik/www/project/Sandbox/web/app.php:0
+PHP   2. Alchemy\Application->run() /Users/erik/www/project/Sandbox/web/app.php:17
+PHP   3. Alchemy\Application->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:236
+PHP   4. Alchemy\Kernel\Kernel->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:244
+PHP   5. Alchemy\Mvc\View->getOutput() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:262
+PHP   6. Alchemy\Mvc\Adapter\HaangaView->render() /Users/erik/www/project/phpalchemy/Alchemy/Mvc/View.php:241
+ 
+2012-07-21 16:05:17: (mod_fastcgi.c.2699) FastCGI-stderr: PHP Fatal error:  Class 'Haanga' not found in /Users/erik/www/project/phpalchemy/Alchemy/Mvc/Adapter/HaangaView.php on line 30
+PHP Stack trace:
+PHP   1. {main}() /Users/erik/www/project/Sandbox/web/app.php:0
+PHP   2. Alchemy\Application->run() /Users/erik/www/project/Sandbox/web/app.php:17
+PHP   3. Alchemy\Application->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:236
+PHP   4. Alchemy\Kernel\Kernel->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:244
+PHP   5. Alchemy\Mvc\View->getOutput() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:262
+PHP   6. Alchemy\Mvc\Adapter\HaangaView->render() /Users/erik/www/project/phpalchemy/Alchemy/Mvc/View.php:241
+ 
+2012-07-21 16:05:18: (mod_fastcgi.c.2699) FastCGI-stderr: PHP Fatal error:  Class 'Haanga' not found in /Users/erik/www/project/phpalchemy/Alchemy/Mvc/Adapter/HaangaView.php on line 30
+PHP Stack trace:
+PHP   1. {main}() /Users/erik/www/project/Sandbox/web/app.php:0
+PHP   2. Alchemy\Application->run() /Users/erik/www/project/Sandbox/web/app.php:17
+PHP   3. Alchemy\Application->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:236
+PHP   4. Alchemy\Kernel\Kernel->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:244
+PHP   5. Alchemy\Mvc\View->getOutput() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:262
+PHP   6. Alchemy\Mvc\Adapter\HaangaView->render() /Users/erik/www/project/phpalchemy/Alchemy/Mvc/View.php:241
+ 
+2012-07-21 16:05:18: (mod_fastcgi.c.2699) FastCGI-stderr: PHP Fatal error:  Class 'Haanga' not found in /Users/erik/www/project/phpalchemy/Alchemy/Mvc/Adapter/HaangaView.php on line 30
+PHP Stack trace:
+PHP   1. {main}() /Users/erik/www/project/Sandbox/web/app.php:0
+PHP   2. Alchemy\Application->run() /Users/erik/www/project/Sandbox/web/app.php:17
+PHP   3. Alchemy\Application->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:236
+PHP   4. Alchemy\Kernel\Kernel->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:244
+PHP   5. Alchemy\Mvc\View->getOutput() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:262
+PHP   6. Alchemy\Mvc\Adapter\HaangaView->render() /Users/erik/www/project/phpalchemy/Alchemy/Mvc/View.php:241
+ 
+2012-07-21 16:05:58: (mod_fastcgi.c.2699) FastCGI-stderr: PHP Fatal error:  Class 'Haanga' not found in /Users/erik/www/project/phpalchemy/Alchemy/Mvc/Adapter/HaangaView.php on line 30
+PHP Stack trace:
+PHP   1. {main}() /Users/erik/www/project/Sandbox/web/app.php:0
+PHP   2. Alchemy\Application->run() /Users/erik/www/project/Sandbox/web/app.php:17
+PHP   3. Alchemy\Application->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:236
+PHP   4. Alchemy\Kernel\Kernel->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:244
+PHP   5. Alchemy\Mvc\View->getOutput() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:262
+PHP   6. Alchemy\Mvc\Adapter\HaangaView->render() /Users/erik/www/project/phpalchemy/Alchemy/Mvc/View.php:241
+ 
+2012-07-21 16:06:18: (mod_fastcgi.c.2699) FastCGI-stderr: PHP Fatal error:  Cannot redeclare class Haanga in /Users/erik/www/project/phpalchemy/vendor/crodas/Haanga/lib/Haanga.php on line 54
+PHP Stack trace:
+PHP   1. {main}() /Users/erik/www/project/Sandbox/web/app.php:0
+PHP   2. Alchemy\Application->run() /Users/erik/www/project/Sandbox/web/app.php:17
+PHP   3. Alchemy\Application->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:236
+PHP   4. Alchemy\Kernel\Kernel->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:244
+PHP   5. Alchemy\Exception\Handler->getOutput() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:281
+PHP   6. Alchemy\Mvc\Adapter\HaangaView->__construct() /Users/erik/www/project/phpalchemy/Alchemy/Exception/Handler.php:31
+PHP   7. require() /Users/erik/www/project/phpalchemy/Alchemy/Mvc/Adapter/HaangaView.php:12
+ 
+2012-07-21 16:18:41: (mod_fastcgi.c.2699) FastCGI-stderr: PHP Notice:  Undefined variable: tplFile in /Users/erik/www/project/phpalchemy/Alchemy/Exception/Handler.php on line 41
+PHP Stack trace:
+PHP   1. {main}() /Users/erik/www/project/Sandbox/web/app.php:0
+PHP   2. Alchemy\Application->run() /Users/erik/www/project/Sandbox/web/app.php:17
+PHP   3. Alchemy\Application->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:236
+PHP   4. Alchemy\Kernel\Kernel->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:244
+PHP   5. Alchemy\Exception\Handler->getOutput() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:281
+PHP Notice:  Undefined variable: tplFile in /Users/erik/www/project/phpalchemy/Alchemy/Exception/Handler.php on line 41
+PHP Stack trace:
+PHP   1. Alchemy\Exception\Handler->handle() /Users/erik/www/project/phpalchemy/Alchemy/Exception/Handler.php:0
+PHP   2. Alchemy\Exception\Handler->getOutput() /Users/erik/www/project/phpalchemy/Alchemy/Exception/Handler.php:21
+PHP Fatal error:  Uncaught exception 'Exception' with message 'View  doesn't exists' in /Users/erik/www/project/phpalchemy/vendor/crodas/Haanga/lib/Haanga.php:328
+Stack trace:
+#0 /Users/erik/www/project/phpalchemy/Alchemy/Mvc/Adapter/HaangaView.php(34): Haanga::Load(NULL, Array)
+#1 /Users/erik/www/project/phpalchemy/Alchemy/Mvc/View.php(241): Alchemy\Mvc\Adapter\HaangaView->render()
+#2 /Users/erik/www/project/phpalchemy/Alchemy/Exception/Handler.php(60): Alchemy\Mvc\View->getOutput()
+#3 /Users/erik/www/project/phpalchemy/Alchemy/Exception/Handler.php(21): Alchemy\Exception\Handler->getOutput(Object(Exception))
+#4 [internal function]: Alchemy\Exception\Handler->handle(Object(Exception))
+#5 {main}
+  thrown in /Users/erik/www/project/phpalchemy/vendor/crodas/Haanga/lib/Haanga.php on line 328
+ 
+2012-07-21 16:26:27: (mod_fastcgi.c.2699) FastCGI-stderr: PHP Fatal error:  Uncaught exception 'Haanga_Compiler_Exception' with message 'exception 'Haanga_Compiler_Exception' with message 'Unexpected T_PRINT_CLOSE(}}) in /Users/erik/www/project/phpalchemy/templates/Exception/Exception.djt:3' in /Users/erik/www/project/phpalchemy/vendor/crodas/Haanga/lib/Haanga/Compiler/Parser.php:155
+Stack trace:
+#0 /Users/erik/www/project/phpalchemy/vendor/crodas/Haanga/lib/Haanga/Compiler/Parser.php(2149): Haanga_Compiler_Parser->Error('Unexpected T_PR...')
+#1 /Users/erik/www/project/phpalchemy/vendor/crodas/Haanga/lib/Haanga/Compiler/Parser.php(2260): Haanga_Compiler_Parser->yy_syntax_error(23, '}}')
+#2 /Users/erik/www/project/phpalchemy/vendor/crodas/Haanga/lib/Haanga/Compiler/Tokenizer.php(557): Haanga_Compiler_Parser->doParse(23, '}}')
+#3 /Users/erik/www/project/phpalchemy/vendor/crodas/Haanga/lib/Haanga/Compiler.php(256): Haanga_Compiler_Tokenizer::init('{% extends 'Mas...', Object(Haanga_Compiler_Runtime), '/Users/erik/www...')
+#4 /Users/erik/www/project/phpalchemy/vendor/crodas/Haanga/lib/Ha in /Users/erik/www/project/phpalchemy/vendor/crodas/Haanga/lib/Haanga/Compiler.php on line 399
+ 
+2012-07-21 16:27:06: (mod_fastcgi.c.2699) FastCGI-stderr: PHP Fatal error:  Uncaught exception 'Haanga_Compiler_Exception' with message 'exception 'Haanga_Compiler_Exception' with message 'Unexpected T_PRINT_CLOSE(}}) in /Users/erik/www/project/phpalchemy/templates/Exception/Exception.djt:3' in /Users/erik/www/project/phpalchemy/vendor/crodas/Haanga/lib/Haanga/Compiler/Parser.php:155
+Stack trace:
+#0 /Users/erik/www/project/phpalchemy/vendor/crodas/Haanga/lib/Haanga/Compiler/Parser.php(2149): Haanga_Compiler_Parser->Error('Unexpected T_PR...')
+#1 /Users/erik/www/project/phpalchemy/vendor/crodas/Haanga/lib/Haanga/Compiler/Parser.php(2260): Haanga_Compiler_Parser->yy_syntax_error(23, '}}')
+#2 /Users/erik/www/project/phpalchemy/vendor/crodas/Haanga/lib/Haanga/Compiler/Tokenizer.php(557): Haanga_Compiler_Parser->doParse(23, '}}')
+#3 /Users/erik/www/project/phpalchemy/vendor/crodas/Haanga/lib/Haanga/Compiler.php(256): Haanga_Compiler_Tokenizer::init('{% extends 'Mas...', Object(Haanga_Compiler_Runtime), '/Users/erik/www...')
+#4 /Users/erik/www/project/phpalchemy/vendor/crodas/Haanga/lib/Ha in /Users/erik/www/project/phpalchemy/vendor/crodas/Haanga/lib/Haanga/Compiler.php on line 399
+ 
+2012-07-21 16:27:08: (mod_fastcgi.c.2699) FastCGI-stderr: PHP Fatal error:  Uncaught exception 'Haanga_Compiler_Exception' with message 'exception 'Haanga_Compiler_Exception' with message 'Unexpected T_PRINT_CLOSE(}}) in /Users/erik/www/project/phpalchemy/templates/Exception/Exception.djt:3' in /Users/erik/www/project/phpalchemy/vendor/crodas/Haanga/lib/Haanga/Compiler/Parser.php:155
+Stack trace:
+#0 /Users/erik/www/project/phpalchemy/vendor/crodas/Haanga/lib/Haanga/Compiler/Parser.php(2149): Haanga_Compiler_Parser->Error('Unexpected T_PR...')
+#1 /Users/erik/www/project/phpalchemy/vendor/crodas/Haanga/lib/Haanga/Compiler/Parser.php(2260): Haanga_Compiler_Parser->yy_syntax_error(23, '}}')
+#2 /Users/erik/www/project/phpalchemy/vendor/crodas/Haanga/lib/Haanga/Compiler/Tokenizer.php(557): Haanga_Compiler_Parser->doParse(23, '}}')
+#3 /Users/erik/www/project/phpalchemy/vendor/crodas/Haanga/lib/Haanga/Compiler.php(256): Haanga_Compiler_Tokenizer::init('{% extends 'Mas...', Object(Haanga_Compiler_Runtime), '/Users/erik/www...')
+#4 /Users/erik/www/project/phpalchemy/vendor/crodas/Haanga/lib/Ha in /Users/erik/www/project/phpalchemy/vendor/crodas/Haanga/lib/Haanga/Compiler.php on line 399
+ 
+2012-07-21 16:27:09: (mod_fastcgi.c.2699) FastCGI-stderr: PHP Fatal error:  Uncaught exception 'Haanga_Compiler_Exception' with message 'exception 'Haanga_Compiler_Exception' with message 'Unexpected T_PRINT_CLOSE(}}) in /Users/erik/www/project/phpalchemy/templates/Exception/Exception.djt:3' in /Users/erik/www/project/phpalchemy/vendor/crodas/Haanga/lib/Haanga/Compiler/Parser.php:155
+Stack trace:
+#0 /Users/erik/www/project/phpalchemy/vendor/crodas/Haanga/lib/Haanga/Compiler/Parser.php(2149): Haanga_Compiler_Parser->Error('Unexpected T_PR...')
+#1 /Users/erik/www/project/phpalchemy/vendor/crodas/Haanga/lib/Haanga/Compiler/Parser.php(2260): Haanga_Compiler_Parser->yy_syntax_error(23, '}}')
+#2 /Users/erik/www/project/phpalchemy/vendor/crodas/Haanga/lib/Haanga/Compiler/Tokenizer.php(557): Haanga_Compiler_Parser->doParse(23, '}}')
+#3 /Users/erik/www/project/phpalchemy/vendor/crodas/Haanga/lib/Haanga/Compiler.php(256): Haanga_Compiler_Tokenizer::init('{% extends 'Mas...', Object(Haanga_Compiler_Runtime), '/Users/erik/www...')
+#4 /Users/erik/www/project/phpalchemy/vendor/crodas/Haanga/lib/Ha in /Users/erik/www/project/phpalchemy/vendor/crodas/Haanga/lib/Haanga/Compiler.php on line 399
+ 
+2012-07-21 16:27:09: (mod_fastcgi.c.2699) FastCGI-stderr: PHP Fatal error:  Uncaught exception 'Haanga_Compiler_Exception' with message 'exception 'Haanga_Compiler_Exception' with message 'Unexpected T_PRINT_CLOSE(}}) in /Users/erik/www/project/phpalchemy/templates/Exception/Exception.djt:3' in /Users/erik/www/project/phpalchemy/vendor/crodas/Haanga/lib/Haanga/Compiler/Parser.php:155
+Stack trace:
+#0 /Users/erik/www/project/phpalchemy/vendor/crodas/Haanga/lib/Haanga/Compiler/Parser.php(2149): Haanga_Compiler_Parser->Error('Unexpected T_PR...')
+#1 /Users/erik/www/project/phpalchemy/vendor/crodas/Haanga/lib/Haanga/Compiler/Parser.php(2260): Haanga_Compiler_Parser->yy_syntax_error(23, '}}')
+#2 /Users/erik/www/project/phpalchemy/vendor/crodas/Haanga/lib/Haanga/Compiler/Tokenizer.php(557): Haanga_Compiler_Parser->doParse(23, '}}')
+#3 /Users/erik/www/project/phpalchemy/vendor/crodas/Haanga/lib/Haanga/Compiler.php(256): Haanga_Compiler_Tokenizer::init('{% extends 'Mas...', Object(Haanga_Compiler_Runtime), '/Users/erik/www...')
+#4 /Users/erik/www/project/phpalchemy/vendor/crodas/Haanga/lib/Ha in /Users/erik/www/project/phpalchemy/vendor/crodas/Haanga/lib/Haanga/Compiler.php on line 399
+ 
+2012-07-21 16:27:24: (mod_fastcgi.c.2699) FastCGI-stderr: PHP Fatal error:  Uncaught exception 'Haanga_Compiler_Exception' with message 'exception 'Haanga_Compiler_Exception' with message 'error: unexpected $trace }}</pre>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane" id="4">
+                        <div class="well">
+                            <h3>Request Parameters:</h3>
+                            <pre>{{ $query }}</pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </span>
+    </div>
+</div>
+<?php }) ?>
+
+ in /Users/erik/www/project/phpalchemy/templates/Exception/Exception.djt:42' in /Users/erik/www/project/phpalchemy/vendor/crodas/Haanga/lib/Haanga/Compiler/Tokenizer.php:446
+Stack trace:
+#0 /Users/erik/www/project/phpalchemy/vendor/crodas/Haanga/lib/Haanga/Compiler/Tokenizer.php(373): Haanga_Compiler_Tokenizer->Error('error: unexpect...')
+#1 /Users/erik/www/project/phpalchemy/vendor/crodas/Haanga/lib/Haanga/Compiler/Tokenizer.php(221): Haanga_Compiler_Tokenizer->yy in /Users/erik/www/project/phpalchemy/vendor/crodas/Haanga/lib/Haanga/Compiler.php on line 399
+ 
+2012-07-21 16:27:51: (mod_fastcgi.c.2699) FastCGI-stderr: PHP Fatal error:  Uncaught exception 'Haanga_Compiler_Exception' with message 'exception 'Haanga_Compiler_Exception' with message 'error: unexpected $trace }}</pre>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane" id="4">
+                        <div class="well">
+                            <h3>Request Parameters:</h3>
+                            <pre>{{ $query }}</pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </span>
+    </div>
+</div>
+{{ endbody }}
+
+ in /Users/erik/www/project/phpalchemy/templates/Exception/Exception.djt:42' in /Users/erik/www/project/phpalchemy/vendor/crodas/Haanga/lib/Haanga/Compiler/Tokenizer.php:446
+Stack trace:
+#0 /Users/erik/www/project/phpalchemy/vendor/crodas/Haanga/lib/Haanga/Compiler/Tokenizer.php(373): Haanga_Compiler_Tokenizer->Error('error: unexpect...')
+#1 /Users/erik/www/project/phpalchemy/vendor/crodas/Haanga/lib/Haanga/Compiler/Tokenizer.php(221): Haanga_Compiler_Tokenizer-> in /Users/erik/www/project/phpalchemy/vendor/crodas/Haanga/lib/Haanga/Compiler.php on line 399
+ 
+2012-07-21 16:27:59: (mod_fastcgi.c.2699) FastCGI-stderr: PHP Fatal error:  Uncaught exception 'Haanga_Compiler_Exception' with message 'exception 'Haanga_Compiler_Exception' with message 'Unexpected End of Input(0) in /Users/erik/www/project/phpalchemy/templates/Exception/Exception.djt:59' in /Users/erik/www/project/phpalchemy/vendor/crodas/Haanga/lib/Haanga/Compiler/Parser.php:155
+Stack trace:
+#0 /Users/erik/www/project/phpalchemy/vendor/crodas/Haanga/lib/Haanga/Compiler/Parser.php(2149): Haanga_Compiler_Parser->Error('Unexpected End ...')
+#1 /Users/erik/www/project/phpalchemy/vendor/crodas/Haanga/lib/Haanga/Compiler/Parser.php(2260): Haanga_Compiler_Parser->yy_syntax_error(0, 0)
+#2 /Users/erik/www/project/phpalchemy/vendor/crodas/Haanga/lib/Haanga/Compiler/Tokenizer.php(567): Haanga_Compiler_Parser->doParse(0, 0)
+#3 /Users/erik/www/project/phpalchemy/vendor/crodas/Haanga/lib/Haanga/Compiler.php(256): Haanga_Compiler_Tokenizer::init('{% extends 'Mas...', Object(Haanga_Compiler_Runtime), '/Users/erik/www...')
+#4 /Users/erik/www/project/phpalchemy/vendor/crodas/Haanga/lib/Haanga/Comp in /Users/erik/www/project/phpalchemy/vendor/crodas/Haanga/lib/Haanga/Compiler.php on line 399
+ 
+2012-07-21 16:28:20: (mod_fastcgi.c.2699) FastCGI-stderr: PHP Fatal error:  Uncaught exception 'Haanga_Compiler_Exception' with message 'exception 'Haanga_Compiler_Exception' with message 'Unexpected endbody, expecting endblock in /Users/erik/www/project/phpalchemy/templates/Exception/Exception.djt:59' in /Users/erik/www/project/phpalchemy/vendor/crodas/Haanga/lib/Haanga/Compiler/Parser.php:155
+Stack trace:
+#0 /Users/erik/www/project/phpalchemy/vendor/crodas/Haanga/lib/Haanga/Compiler/Parser.php(1931): Haanga_Compiler_Parser->Error('Unexpected endb...')
+#1 /Users/erik/www/project/phpalchemy/vendor/crodas/Haanga/lib/Haanga/Compiler/Parser.php(2086): Haanga_Compiler_Parser->yy_r46()
+#2 /Users/erik/www/project/phpalchemy/vendor/crodas/Haanga/lib/Haanga/Compiler/Parser.php(2230): Haanga_Compiler_Parser->yy_reduce(46)
+#3 /Users/erik/www/project/phpalchemy/vendor/crodas/Haanga/lib/Haanga/Compiler/Tokenizer.php(557): Haanga_Compiler_Parser->doParse(20, '??')
+#4 /Users/erik/www/project/phpalchemy/vendor/crodas/Haanga/lib/Haanga/Compiler.php(256): Haanga_Compiler_Tokenizer::init('{% extends ' in /Users/erik/www/project/phpalchemy/vendor/crodas/Haanga/lib/Haanga/Compiler.php on line 399
+ 
+2012-07-21 16:28:36: (mod_fastcgi.c.2699) FastCGI-stderr: PHP Fatal error:  Uncaught exception 'Exception' with message 'View MasterLayout doesn't exists' in /Users/erik/www/project/phpalchemy/vendor/crodas/Haanga/lib/Haanga.php:328
+Stack trace:
+#0 /private/var/folders/9l/rltlq1qx54951dhl1892tg880000gn/T/_phpalchemy/8a2e45e88a8ec52864116fba813d01d30253eb0c.php(66): Haanga::Load('MasterLayout', Array, true, Array)
+#1 /Users/erik/www/project/phpalchemy/vendor/crodas/Haanga/lib/Haanga.php(306): haanga_8a2e45e88a8ec52864116fba813d01d30253eb0c(Array, false, Array)
+#2 /Users/erik/www/project/phpalchemy/Alchemy/Mvc/Adapter/HaangaView.php(34): Haanga::Load('Exception.djt', Array)
+#3 /Users/erik/www/project/phpalchemy/Alchemy/Mvc/View.php(241): Alchemy\Mvc\Adapter\HaangaView->render()
+#4 /Users/erik/www/project/phpalchemy/Alchemy/Exception/Handler.php(60): Alchemy\Mvc\View->getOutput()
+#5 /Users/erik/www/project/phpalchemy/Alchemy/Exception/Handler.php(21): Alchemy\Exception\Handler->getOutput(Object(Exception))
+#6 [internal function]: Alchemy\Exception\Handler->handle(Object(Exception))
+#7 { in /Users/erik/www/project/phpalchemy/vendor/crodas/Haanga/lib/Haanga.php on line 328
+ 
+2012-07-21 16:28:54: (mod_fastcgi.c.2699) FastCGI-stderr: PHP Fatal error:  Uncaught exception 'Haanga_Compiler_Exception' with message 'exception 'Haanga_Compiler_Exception' with message 'error: unexpected $baseurl }}assets/framework/js/html5.js"></script>
+        <![endif]-->
+        <style>
+        pre{
+            background-color: inherit;
+            border: 0px;
+            color: inherit;
+            font: inherit;
+        }
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            {% block body %}{% endblock %}
+            <footer>
+                <p>Powered by <a href="https://www.phpalchemy.org">PHPAlchemy Framework</a></p>
+            </footer>
+        </div>
+        <script src="{{ $baseurl }}assets/framework/js/jquery.js"></script>
+        <script src="{{ $baseurl }}assets/framework/js/bootstrap.js"></script>
+        <script src="{{ $baseurl }}assets/framework/js/codemirror.js"></script>
+        <script src="{{ $baseurl }}assets/framework/js/main.js"></script>
+    </body>
+</html>
+
+ in /Users/erik/www/project/phpalchemy/templates/Exception/Mast in /Users/erik/www/project/phpalchemy/vendor/crodas/Haanga/lib/Haanga/Compiler.php on line 399
+ 
+2012-07-21 16:29:21: (mod_fastcgi.c.2699) FastCGI-stderr: PHP Fatal error:  Uncaught exception 'Haanga_Compiler_Exception' with message 'exception 'Haanga_Compiler_Exception' with message 'error: unexpected $baseurl }}assets/framework/js/html5.js"></script>
+        <![endif]-->
+        <style>
+        pre{
+            background-color: inherit;
+            border: 0px;
+            color: inherit;
+            font: inherit;
+        }
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            {% block body %}{% endblock %}
+            <footer>
+                <p>Powered by <a href="https://www.phpalchemy.org">PHPAlchemy Framework</a></p>
+            </footer>
+        </div>
+        <script src="{{ baseurl }}assets/framework/js/jquery.js"></script>
+        <script src="{{ baseurl }}assets/framework/js/bootstrap.js"></script>
+        <script src="{{ baseurl }}assets/framework/js/codemirror.js"></script>
+        <script src="{{ baseurl }}assets/framework/js/main.js"></script>
+    </body>
+</html>
+
+ in /Users/erik/www/project/phpalchemy/templates/Exception/MasterLa in /Users/erik/www/project/phpalchemy/vendor/crodas/Haanga/lib/Haanga/Compiler.php on line 399
+ 
+2012-07-21 16:29:22: (mod_fastcgi.c.2699) FastCGI-stderr: PHP Fatal error:  Uncaught exception 'Haanga_Compiler_Exception' with message 'exception 'Haanga_Compiler_Exception' with message 'error: unexpected $baseurl }}assets/framework/js/html5.js"></script>
+        <![endif]-->
+        <style>
+        pre{
+            background-color: inherit;
+            border: 0px;
+            color: inherit;
+            font: inherit;
+        }
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            {% block body %}{% endblock %}
+            <footer>
+                <p>Powered by <a href="https://www.phpalchemy.org">PHPAlchemy Framework</a></p>
+            </footer>
+        </div>
+        <script src="{{ baseurl }}assets/framework/js/jquery.js"></script>
+        <script src="{{ baseurl }}assets/framework/js/bootstrap.js"></script>
+        <script src="{{ baseurl }}assets/framework/js/codemirror.js"></script>
+        <script src="{{ baseurl }}assets/framework/js/main.js"></script>
+    </body>
+</html>
+
+ in /Users/erik/www/project/phpalchemy/templates/Exception/MasterLa in /Users/erik/www/project/phpalchemy/vendor/crodas/Haanga/lib/Haanga/Compiler.php on line 399
+ 
+2012-07-21 16:29:22: (mod_fastcgi.c.2699) FastCGI-stderr: PHP Fatal error:  Uncaught exception 'Haanga_Compiler_Exception' with message 'exception 'Haanga_Compiler_Exception' with message 'error: unexpected $baseurl }}assets/framework/js/html5.js"></script>
+        <![endif]-->
+        <style>
+        pre{
+            background-color: inherit;
+            border: 0px;
+            color: inherit;
+            font: inherit;
+        }
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            {% block body %}{% endblock %}
+            <footer>
+                <p>Powered by <a href="https://www.phpalchemy.org">PHPAlchemy Framework</a></p>
+            </footer>
+        </div>
+        <script src="{{ baseurl }}assets/framework/js/jquery.js"></script>
+        <script src="{{ baseurl }}assets/framework/js/bootstrap.js"></script>
+        <script src="{{ baseurl }}assets/framework/js/codemirror.js"></script>
+        <script src="{{ baseurl }}assets/framework/js/main.js"></script>
+    </body>
+</html>
+
+ in /Users/erik/www/project/phpalchemy/templates/Exception/MasterLa in /Users/erik/www/project/phpalchemy/vendor/crodas/Haanga/lib/Haanga/Compiler.php on line 399
+ 
+2012-07-21 16:29:22: (mod_fastcgi.c.2699) FastCGI-stderr: PHP Fatal error:  Uncaught exception 'Haanga_Compiler_Exception' with message 'exception 'Haanga_Compiler_Exception' with message 'error: unexpected $baseurl }}assets/framework/js/html5.js"></script>
+        <![endif]-->
+        <style>
+        pre{
+            background-color: inherit;
+            border: 0px;
+            color: inherit;
+            font: inherit;
+        }
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            {% block body %}{% endblock %}
+            <footer>
+                <p>Powered by <a href="https://www.phpalchemy.org">PHPAlchemy Framework</a></p>
+            </footer>
+        </div>
+        <script src="{{ baseurl }}assets/framework/js/jquery.js"></script>
+        <script src="{{ baseurl }}assets/framework/js/bootstrap.js"></script>
+        <script src="{{ baseurl }}assets/framework/js/codemirror.js"></script>
+        <script src="{{ baseurl }}assets/framework/js/main.js"></script>
+    </body>
+</html>
+
+ in /Users/erik/www/project/phpalchemy/templates/Exception/MasterLa in /Users/erik/www/project/phpalchemy/vendor/crodas/Haanga/lib/Haanga/Compiler.php on line 399
+ 
+2012-07-21 16:33:51: (mod_fastcgi.c.2699) FastCGI-stderr: PHP Notice:  Undefined variable: app in /Users/erik/www/project/Sandbox/cache/templates/b53118b7aa3219bc5094bc33e75a425013aad5ef.php on line 44
+PHP Stack trace:
+PHP   1. {main}() /Users/erik/www/project/Sandbox/web/app.php:0
+PHP   2. Alchemy\Application->run() /Users/erik/www/project/Sandbox/web/app.php:17
+PHP   3. Alchemy\Application->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:236
+PHP   4. Alchemy\Kernel\Kernel->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:244
+PHP   5. Alchemy\Mvc\View->getOutput() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:262
+PHP   6. Alchemy\Mvc\Adapter\HaangaView->render() /Users/erik/www/project/phpalchemy/Alchemy/Mvc/View.php:241
+PHP   7. Haanga::Load() /Users/erik/www/project/phpalchemy/Alchemy/Mvc/Adapter/HaangaView.php:34
+PHP   8. haanga_2995228b82228e9b6dadfbbd68f01caf9e9e0a9a() /Users/erik/www/project/phpalchemy/vendor/crodas/Haanga/lib/Haanga.php:414
+PHP   9. Haanga::Load() /Users/erik/www/project/Sandbox/cache/templates/2995228b82228e9b6dadfbbd68f01caf9e9e0a9a.php:20
+PHP  10. haanga_b53118b7aa3219bc5094bc33e75a425013aad5ef() /Users/erik/www/project/phpalchemy/vendor/crodas/Haanga/lib/Haanga.php:414
+PHP Notice:  Trying to get property of non-object in /Users/erik/www/project/Sandbox/cache/templates/b53118b7aa3219bc5094bc33e75a425013aad5ef.php on line 44
+PHP Stack trace:
+PHP   1. {main}() /Users/erik/www/project/Sandbox/web/app.php:0
+PHP   2. Alchemy\Application->run() /Users/erik/www/project/Sandbox/web/app.php:17
+PHP   3. Alchemy\Application->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:236
+PHP   4. Alchemy\Kernel\Kernel->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:244
+PHP   5. Alchemy\Mvc\View->getOutput() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:262
+PHP   6. Alchemy\Mvc\Adapter\HaangaView->render() /Users/erik/www/project/phpalchemy/Alchemy/Mvc/View.php:241
+PHP   7. Haanga::Load() /Users/erik/www/project/phpalchemy/Alchemy/Mvc/Adapter/HaangaView.php:34
+PHP   8. haanga_2995228b82228e9b6dadfbbd68f01caf9e9e0a9a() /Users/erik/www/project/phpalchemy/vendor/crodas/Haanga/lib/Haanga.php:414
+PHP   9. Haanga::Load() /Users/erik/www/project/Sandbox/cache/templates/2995228b82228e9b6dadfbbd68f01caf9e9e0a9a.php:20
+PHP  10. haanga_b53118b7aa3219bc5094bc33e75a425013aad5ef() /Users/erik/www/project/phpalchemy/vendor/crodas/Haanga/lib/Haanga.php:414
+PHP Notice:  Trying to get property of non-object in /Users/erik/www/project/Sandbox/cache/templates/b53118b7aa3219bc5094bc33e75a425013aad5ef.php on line 44
+PHP Stack trace:
+PHP   1. {main}() /Users/erik/www/project/Sandbox/web/app.php:0
+PHP   2. Alchemy\Application->run() /Users/erik/www/project/Sandbox/web/app.php:17
+PHP   3. Alchemy\Application->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:236
+PHP   4. Alchemy\Kernel\Kernel->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:244
+PHP   5. Alchemy\Mvc\View->getOutput() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:262
+PHP   6. Alchemy\Mvc\Adapter\HaangaView->render() /Users/erik/www/project/phpalchemy/Alchemy/Mvc/View.php:241
+PHP   7. Haanga::Load() /Users/erik/www/project/phpalchemy/Alchemy/Mvc/Adapter/HaangaView.php:34
+PHP   8. haanga_2995228b82228e9b6dadfbbd68f01caf9e9e0a9a() /Users/erik/www/project/phpalchemy/vendor/crodas/Haanga/lib/Haanga.php:414
+PHP   9. Haanga::Load() /Users/erik/www/project/Sandbox/cache/templates/2995228b82228e9b6dadfbbd68f01caf9e9e0a9a.php:20
+PHP  10. haanga_b53118b7aa3219bc5094bc33e75a425013aad5ef() /Users/erik/www/project/phpalchemy/vendor/crodas/Haanga/lib/Haanga.php:414
+PHP Notice:  Undefined variable: app in /Users/erik/www/project/Sandbox/cache/templates/b53118b7aa3219bc5094bc33e75a425013aad5ef.php on line 45
+PHP Stack trace:
+PHP   1. {main}() /Users/erik/www/project/Sandbox/web/app.php:0
+PHP   2. Alchemy\Application->run() /Users/erik/www/project/Sandbox/web/app.php:17
+PHP   3. Alchemy\Application->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:236
+PHP   4. Alchemy\Kernel\Kernel->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:244
+PHP   5. Alchemy\Mvc\View->getOutput() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:262
+PHP   6. Alchemy\Mvc\Adapter\HaangaView->render() /Users/erik/www/project/phpalchemy/Alchemy/Mvc/View.php:241
+PHP   7. Haanga::Load() /Users/erik/www/project/phpalchemy/Alchemy/Mvc/Adapter/HaangaView.php:34
+PHP   8. haanga_2995228b82228e9b6dadfbbd68f01caf9e9e0a9a() /Users/erik/www/project/phpalchemy/vendor/crodas/Haanga/lib/Haanga.php:414
+PHP   9. Haanga::Load() /Users/erik/www/project/Sandbox/cache/templates/2995228b82228e9b6dadfbbd68f01caf9e9e0a9a.php:20
+PHP  10. haanga_b53118b7aa3219bc5094bc33e75a425013aad5ef() /Users/erik/www/project/phpalchemy/vendor/crodas/Haanga/lib/Haanga.php:414
+PHP Notice:  Trying to get property of non-object in /Users/erik/www/project/Sandbox/cache/templates/b53118b7aa3219bc5094bc33e75a425013aad5ef.php on line 45
+PHP Stack trace:
+PHP   1. {main}() /Users/erik/www/project/Sandbox/web/app.php:0
+PHP   2. Alchemy\Application->run() /Users/erik/www/project/Sandbox/web/app.php:17
+PHP   3. Alchemy\Application->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:236
+PHP   4. Alchemy\Kernel\Kernel->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:244
+PHP   5. Alchemy\Mvc\View->getOutput() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:262
+PHP   6. Alchemy\Mvc\Adapter\HaangaView->render() /Users/erik/www/project/phpalchemy/Alchemy/Mvc/View.php:241
+PHP   7. Haanga::Load() /Users/erik/www/project/phpalchemy/Alchemy/Mvc/Adapter/HaangaView.php:34
+PHP   8. haanga_2995228b82228e9b6dadfbbd68f01caf9e9e0a9a() /Users/erik/www/project/phpalchemy/vendor/crodas/Haanga/lib/Haanga.php:414
+PHP   9. Haanga::Load() /Users/erik/www/project/Sandbox/cache/templates/2995228b82228e9b6dadfbbd68f01caf9e9e0a9a.php:20
+PHP  10. haanga_b53118b7aa3219bc5094bc33e75a425013aad5ef() /Users/erik/www/project/phpalchemy/vendor/crodas/Haanga/lib/Haanga.php:414
+PHP Notice:  Trying to get property of non-object in /Users/erik/www/project/Sandbox/cache/templates/b53118b7aa3219bc5094bc33e75a425013aad5ef.php on line 45
+PHP Stack trace:
+PHP   1. {main}() /Users/erik/www/project/Sandbox/web/app.php:0
+PHP   2. Alchemy\Application->run() /Users/erik/www/project/Sandbox/web/app.php:17
+PHP   3. Alchemy\Application->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:236
+PHP   4. Alchemy\Kernel\Kernel->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:244
+PHP   5. Alchemy\Mvc\View->getOutput() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:262
+PHP   6. Alchemy\Mvc\Adapter\HaangaView->render() /Users/erik/www/project/phpalchemy/Alchemy/Mvc/View.php:241
+PHP   7. Haanga::Load() /Users/erik/www/project/phpalchemy/Alchemy/Mvc/Adapter/HaangaView.php:34
+PHP   8. haanga_2995228b82228e9b6dadfbbd68f01caf9e9e0a9a() /Users/erik/www/project/phpalchemy/vendor/crodas/Haanga/lib/Haanga.php:414
+PHP   9. Haanga::Load() /Users/erik/www/project/Sandbox/cache/templates/2995228b82228e9b6dadfbbd68f01caf9e9e0a9a.php:20
+PHP  10. haanga_b53118b7aa3219bc5094bc33e75a425013aad5ef() /Users/erik/www/project/phpalchemy/vendor/crodas/Haanga/lib/Haanga.php:414
+PHP Notice:  Undefined variable: app in /Users/erik/www/project/Sandbox/cache/templates/b53118b7aa3219bc5094bc33e75a425013aad5ef.php on line 46
+PHP Stack trace:
+PHP   1. {main}() /Users/erik/www/project/Sandbox/web/app.php:0
+PHP   2. Alchemy\Application->run() /Users/erik/www/project/Sandbox/web/app.php:17
+PHP   3. Alchemy\Application->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:236
+PHP   4. Alchemy\Kernel\Kernel->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:244
+PHP   5. Alchemy\Mvc\View->getOutput() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:262
+PHP   6. Alchemy\Mvc\Adapter\HaangaView->render() /Users/erik/www/project/phpalchemy/Alchemy/Mvc/View.php:241
+PHP   7. Haanga::Load() /Users/erik/www/project/phpalchemy/Alchemy/Mvc/Adapter/HaangaView.php:34
+PHP   8. haanga_2995228b82228 
+2012-07-21 16:33:52: (mod_fastcgi.c.2699) FastCGI-stderr: e9b6dadfbbd68f01caf9e9e0a9a() /Users/erik/www/project/phpalchemy/vendor/crodas/Haanga/lib/Haanga.php:414
+PHP   9. Haanga::Load() /Users/erik/www/project/Sandbox/cache/templates/2995228b82228e9b6dadfbbd68f01caf9e9e0a9a.php:20
+PHP  10. haanga_b53118b7aa3219bc5094bc33e75a425013aad5ef() /Users/erik/www/project/phpalchemy/vendor/crodas/Haanga/lib/Haanga.php:414
+PHP Notice:  Trying to get property of non-object in /Users/erik/www/project/Sandbox/cache/templates/b53118b7aa3219bc5094bc33e75a425013aad5ef.php on line 46
+PHP Stack trace:
+PHP   1. {main}() /Users/erik/www/project/Sandbox/web/app.php:0
+PHP   2. Alchemy\Application->run() /Users/erik/www/project/Sandbox/web/app.php:17
+PHP   3. Alchemy\Application->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:236
+PHP   4. Alchemy\Kernel\Kernel->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:244
+PHP   5. Alchemy\Mvc\View->getOutput() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:262
+PHP   6. Alchemy\Mvc\Adapter\HaangaView->render() /Users/erik/www/project/phpalchemy/Alchemy/Mvc/View.php:241
+PHP   7. Haanga::Load() /Users/erik/www/project/phpalchemy/Alchemy/Mvc/Adapter/HaangaView.php:34
+PHP   8. haanga_2995228b82228e9b6dadfbbd68f01caf9e9e0a9a() /Users/erik/www/project/phpalchemy/vendor/crodas/Haanga/lib/Haanga.php:414
+PHP   9. Haanga::Load() /Users/erik/www/project/Sandbox/cache/templates/2995228b82228e9b6dadfbbd68f01caf9e9e0a9a.php:20
+PHP  10. haanga_b53118b7aa3219bc5094bc33e75a425013aad5ef() /Users/erik/www/project/phpalchemy/vendor/crodas/Haanga/lib/Haanga.php:414
+PHP Notice:  Trying to get property of non-object in /Users/erik/www/project/Sandbox/cache/templates/b53118b7aa3219bc5094bc33e75a425013aad5ef.php on line 46
+PHP Stack trace:
+PHP   1. {main}() /Users/erik/www/project/Sandbox/web/app.php:0
+PHP   2. Alchemy\Application->run() /Users/erik/www/project/Sandbox/web/app.php:17
+PHP   3. Alchemy\Application->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:236
+PHP   4. Alchemy\Kernel\Kernel->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:244
+PHP   5. Alchemy\Mvc\View->getOutput() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:262
+PHP   6. Alchemy\Mvc\Adapter\HaangaView->render() /Users/erik/www/project/phpalchemy/Alchemy/Mvc/View.php:241
+PHP   7. Haanga::Load() /Users/erik/www/project/phpalchemy/Alchemy/Mvc/Adapter/HaangaView.php:34
+PHP   8. haanga_2995228b82228e9b6dadfbbd68f01caf9e9e0a9a() /Users/erik/www/project/phpalchemy/vendor/crodas/Haanga/lib/Haanga.php:414
+PHP   9. Haanga::Load() /Users/erik/www/project/Sandbox/cache/templates/2995228b82228e9b6dadfbbd68f01caf9e9e0a9a.php:20
+PHP  10. haanga_b53118b7aa3219bc5094bc33e75a425013aad5ef() /Users/erik/www/project/phpalchemy/vendor/crodas/Haanga/lib/Haanga.php:414
+PHP Notice:  Undefined variable: app in /Users/erik/www/project/Sandbox/cache/templates/b53118b7aa3219bc5094bc33e75a425013aad5ef.php on line 47
+PHP Stack trace:
+PHP   1. {main}() /Users/erik/www/project/Sandbox/web/app.php:0
+PHP   2. Alchemy\Application->run() /Users/erik/www/project/Sandbox/web/app.php:17
+PHP   3. Alchemy\Application->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:236
+PHP   4. Alchemy\Kernel\Kernel->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:244
+PHP   5. Alchemy\Mvc\View->getOutput() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:262
+PHP   6. Alchemy\Mvc\Adapter\HaangaView->render() /Users/erik/www/project/phpalchemy/Alchemy/Mvc/View.php:241
+PHP   7. Haanga::Load() /Users/erik/www/project/phpalchemy/Alchemy/Mvc/Adapter/HaangaView.php:34
+PHP   8. haanga_2995228b82228e9b6dadfbbd68f01caf9e9e0a9a() /Users/erik/www/project/phpalchemy/vendor/crodas/Haanga/lib/Haanga.php:414
+PHP   9. Haanga::Load() /Users/erik/www/project/Sandbox/cache/templates/2995228b82228e9b6dadfbbd68f01caf9e9e0a9a.php:20
+PHP  10. haanga_b53118b7aa3219bc5094bc33e75a425013aad5ef() /Users/erik/www/project/phpalchemy/vendor/crodas/Haanga/lib/Haanga.php:414
+PHP Notice:  Trying to get property of non-object in /Users/erik/www/project/Sandbox/cache/templates/b53118b7aa3219bc5094bc33e75a425013aad5ef.php on line 47
+PHP Stack trace:
+PHP   1. {main}() /Users/erik/www/project/Sandbox/web/app.php:0
+PHP   2. Alchemy\Application->run() /Users/erik/www/project/Sandbox/web/app.php:17
+PHP   3. Alchemy\Application->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:236
+PHP   4. Alchemy\Kernel\Kernel->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:244
+PHP   5. Alchemy\Mvc\View->getOutput() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:262
+PHP   6. Alchemy\Mvc\Adapter\HaangaView->render() /Users/erik/www/project/phpalchemy/Alchemy/Mvc/View.php:241
+PHP   7. Haanga::Load() /Users/erik/www/project/phpalchemy/Alchemy/Mvc/Adapter/HaangaView.php:34
+PHP   8. haanga_2995228b82228e9b6dadfbbd68f01caf9e9e0a9a() /Users/erik/www/project/phpalchemy/vendor/crodas/Haanga/lib/Haanga.php:414
+PHP   9. Haanga::Load() /Users/erik/www/project/Sandbox/cache/templates/2995228b82228e9b6dadfbbd68f01caf9e9e0a9a.php:20
+PHP  10. haanga_b53118b7aa3219bc5094bc33e75a425013aad5ef() /Users/erik/www/project/phpalchemy/vendor/crodas/Haanga/lib/Haanga.php:414
+PHP Notice:  Trying to get property of non-object in /Users/erik/www/project/Sandbox/cache/templates/b53118b7aa3219bc5094bc33e75a425013aad5ef.php on line 47
+PHP Stack trace:
+PHP   1. {main}() /Users/erik/www/project/Sandbox/web/app.php:0
+PHP   2. Alchemy\Application->run() /Users/erik/www/project/Sandbox/web/app.php:17
+PHP   3. Alchemy\Application->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:236
+PHP   4. Alchemy\Kernel\Kernel->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:244
+PHP   5. Alchemy\Mvc\View->getOutput() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:262
+PHP   6. Alchemy\Mvc\Adapter\HaangaView->render() /Users/erik/www/project/phpalchemy/Alchemy/Mvc/View.php:241
+PHP   7. Haanga::Load() /Users/erik/www/project/phpalchemy/Alchemy/Mvc/Adapter/HaangaView.php:34
+PHP   8. haanga_2995228b82228e9b6dadfbbd68f01caf9e9e0a9a() /Users/erik/www/project/phpalchemy/vendor/crodas/Haanga/lib/Haanga.php:414
+PHP   9. Haanga::Load() /Users/erik/www/project/Sandbox/cache/templates/2995228b82228e9b6dadfbbd68f01caf9e9e0a9a.php:20
+PHP  10. haanga_b53118b7aa3219bc5094bc33e75a425013aad5ef() /Users/erik/www/project/phpalchemy/vendor/crodas/Haanga/lib/Haanga.php:414
+PHP Notice:  Undefined variable: app in /Users/erik/www/project/Sandbox/cache/templates/b53118b7aa3219bc5094bc33e75a425013aad5ef.php on line 48
+PHP Stack trace:
+PHP   1. {main}() /Users/erik/www/project/Sandbox/web/app.php:0
+PHP   2. Alchemy\Application->run() /Users/erik/www/project/Sandbox/web/app.php:17
+PHP   3. Alchemy\Application->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:236
+PHP   4. Alchemy\Kernel\Kernel->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:244
+PHP   5. Alchemy\Mvc\View->getOutput() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:262
+PHP   6. Alchemy\Mvc\Adapter\HaangaView->render() /Users/erik/www/project/phpalchemy/Alchemy/Mvc/View.php:241
+PHP   7. Haanga::Load() /Users/erik/www/project/phpalchemy/Alchemy/Mvc/Adapter/HaangaView.php:34
+PHP   8. haanga_2995228b82228e9b6dadfbbd68f01caf9e9e0a9a() /Users/erik/www/project/phpalchemy/vendor/crodas/Haanga/lib/Haanga.php:414
+PHP   9. Haanga::Load() /Users/erik/www/project/Sandbox/cache/templates/2995228b82228e9b6dadfbbd68f01caf9e9e0a9a.php:20
+PHP  10. haanga_b53118b7aa3219bc5094bc33e75a425013aad5ef() /Users/erik/www/project/phpalchemy/vendor/crodas/Haanga/lib/Haanga.php:414
+PHP Notice:  Trying to get property of non-object in /Users/erik/www/project/Sandbox/cache/templates/b53118b7aa3219bc5094bc33e75a425013aad5ef.php on line 48
+PHP Stack trace:
+PHP   1. {main}() /Users/erik/www/project/Sandbox/web/app.php:0
+PHP   2. Alchemy\Application->run() /Users/erik/www/project/Sandbox/web/app.php:17
+PHP   3. Alchemy\Application->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:236
+PHP   4. Alchemy\Kernel\Kernel->handle() /Users/erik/www/project/phpalch 
+2012-07-21 16:33:52: (mod_fastcgi.c.2699) FastCGI-stderr: emy/Alchemy/Application.php:244
+PHP   5. Alchemy\Mvc\View->getOutput() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:262
+PHP   6. Alchemy\Mvc\Adapter\HaangaView->render() /Users/erik/www/project/phpalchemy/Alchemy/Mvc/View.php:241
+PHP   7. Haanga::Load() /Users/erik/www/project/phpalchemy/Alchemy/Mvc/Adapter/HaangaView.php:34
+PHP   8. haanga_2995228b82228e9b6dadfbbd68f01caf9e9e0a9a() /Users/erik/www/project/phpalchemy/vendor/crodas/Haanga/lib/Haanga.php:414
+PHP   9. Haanga::Load() /Users/erik/www/project/Sandbox/cache/templates/2995228b82228e9b6dadfbbd68f01caf9e9e0a9a.php:20
+PHP  10. haanga_b53118b7aa3219bc5094bc33e75a425013aad5ef() /Users/erik/www/project/phpalchemy/vendor/crodas/Haanga/lib/Haanga.php:414
+PHP Notice:  Trying to get property of non-object in /Users/erik/www/project/Sandbox/cache/templates/b53118b7aa3219bc5094bc33e75a425013aad5ef.php on line 48
+PHP Stack trace:
+PHP   1. {main}() /Users/erik/www/project/Sandbox/web/app.php:0
+PHP   2. Alchemy\Application->run() /Users/erik/www/project/Sandbox/web/app.php:17
+PHP   3. Alchemy\Application->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:236
+PHP   4. Alchemy\Kernel\Kernel->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:244
+PHP   5. Alchemy\Mvc\View->getOutput() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:262
+PHP   6. Alchemy\Mvc\Adapter\HaangaView->render() /Users/erik/www/project/phpalchemy/Alchemy/Mvc/View.php:241
+PHP   7. Haanga::Load() /Users/erik/www/project/phpalchemy/Alchemy/Mvc/Adapter/HaangaView.php:34
+PHP   8. haanga_2995228b82228e9b6dadfbbd68f01caf9e9e0a9a() /Users/erik/www/project/phpalchemy/vendor/crodas/Haanga/lib/Haanga.php:414
+PHP   9. Haanga::Load() /Users/erik/www/project/Sandbox/cache/templates/2995228b82228e9b6dadfbbd68f01caf9e9e0a9a.php:20
+PHP  10. haanga_b53118b7aa3219bc5094bc33e75a425013aad5ef() /Users/erik/www/project/phpalchemy/vendor/crodas/Haanga/lib/Haanga.php:414
+ 
+2012-07-21 16:49:00: (mod_fastcgi.c.2699) FastCGI-stderr: PHP Parse error:  syntax error, unexpected ';' in /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php on line 517
+PHP Stack trace:
+PHP   1. {main}() /Users/erik/www/project/Sandbox/web/app.php:0
+PHP   2. Alchemy\Application->run() /Users/erik/www/project/Sandbox/web/app.php:17
+PHP   3. Alchemy\Application->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:236
+PHP   4. DiContainer->offsetGet() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:244
+PHP   5. {closure}() /Users/erik/www/project/phpalchemy/Alchemy/Component/DiContainer/DiContainer.php:74
+PHP   6. Alchemy\{closure}() /Users/erik/www/project/phpalchemy/Alchemy/Component/DiContainer/DiContainer.php:112
+PHP   7. Alchemy\Component\ClassLoader\ClassLoader->loadClass() /Users/erik/www/project/phpalchemy/Alchemy/Component/DiContainer/DiContainer.php:0
+ 
+2012-07-21 16:52:13: (mod_fastcgi.c.2699) FastCGI-stderr: PHP Parse error:  syntax error, unexpected ';' in /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php on line 517
+PHP Stack trace:
+PHP   1. {main}() /Users/erik/www/project/Sandbox/web/app.php:0
+PHP   2. Alchemy\Application->run() /Users/erik/www/project/Sandbox/web/app.php:17
+PHP   3. Alchemy\Application->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:236
+PHP   4. DiContainer->offsetGet() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:244
+PHP   5. {closure}() /Users/erik/www/project/phpalchemy/Alchemy/Component/DiContainer/DiContainer.php:74
+PHP   6. Alchemy\{closure}() /Users/erik/www/project/phpalchemy/Alchemy/Component/DiContainer/DiContainer.php:112
+PHP   7. Alchemy\Component\ClassLoader\ClassLoader->loadClass() /Users/erik/www/project/phpalchemy/Alchemy/Component/DiContainer/DiContainer.php:0
+ 
+2012-07-21 16:52:14: (mod_fastcgi.c.2699) FastCGI-stderr: PHP Parse error:  syntax error, unexpected ';' in /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php on line 517
+PHP Stack trace:
+PHP   1. {main}() /Users/erik/www/project/Sandbox/web/app.php:0
+PHP   2. Alchemy\Application->run() /Users/erik/www/project/Sandbox/web/app.php:17
+PHP   3. Alchemy\Application->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:236
+PHP   4. DiContainer->offsetGet() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:244
+PHP   5. {closure}() /Users/erik/www/project/phpalchemy/Alchemy/Component/DiContainer/DiContainer.php:74
+PHP   6. Alchemy\{closure}() /Users/erik/www/project/phpalchemy/Alchemy/Component/DiContainer/DiContainer.php:112
+PHP   7. Alchemy\Component\ClassLoader\ClassLoader->loadClass() /Users/erik/www/project/phpalchemy/Alchemy/Component/DiContainer/DiContainer.php:0
+ 
+2012-07-21 16:52:14: (mod_fastcgi.c.2699) FastCGI-stderr: PHP Parse error:  syntax error, unexpected ';' in /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php on line 517
+PHP Stack trace:
+PHP   1. {main}() /Users/erik/www/project/Sandbox/web/app.php:0
+PHP   2. Alchemy\Application->run() /Users/erik/www/project/Sandbox/web/app.php:17
+PHP   3. Alchemy\Application->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:236
+PHP   4. DiContainer->offsetGet() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:244
+PHP   5. {closure}() /Users/erik/www/project/phpalchemy/Alchemy/Component/DiContainer/DiContainer.php:74
+PHP   6. Alchemy\{closure}() /Users/erik/www/project/phpalchemy/Alchemy/Component/DiContainer/DiContainer.php:112
+PHP   7. Alchemy\Component\ClassLoader\ClassLoader->loadClass() /Users/erik/www/project/phpalchemy/Alchemy/Component/DiContainer/DiContainer.php:0
+ 
+2012-07-21 20:06:17: (server.c.1211) logfiles cycled UID = 501 PID = 2119 
+2012-07-21 20:06:57: (server.c.1527) server stopped by UID = 0 PID = 1 
+2012-07-24 18:52:34: (log.c.166) server started 
+2012-07-24 18:53:15: (mod_fastcgi.c.2699) FastCGI-stderr: PHP Fatal error:  Class Sandbox\Application\Controller\SampleController contains 1 abstract method and must therefore be declared abstract or implement the remaining methods (Alchemy\Component\EventDispatcher\EventSubscriberInterface::getSubscribedEvents) in /Users/erik/www/project/Sandbox/Application/Controller/SampleController.php on line 5
+PHP Stack trace:
+PHP   1. {main}() /Users/erik/www/project/Sandbox/web/app.php:0
+PHP   2. Alchemy\Application->run() /Users/erik/www/project/Sandbox/web/app.php:17
+PHP   3. Alchemy\Application->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:236
+PHP   4. Alchemy\Kernel\Kernel->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:244
+PHP   5. Alchemy\Mvc\ControllerResolver->getController() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:164
+PHP   6. Alchemy\Mvc\ControllerResolver->createController() /Users/erik/www/project/phpalchemy/Alchemy/Mvc/ControllerResolver.php:73
+PHP   7. class_exists() /Users/erik/www/project/phpalchemy/Alchemy/Mvc/ControllerResolver.php:161
+PHP   8. Alchemy\Component\ClassLoader\ClassLoader->loadClass() /Users/erik/www/project/phpalchemy/Alchemy/Mvc/ControllerResolver.php:0
+PHP   9. require_once() /Users/erik/www/project/phpalchemy/Alchemy/Component/ClassLoader/ClassLoader.php:107
+ 
+2012-07-24 19:02:47: (mod_fastcgi.c.2699) FastCGI-stderr: PHP Parse error:  syntax error, unexpected T_DOUBLE_ARROW in /Users/erik/www/project/phpalchemy/Alchemy/Mvc/Controller.php on line 37
+PHP Stack trace:
+PHP   1. {main}() /Users/erik/www/project/Sandbox/web/app.php:0
+PHP   2. Alchemy\Application->run() /Users/erik/www/project/Sandbox/web/app.php:17
+PHP   3. Alchemy\Application->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:236
+PHP   4. Alchemy\Kernel\Kernel->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:244
+PHP   5. Alchemy\Mvc\ControllerResolver->getController() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:164
+PHP   6. Alchemy\Mvc\ControllerResolver->createController() /Users/erik/www/project/phpalchemy/Alchemy/Mvc/ControllerResolver.php:73
+PHP   7. class_exists() /Users/erik/www/project/phpalchemy/Alchemy/Mvc/ControllerResolver.php:161
+PHP   8. Alchemy\Component\ClassLoader\ClassLoader->loadClass() /Users/erik/www/project/phpalchemy/Alchemy/Mvc/ControllerResolver.php:0
+PHP   9. require_once() /Users/erik/www/project/phpalchemy/Alchemy/Component/ClassLoader/ClassLoader.php:107
+PHP  10. Alchemy\Component\ClassLoader\ClassLoader->loadClass() /Users/erik/www/project/phpalchemy/Alchemy/Component/ClassLoader/ClassLoader.php:0
+ 
+2012-07-24 19:06:23: (mod_fastcgi.c.2699) FastCGI-stderr: PHP Catchable fatal error:  Argument 1 passed to Alchemy\Component\EventDispatcher\EventDispatcher::addSubscriber() must implement interface Alchemy\Component\EventDispatcher\EventSubscriberInterface, array given, called in /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php on line 183 and defined in /Users/erik/www/project/phpalchemy/Alchemy/Component/EventDispatcher/EventDispatcher.php on line 173
+PHP Stack trace:
+PHP   1. {main}() /Users/erik/www/project/Sandbox/web/app.php:0
+PHP   2. Alchemy\Application->run() /Users/erik/www/project/Sandbox/web/app.php:17
+PHP   3. Alchemy\Application->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:236
+PHP   4. Alchemy\Kernel\Kernel->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:244
+PHP   5. Alchemy\Component\EventDispatcher\EventDispatcher->addSubscriber() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:183
+ 
+2012-07-24 19:07:07: (mod_fastcgi.c.2699) FastCGI-stderr: PHP Catchable fatal error:  Argument 1 passed to Alchemy\Component\EventDispatcher\EventDispatcher::addSubscriber() must implement interface Alchemy\Component\EventDispatcher\EventSubscriberInterface, array given, called in /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php on line 183 and defined in /Users/erik/www/project/phpalchemy/Alchemy/Component/EventDispatcher/EventDispatcher.php on line 173
+PHP Stack trace:
+PHP   1. {main}() /Users/erik/www/project/Sandbox/web/app.php:0
+PHP   2. Alchemy\Application->run() /Users/erik/www/project/Sandbox/web/app.php:17
+PHP   3. Alchemy\Application->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:236
+PHP   4. Alchemy\Kernel\Kernel->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:244
+PHP   5. Alchemy\Component\EventDispatcher\EventDispatcher->addSubscriber() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:183
+ 
+2012-07-24 19:07:07: (mod_fastcgi.c.2699) FastCGI-stderr: PHP Catchable fatal error:  Argument 1 passed to Alchemy\Component\EventDispatcher\EventDispatcher::addSubscriber() must implement interface Alchemy\Component\EventDispatcher\EventSubscriberInterface, array given, called in /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php on line 183 and defined in /Users/erik/www/project/phpalchemy/Alchemy/Component/EventDispatcher/EventDispatcher.php on line 173
+PHP Stack trace:
+PHP   1. {main}() /Users/erik/www/project/Sandbox/web/app.php:0
+PHP   2. Alchemy\Application->run() /Users/erik/www/project/Sandbox/web/app.php:17
+PHP   3. Alchemy\Application->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:236
+PHP   4. Alchemy\Kernel\Kernel->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:244
+PHP   5. Alchemy\Component\EventDispatcher\EventDispatcher->addSubscriber() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:183
+ 
+2012-07-24 19:07:07: (mod_fastcgi.c.2699) FastCGI-stderr: PHP Catchable fatal error:  Argument 1 passed to Alchemy\Component\EventDispatcher\EventDispatcher::addSubscriber() must implement interface Alchemy\Component\EventDispatcher\EventSubscriberInterface, array given, called in /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php on line 183 and defined in /Users/erik/www/project/phpalchemy/Alchemy/Component/EventDispatcher/EventDispatcher.php on line 173
+PHP Stack trace:
+PHP   1. {main}() /Users/erik/www/project/Sandbox/web/app.php:0
+PHP   2. Alchemy\Application->run() /Users/erik/www/project/Sandbox/web/app.php:17
+PHP   3. Alchemy\Application->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:236
+PHP   4. Alchemy\Kernel\Kernel->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:244
+PHP   5. Alchemy\Component\EventDispatcher\EventDispatcher->addSubscriber() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:183
+ 
+2012-07-24 19:07:07: (mod_fastcgi.c.2699) FastCGI-stderr: PHP Catchable fatal error:  Argument 1 passed to Alchemy\Component\EventDispatcher\EventDispatcher::addSubscriber() must implement interface Alchemy\Component\EventDispatcher\EventSubscriberInterface, array given, called in /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php on line 183 and defined in /Users/erik/www/project/phpalchemy/Alchemy/Component/EventDispatcher/EventDispatcher.php on line 173
+PHP Stack trace:
+PHP   1. {main}() /Users/erik/www/project/Sandbox/web/app.php:0
+PHP   2. Alchemy\Application->run() /Users/erik/www/project/Sandbox/web/app.php:17
+PHP   3. Alchemy\Application->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:236
+PHP   4. Alchemy\Kernel\Kernel->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:244
+PHP   5. Alchemy\Component\EventDispatcher\EventDispatcher->addSubscriber() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:183
+ 
+2012-07-24 19:07:48: (mod_fastcgi.c.2699) FastCGI-stderr: PHP Notice:  Undefined variable: this in /Users/erik/www/project/phpalchemy/Alchemy/Mvc/Controller.php on line 37
+PHP Stack trace:
+PHP   1. {main}() /Users/erik/www/project/Sandbox/web/app.php:0
+PHP   2. Alchemy\Application->run() /Users/erik/www/project/Sandbox/web/app.php:17
+PHP   3. Alchemy\Application->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:236
+PHP   4. Alchemy\Kernel\Kernel->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:244
+PHP   5. Alchemy\Component\EventDispatcher\EventDispatcher->addSubscriber() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:183
+PHP   6. Alchemy\Mvc\Controller::getSubscribedEvents() /Users/erik/www/project/phpalchemy/Alchemy/Component/EventDispatcher/EventDispatcher.php:175
+PHP Notice:  Undefined variable: this in /Users/erik/www/project/phpalchemy/Alchemy/Mvc/Controller.php on line 41
+PHP Stack trace:
+PHP   1. {main}() /Users/erik/www/project/Sandbox/web/app.php:0
+PHP   2. Alchemy\Application->run() /Users/erik/www/project/Sandbox/web/app.php:17
+PHP   3. Alchemy\Application->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:236
+PHP   4. Alchemy\Kernel\Kernel->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:244
+PHP   5. Alchemy\Component\EventDispatcher\EventDispatcher->addSubscriber() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:183
+PHP   6. Alchemy\Mvc\Controller::getSubscribedEvents() /Users/erik/www/project/phpalchemy/Alchemy/Component/EventDispatcher/EventDispatcher.php:175
+ 
+2012-07-24 19:08:22: (mod_fastcgi.c.2699) FastCGI-stderr: PHP Notice:  Use of undefined constant self - assumed 'self' in /Users/erik/www/project/phpalchemy/Alchemy/Mvc/Controller.php on line 37
+PHP Stack trace:
+PHP   1. {main}() /Users/erik/www/project/Sandbox/web/app.php:0
+PHP   2. Alchemy\Application->run() /Users/erik/www/project/Sandbox/web/app.php:17
+PHP   3. Alchemy\Application->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:236
+PHP   4. Alchemy\Kernel\Kernel->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:244
+PHP   5. Alchemy\Component\EventDispatcher\EventDispatcher->addSubscriber() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:183
+PHP   6. Alchemy\Mvc\Controller::getSubscribedEvents() /Users/erik/www/project/phpalchemy/Alchemy/Component/EventDispatcher/EventDispatcher.php:175
+PHP Notice:  Undefined variable: this in /Users/erik/www/project/phpalchemy/Alchemy/Mvc/Controller.php on line 41
+PHP Stack trace:
+PHP   1. {main}() /Users/erik/www/project/Sandbox/web/app.php:0
+PHP   2. Alchemy\Application->run() /Users/erik/www/project/Sandbox/web/app.php:17
+PHP   3. Alchemy\Application->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:236
+PHP   4. Alchemy\Kernel\Kernel->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:244
+PHP   5. Alchemy\Component\EventDispatcher\EventDispatcher->addSubscriber() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:183
+PHP   6. Alchemy\Mvc\Controller::getSubscribedEvents() /Users/erik/www/project/phpalchemy/Alchemy/Component/EventDispatcher/EventDispatcher.php:175
+ 
+2012-07-24 19:08:23: (mod_fastcgi.c.2699) FastCGI-stderr: PHP Notice:  Use of undefined constant self - assumed 'self' in /Users/erik/www/project/phpalchemy/Alchemy/Mvc/Controller.php on line 37
+PHP Stack trace:
+PHP   1. {main}() /Users/erik/www/project/Sandbox/web/app.php:0
+PHP   2. Alchemy\Application->run() /Users/erik/www/project/Sandbox/web/app.php:17
+PHP   3. Alchemy\Application->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:236
+PHP   4. Alchemy\Kernel\Kernel->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:244
+PHP   5. Alchemy\Component\EventDispatcher\EventDispatcher->addSubscriber() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:183
+PHP   6. Alchemy\Mvc\Controller::getSubscribedEvents() /Users/erik/www/project/phpalchemy/Alchemy/Component/EventDispatcher/EventDispatcher.php:175
+PHP Notice:  Undefined variable: this in /Users/erik/www/project/phpalchemy/Alchemy/Mvc/Controller.php on line 41
+PHP Stack trace:
+PHP   1. {main}() /Users/erik/www/project/Sandbox/web/app.php:0
+PHP   2. Alchemy\Application->run() /Users/erik/www/project/Sandbox/web/app.php:17
+PHP   3. Alchemy\Application->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:236
+PHP   4. Alchemy\Kernel\Kernel->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:244
+PHP   5. Alchemy\Component\EventDispatcher\EventDispatcher->addSubscriber() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:183
+PHP   6. Alchemy\Mvc\Controller::getSubscribedEvents() /Users/erik/www/project/phpalchemy/Alchemy/Component/EventDispatcher/EventDispatcher.php:175
+ 
+2012-07-24 19:08:23: (mod_fastcgi.c.2699) FastCGI-stderr: PHP Notice:  Use of undefined constant self - assumed 'self' in /Users/erik/www/project/phpalchemy/Alchemy/Mvc/Controller.php on line 37
+PHP Stack trace:
+PHP   1. {main}() /Users/erik/www/project/Sandbox/web/app.php:0
+PHP   2. Alchemy\Application->run() /Users/erik/www/project/Sandbox/web/app.php:17
+PHP   3. Alchemy\Application->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:236
+PHP   4. Alchemy\Kernel\Kernel->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:244
+PHP   5. Alchemy\Component\EventDispatcher\EventDispatcher->addSubscriber() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:183
+PHP   6. Alchemy\Mvc\Controller::getSubscribedEvents() /Users/erik/www/project/phpalchemy/Alchemy/Component/EventDispatcher/EventDispatcher.php:175
+PHP Notice:  Undefined variable: this in /Users/erik/www/project/phpalchemy/Alchemy/Mvc/Controller.php on line 41
+PHP Stack trace:
+PHP   1. {main}() /Users/erik/www/project/Sandbox/web/app.php:0
+PHP   2. Alchemy\Application->run() /Users/erik/www/project/Sandbox/web/app.php:17
+PHP   3. Alchemy\Application->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:236
+PHP   4. Alchemy\Kernel\Kernel->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:244
+PHP   5. Alchemy\Component\EventDispatcher\EventDispatcher->addSubscriber() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:183
+PHP   6. Alchemy\Mvc\Controller::getSubscribedEvents() /Users/erik/www/project/phpalchemy/Alchemy/Component/EventDispatcher/EventDispatcher.php:175
+ 
+2012-07-24 19:08:39: (mod_fastcgi.c.2699) FastCGI-stderr: PHP Notice:  Undefined variable: this in /Users/erik/www/project/phpalchemy/Alchemy/Mvc/Controller.php on line 36
+PHP Stack trace:
+PHP   1. {main}() /Users/erik/www/project/Sandbox/web/app.php:0
+PHP   2. Alchemy\Application->run() /Users/erik/www/project/Sandbox/web/app.php:17
+PHP   3. Alchemy\Application->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:236
+PHP   4. Alchemy\Kernel\Kernel->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:244
+PHP   5. Alchemy\Component\EventDispatcher\EventDispatcher->addSubscriber() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:183
+PHP   6. Alchemy\Mvc\Controller::getSubscribedEvents() /Users/erik/www/project/phpalchemy/Alchemy/Component/EventDispatcher/EventDispatcher.php:175
+PHP Notice:  Undefined variable: this in /Users/erik/www/project/phpalchemy/Alchemy/Mvc/Controller.php on line 37
+PHP Stack trace:
+PHP   1. {main}() /Users/erik/www/project/Sandbox/web/app.php:0
+PHP   2. Alchemy\Application->run() /Users/erik/www/project/Sandbox/web/app.php:17
+PHP   3. Alchemy\Application->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:236
+PHP   4. Alchemy\Kernel\Kernel->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:244
+PHP   5. Alchemy\Component\EventDispatcher\EventDispatcher->addSubscriber() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:183
+PHP   6. Alchemy\Mvc\Controller::getSubscribedEvents() /Users/erik/www/project/phpalchemy/Alchemy/Component/EventDispatcher/EventDispatcher.php:175
+ 
+2012-07-24 19:08:39: (mod_fastcgi.c.2699) FastCGI-stderr: PHP Notice:  Undefined variable: this in /Users/erik/www/project/phpalchemy/Alchemy/Mvc/Controller.php on line 41
+PHP Stack trace:
+PHP   1. {main}() /Users/erik/www/project/Sandbox/web/app.php:0
+PHP   2. Alchemy\Application->run() /Users/erik/www/project/Sandbox/web/app.php:17
+PHP   3. Alchemy\Application->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:236
+PHP   4. Alchemy\Kernel\Kernel->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:244
+PHP   5. Alchemy\Component\EventDispatcher\EventDispatcher->addSubscriber() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:183
+PHP   6. Alchemy\Mvc\Controller::getSubscribedEvents() /Users/erik/www/project/phpalchemy/Alchemy/Component/EventDispatcher/EventDispatcher.php:175
+ 
+2012-07-24 19:09:12: (mod_fastcgi.c.2699) FastCGI-stderr: PHP Fatal error:  Cannot make static method Alchemy\Component\EventDispatcher\EventSubscriberInterface::getSubscribedEvents() non static in class Alchemy\Mvc\Controller in /Users/erik/www/project/phpalchemy/Alchemy/Mvc/Controller.php on line 23
+PHP Stack trace:
+PHP   1. {main}() /Users/erik/www/project/Sandbox/web/app.php:0
+PHP   2. Alchemy\Application->run() /Users/erik/www/project/Sandbox/web/app.php:17
+PHP   3. Alchemy\Application->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:236
+PHP   4. Alchemy\Kernel\Kernel->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:244
+PHP   5. Alchemy\Mvc\ControllerResolver->getController() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:164
+PHP   6. Alchemy\Mvc\ControllerResolver->createController() /Users/erik/www/project/phpalchemy/Alchemy/Mvc/ControllerResolver.php:73
+PHP   7. class_exists() /Users/erik/www/project/phpalchemy/Alchemy/Mvc/ControllerResolver.php:161
+PHP   8. Alchemy\Component\ClassLoader\ClassLoader->loadClass() /Users/erik/www/project/phpalchemy/Alchemy/Mvc/ControllerResolver.php:0
+PHP   9. require_once() /Users/erik/www/project/phpalchemy/Alchemy/Component/ClassLoader/ClassLoader.php:107
+PHP  10. Alchemy\Component\ClassLoader\ClassLoader->loadClass() /Users/erik/www/project/phpalchemy/Alchemy/Component/ClassLoader/ClassLoader.php:0
+PHP  11. require_once() /Users/erik/www/project/phpalchemy/Alchemy/Component/ClassLoader/ClassLoader.php:107
+ 
+2012-07-24 19:30:04: (mod_fastcgi.c.2699) FastCGI-stderr: PHP Fatal error:  Class 'Alchemy\Mvc\Kernel' not found in /Users/erik/www/project/phpalchemy/Alchemy/Mvc/Controller.php on line 37
+PHP Stack trace:
+PHP   1. {main}() /Users/erik/www/project/Sandbox/web/app.php:0
+PHP   2. Alchemy\Application->run() /Users/erik/www/project/Sandbox/web/app.php:17
+PHP   3. Alchemy\Application->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:236
+PHP   4. Alchemy\Kernel\Kernel->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:244
+PHP   5. Alchemy\Component\EventDispatcher\EventDispatcher->addSubscriber() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:183
+PHP   6. Alchemy\Mvc\Controller::getSubscribedEvents() /Users/erik/www/project/phpalchemy/Alchemy/Component/EventDispatcher/EventDispatcher.php:175
+ 
+2012-07-24 19:30:05: (mod_fastcgi.c.2699) FastCGI-stderr: PHP Fatal error:  Class 'Alchemy\Mvc\Kernel' not found in /Users/erik/www/project/phpalchemy/Alchemy/Mvc/Controller.php on line 37
+PHP Stack trace:
+PHP   1. {main}() /Users/erik/www/project/Sandbox/web/app.php:0
+PHP   2. Alchemy\Application->run() /Users/erik/www/project/Sandbox/web/app.php:17
+PHP   3. Alchemy\Application->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:236
+PHP   4. Alchemy\Kernel\Kernel->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:244
+PHP   5. Alchemy\Component\EventDispatcher\EventDispatcher->addSubscriber() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:183
+PHP   6. Alchemy\Mvc\Controller::getSubscribedEvents() /Users/erik/www/project/phpalchemy/Alchemy/Component/EventDispatcher/EventDispatcher.php:175
+ 
+2012-07-24 19:30:05: (mod_fastcgi.c.2699) FastCGI-stderr: PHP Fatal error:  Class 'Alchemy\Mvc\Kernel' not found in /Users/erik/www/project/phpalchemy/Alchemy/Mvc/Controller.php on line 37
+PHP Stack trace:
+PHP   1. {main}() /Users/erik/www/project/Sandbox/web/app.php:0
+PHP   2. Alchemy\Application->run() /Users/erik/www/project/Sandbox/web/app.php:17
+PHP   3. Alchemy\Application->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:236
+PHP   4. Alchemy\Kernel\Kernel->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:244
+PHP   5. Alchemy\Component\EventDispatcher\EventDispatcher->addSubscriber() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:183
+PHP   6. Alchemy\Mvc\Controller::getSubscribedEvents() /Users/erik/www/project/phpalchemy/Alchemy/Component/EventDispatcher/EventDispatcher.php:175
+ 
+2012-07-24 19:30:39: (mod_fastcgi.c.2699) FastCGI-stderr: PHP Warning:  call_user_func() expects parameter 1 to be a valid callback, class 'if_exists' not found in /Users/erik/www/project/phpalchemy/Alchemy/Component/EventDispatcher/EventDispatcher.php on line 92
+PHP Stack trace:
+PHP   1. {main}() /Users/erik/www/project/Sandbox/web/app.php:0
+PHP   2. Alchemy\Application->run() /Users/erik/www/project/Sandbox/web/app.php:17
+PHP   3. Alchemy\Application->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:236
+PHP   4. Alchemy\Kernel\Kernel->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:244
+PHP   5. Alchemy\Component\EventDispatcher\EventDispatcher->dispatch() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:204
+PHP   6. call_user_func() /Users/erik/www/project/phpalchemy/Alchemy/Component/EventDispatcher/EventDispatcher.php:92
+PHP Warning:  call_user_func() expects parameter 1 to be a valid callback, class 'if_exists' not found in /Users/erik/www/project/phpalchemy/Alchemy/Component/EventDispatcher/EventDispatcher.php on line 92
+PHP Stack trace:
+PHP   1. {main}() /Users/erik/www/project/Sandbox/web/app.php:0
+PHP   2. Alchemy\Application->run() /Users/erik/www/project/Sandbox/web/app.php:17
+PHP   3. Alchemy\Application->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:236
+PHP   4. Alchemy\Kernel\Kernel->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:244
+PHP   5. Alchemy\Component\EventDispatcher\EventDispatcher->dispatch() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:238
+PHP   6. call_user_func() /Users/erik/www/project/phpalchemy/Alchemy/Component/EventDispatcher/EventDispatcher.php:92
+ 
+2012-07-24 19:31:46: (server.c.1211) logfiles cycled UID = 501 PID = 828 
+2012-07-24 19:32:15: (server.c.1527) server stopped by UID = 0 PID = 1 
+2012-07-24 19:54:03: (log.c.166) server started 
+2012-07-24 19:54:07: (mod_fastcgi.c.2699) FastCGI-stderr: PHP Warning:  call_user_func() expects parameter 1 to be a valid callback, class 'if_exists' not found in /Users/erik/www/project/phpalchemy/Alchemy/Component/EventDispatcher/EventDispatcher.php on line 92
+PHP Stack trace:
+PHP   1. {main}() /Users/erik/www/project/Sandbox/web/app.php:0
+PHP   2. Alchemy\Application->run() /Users/erik/www/project/Sandbox/web/app.php:17
+PHP   3. Alchemy\Application->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:236
+PHP   4. Alchemy\Kernel\Kernel->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:244
+PHP   5. Alchemy\Component\EventDispatcher\EventDispatcher->dispatch() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:204
+PHP   6. call_user_func() /Users/erik/www/project/phpalchemy/Alchemy/Component/EventDispatcher/EventDispatcher.php:92
+PHP Warning:  call_user_func() expects parameter 1 to be a valid callback, class 'if_exists' not found in /Users/erik/www/project/phpalchemy/Alchemy/Component/EventDispatcher/EventDispatcher.php on line 92
+PHP Stack trace:
+PHP   1. {main}() /Users/erik/www/project/Sandbox/web/app.php:0
+PHP   2. Alchemy\Application->run() /Users/erik/www/project/Sandbox/web/app.php:17
+PHP   3. Alchemy\Application->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:236
+PHP   4. Alchemy\Kernel\Kernel->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:244
+PHP   5. Alchemy\Component\EventDispatcher\EventDispatcher->dispatch() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:238
+PHP   6. call_user_func() /Users/erik/www/project/phpalchemy/Alchemy/Component/EventDispatcher/EventDispatcher.php:92
+ 
+2012-07-24 19:54:32: (mod_fastcgi.c.2699) FastCGI-stderr: PHP Warning:  call_user_func() expects parameter 1 to be a valid callback, class 'if_exists' not found in /Users/erik/www/project/phpalchemy/Alchemy/Component/EventDispatcher/EventDispatcher.php on line 92
+PHP Stack trace:
+PHP   1. {main}() /Users/erik/www/project/Sandbox/web/app.php:0
+PHP   2. Alchemy\Application->run() /Users/erik/www/project/Sandbox/web/app.php:17
+PHP   3. Alchemy\Application->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:236
+PHP   4. Alchemy\Kernel\Kernel->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:244
+PHP   5. Alchemy\Component\EventDispatcher\EventDispatcher->dispatch() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:204
+PHP   6. call_user_func() /Users/erik/www/project/phpalchemy/Alchemy/Component/EventDispatcher/EventDispatcher.php:92
+PHP Warning:  call_user_func() expects parameter 1 to be a valid callback, class 'if_exists' not found in /Users/erik/www/project/phpalchemy/Alchemy/Component/EventDispatcher/EventDispatcher.php on line 92
+PHP Stack trace:
+PHP   1. {main}() /Users/erik/www/project/Sandbox/web/app.php:0
+PHP   2. Alchemy\Application->run() /Users/erik/www/project/Sandbox/web/app.php:17
+PHP   3. Alchemy\Application->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:236
+PHP   4. Alchemy\Kernel\Kernel->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:244
+PHP   5. Alchemy\Component\EventDispatcher\EventDispatcher->dispatch() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:238
+PHP   6. call_user_func() /Users/erik/www/project/phpalchemy/Alchemy/Component/EventDispatcher/EventDispatcher.php:92
+ 
+2012-07-24 19:55:06: (mod_fastcgi.c.2699) FastCGI-stderr: PHP Warning:  call_user_func() expects parameter 1 to be a valid callback, class 'if_exists' not found in /Users/erik/www/project/phpalchemy/Alchemy/Component/EventDispatcher/EventDispatcher.php on line 92
+PHP Stack trace:
+PHP   1. {main}() /Users/erik/www/project/Sandbox/web/app.php:0
+PHP   2. Alchemy\Application->run() /Users/erik/www/project/Sandbox/web/app.php:17
+PHP   3. Alchemy\Application->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:236
+PHP   4. Alchemy\Kernel\Kernel->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:244
+PHP   5. Alchemy\Component\EventDispatcher\EventDispatcher->dispatch() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:204
+PHP   6. call_user_func() /Users/erik/www/project/phpalchemy/Alchemy/Component/EventDispatcher/EventDispatcher.php:92
+PHP Warning:  call_user_func() expects parameter 1 to be a valid callback, class 'if_exists' not found in /Users/erik/www/project/phpalchemy/Alchemy/Component/EventDispatcher/EventDispatcher.php on line 92
+PHP Stack trace:
+PHP   1. {main}() /Users/erik/www/project/Sandbox/web/app.php:0
+PHP   2. Alchemy\Application->run() /Users/erik/www/project/Sandbox/web/app.php:17
+PHP   3. Alchemy\Application->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:236
+PHP   4. Alchemy\Kernel\Kernel->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:244
+PHP   5. Alchemy\Component\EventDispatcher\EventDispatcher->dispatch() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:238
+PHP   6. call_user_func() /Users/erik/www/project/phpalchemy/Alchemy/Component/EventDispatcher/EventDispatcher.php:92
+ 
+2012-07-24 19:55:19: (mod_fastcgi.c.2699) FastCGI-stderr: PHP Warning:  call_user_func() expects parameter 1 to be a valid callback, class 'if_exists' not found in /Users/erik/www/project/phpalchemy/Alchemy/Component/EventDispatcher/EventDispatcher.php on line 92
+PHP Stack trace:
+PHP   1. {main}() /Users/erik/www/project/Sandbox/web/app.php:0
+PHP   2. Alchemy\Application->run() /Users/erik/www/project/Sandbox/web/app.php:17
+PHP   3. Alchemy\Application->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:236
+PHP   4. Alchemy\Kernel\Kernel->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:244
+PHP   5. Alchemy\Component\EventDispatcher\EventDispatcher->dispatch() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:204
+PHP   6. call_user_func() /Users/erik/www/project/phpalchemy/Alchemy/Component/EventDispatcher/EventDispatcher.php:92
+PHP Warning:  call_user_func() expects parameter 1 to be a valid callback, class 'if_exists' not found in /Users/erik/www/project/phpalchemy/Alchemy/Component/EventDispatcher/EventDispatcher.php on line 92
+PHP Stack trace:
+PHP   1. {main}() /Users/erik/www/project/Sandbox/web/app.php:0
+PHP   2. Alchemy\Application->run() /Users/erik/www/project/Sandbox/web/app.php:17
+PHP   3. Alchemy\Application->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:236
+PHP   4. Alchemy\Kernel\Kernel->handle() /Users/erik/www/project/phpalchemy/Alchemy/Application.php:244
+PHP   5. Alchemy\Component\EventDispatcher\EventDispatcher->dispatch() /Users/erik/www/project/phpalchemy/Alchemy/Kernel/Kernel.php:238
+PHP   6. call_user_func() /Users/erik/www/project/phpalchemy/Alchemy/Component/EventDispatcher/EventDispatcher.php:92
+ 
+2012-07-24 20:46:41: (server.c.1411) [note] graceful shutdown started 
+2012-07-24 20:46:41: (server.c.1527) server stopped by UID = 501 PID = 138 
+2012-07-25 10:19:54: (log.c.166) server started 
+2012-07-25 10:47:18: (server.c.1411) [note] graceful shutdown started 
+2012-07-25 10:47:18: (server.c.1527) server stopped by UID = 501 PID = 330 
