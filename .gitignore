@@ -3,3 +3,4 @@
 config/env.ini
 config/routes.php
 cache
+cache/*
