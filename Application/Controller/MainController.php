@@ -7,7 +7,7 @@ class MainController extends Controller
     /**
      * Index Action for Main controller
      *
-     * @view(Main/index.djt)
+     * @view(Main/index)
      */
     public function indexAction()
     {
