@@ -13,4 +13,12 @@ class MainController extends Controller
     {
         return array('title' => 'Hello Word!');
     }
+
+    /**
+     * @view(Main/sample)
+     */
+    public function sampleAction()
+    {
+        $this->view->text = 'This is a sample text';
+    }
 }
