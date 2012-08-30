@@ -1,6 +1,8 @@
 <?php
 namespace Sandbox\Application\Controller;
 
+use Alchemy\Component\Http\Response;
+
 class SampleController extends \Alchemy\Mvc\Controller
 {
     /**
@@ -82,7 +84,7 @@ class SampleController extends \Alchemy\Mvc\Controller
 
     function action3Action($name, $lastname)
     {
-        $this->getResponse()->setContent('sample #3 action - hello ' . $name . ' ' . $lastname);
+        return new Response('sample #3 action - hello ' . $name . ' ' . $lastname);
     }
 
     function action4Action($lastname, $name)

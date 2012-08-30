@@ -1,9 +1,7 @@
 <?php
 namespace Sandbox\Application\Controller;
 
-use Alchemy\Mvc\Controller;
-
-class RootController extends Controller
+class RootController extends \Alchemy\Mvc\Controller
 {
     /**
      * Index Action for Main controller
@@ -12,19 +10,22 @@ class RootController extends Controller
      */
     public function indexAction()
     {
-        return array('title' => 'Welcome to PhpAlchemy Project v1.0!');
     }
 
     /** @view(Root/about) */
     public function aboutAction()
     {
-        $this->view->text = 'sample action this project';
     }
 
-    /** @view() */
-    public function sampleAction()
+    /** @View() */
+    public function dataAction($a = '', $b = '')
     {
-        $this->view->text = 'sample action';
+        $this->view->params = array('a' => $a, 'b' => $b);
     }
 
+    /** @JsonResponse() */
+    public function datajsonAction($a = '', $b = '')
+    {
+        return array('a' => $a, 'b' => $b);
+    }
 }
