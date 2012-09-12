@@ -1,16 +1,23 @@
-<fieldset>
-    <legend>{{ form.title }}</legend>
-    <form name="{{ form.name }}" action="{{ form.action }}" method="post" class="form-horizontal">
+    {{ form.title }}<br/>
+    <form name="{{ form.name }}" action="{{ form.action }}" method="post">
         {% for widget in form.getWidgets() %}
-        <div class="control-group">
-            <label class="control-label" for="{{ widget.getId() }}">{{ widget.getFieldLabel() }}</label>
-            <div class="controls">{{ widget.getGenerated('html') | raw }}</div>
+        {% if widget.xtype == 'checkbox' %}
+        <div data-role="fieldcontain">
+            <fieldset data-role="controlgroup">
+                <legend>{{ widget.getFieldLabel() }}:</legend>
+                <input type="checkbox" name="checkbox-2" id="checkbox-2" class="custom" />
+                <label for="checkbox-2">{{ widget.getLabel() }}</label>
+            </fieldset>
         </div>
+        {% else %}
+        <div data-role="fieldcontain" class="ui-field-contain ui-body ui-br">
+          <label for="{{ widget.getId() }}" class="ui-input-text">{{ widget.getFieldLabel() }}:</label>
+          {{ widget.getGenerated('html') | raw }}
+        </div>
+        {% endif %}
         {% endfor %}
 
-        <div class="form-actions">
-            <button type="submit" class="btn btn-primary">Save changes</button>
-            <button type="button" class="btn">Cancel</button>
-        </div>
+        <button type="submit" data-theme="b" name="submit" value="submit-value">Submit</button>
+
     </form>
-</fieldset>
+

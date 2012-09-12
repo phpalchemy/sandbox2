@@ -31,7 +31,7 @@
                 "name": "jquery/jquery-mobile",
                 "version": "1.1.1",
                 "dist": {
-                    "url": "https://github.com/jquery/jquery-mobile/zipball/1.1.1",
+                    "url": "http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.zip",
                     "type": "zip"
                 }
             }

@@ -40,13 +40,18 @@ class TestController extends \Alchemy\Mvc\Controller
     {
     }
 
-    /** @ServeUi(contact_form = "test/register2.yaml", ui-bundle = twitter-bootstrap) */
+    /** @ServeUi(contact_form="test/register2.yaml", ui-bundle="twitter-bootstrap") */
     public function register2Action()
     {
     }
 
-    /** @ServeUi(contact_form = "test/register2.yaml") */
+    /** @ServeUi(contact_form="test/register2.yaml") */
     public function register3Action()
+    {
+    }
+
+    /** @ServeUi(contact_form="test/register2.yaml", ui-bundle="jquery-mobile") */
+    public function register4Action()
     {
     }
 
