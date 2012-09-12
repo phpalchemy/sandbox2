@@ -4,7 +4,8 @@ config/env.ini
 config/routes.php
 cache
 cache/*
-
-web/assets/Sandbox/.DS_Store
-
-web/assets/Sandbox/css/.DS_Store
+vendor
+vendor/*
+web/assets/lib/
+composer.lock
+composer.phar

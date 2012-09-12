@@ -41,5 +41,6 @@ function pr($v){echo "<pre>".print_r($v, true)."</pre>";}
 $config['app']['root_dir'] = realpath(__DIR__);
 
 require_once $config['phpalchemy']['root_dir'] . '/autoload.php';
+require_once __DIR__ . '/vendor/autoload.php';
 
 return $config;

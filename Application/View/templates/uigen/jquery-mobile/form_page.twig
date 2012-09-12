@@ -1,0 +1,11 @@
+{% extends 'master.twig' %}
+
+{% block title %}My Form Page Title{% endblock %}
+
+{% block main_assets_header %}
+<script src="{{ asset('js/jquery.js', import="@jquery/*.js") }}"></script>
+{% endblock %}
+
+{% block body %}
+{% include 'uigen/jquery-mobile/form.twig' %}
+{% endblock %}
