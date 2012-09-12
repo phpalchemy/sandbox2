@@ -19,9 +19,11 @@ if (substr($config['phpalchemy']['root_dir'], 0, 2) === '..') { // is relative p
     $phpalchemyRootDir = realpath(
         dirname(__FILE__) . DIRECTORY_SEPARATOR . $config['phpalchemy']['root_dir']
     );
+} else {
+    $phpalchemyRootDir = $config['phpalchemy']['root_dir'];
 }
 
-if (!is_dir($phpalchemyRootDir)) {
+if (! isset($phpalchemyRootDir) || ! is_dir($phpalchemyRootDir)) {
     throw new Exception(
         "Configuration Error: phpalchemy root directory not found on: " .
         "'{$config['phpalchemy']['root_dir']}'"

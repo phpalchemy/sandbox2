@@ -28,4 +28,11 @@ class RootController extends \Alchemy\Mvc\Controller
     {
         return array('a' => $a, 'b' => $b);
     }
+
+    /**
+     * @ServeUi(contact_form = root/register.yaml)
+     */
+    public function registerAction()
+    {
+    }
 }
