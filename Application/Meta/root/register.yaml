@@ -1,7 +1,33 @@
 form:
-  attributes: {id: myForm, title: Sample Form No. 1, width: 350}
+  attributes:
+    title:  My Form
+    action: save
+
   items:
-    - textbox:  { id: name, fieldLabel: Name, width:200 }
-    - textbox:  { id: lastname, fieldLabel: Last Name }
-    - checkbox: { name: gratuated, fieldLabel: Gratuated?, label: Gratuated? }
-    - textbox:  { id: skills, fieldLabel: Skills title sample, multiline: true }
+    - listbox:
+        id: list1
+        fieldLabel: Sample list select
+        items:
+            - {label: item1, value: 1}
+            - {label: item2, value: 2}
+            - {label: item3, value: 3}
+            - {label: item4444, value: 4}
+    - textbox:
+        id: name
+        fieldLabel: Name
+        width: 200
+        placeholder: sample
+    - textbox:
+        id: lastname
+        fieldLabel: Last Name
+    - checkbox:
+        name: gratuated
+        fieldLabel: Gratuated?
+        label: Gratuated?
+    - textbox:
+        id: skills
+        fieldLabel: Skills title
+        multiline: true
+
+
+
