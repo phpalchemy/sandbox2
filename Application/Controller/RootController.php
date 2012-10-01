@@ -35,4 +35,11 @@ class RootController extends \Alchemy\Mvc\Controller
     public function registerAction()
     {
     }
+
+    /**
+     * @ServeUi(form1="root/form1.yaml")
+     */
+    public function form1Action()
+    {
+    }
 }

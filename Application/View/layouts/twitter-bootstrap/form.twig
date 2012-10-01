@@ -3,8 +3,10 @@
     <form name="{{ form.name }}" action="{{ form.action }}" method="post" class="form-horizontal">
         {% for widget in form.getWidgets() %}
         <div class="control-group">
-            <label class="control-label" for="{{ widget.getId() }}">{{ widget.getFieldLabel() }}</label>
-            <div class="controls">{{ widget.getGenerated('html') | raw }}</div>
+            <label class="control-label" for="{{ widget.getId() }}">
+                {{ widget.getFieldLabel() }}
+            </label>
+            {{ widget.getGenerated('html') | raw }}
         </div>
         {% endfor %}
 
