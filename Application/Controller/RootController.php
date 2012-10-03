@@ -42,4 +42,21 @@ class RootController extends \Alchemy\Mvc\Controller
     public function form1Action()
     {
     }
+
+    /**
+     * @ServeUi(form1="root/form1.yaml")
+     */
+    public function form1EditAction()
+    {
+        $this->view->form1 = array(
+            'textbox1' => 'sample value for textbox1',
+            'textbox2' => 'sample value for textbox2',
+            'textbox3' => 'sample value for textbox3',
+            'listbox1' => 2,
+            'listbox2' => array(1, 3),
+            'checkbox1' => true,
+            'checkgroup1' => array(true, false, true),
+            'radiogroup1' => 2
+        );
+    }
 }

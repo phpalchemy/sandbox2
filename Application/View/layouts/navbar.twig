@@ -12,6 +12,7 @@
           <a class="brand" href="/">Sandbox</a>
           <div class="nav-collapse collapse">
             <ul class="nav">
+              <!--
               <li class="{% if _action == 'index' %}active{% endif %}">
                 <a href="/">Welcome</a>
               </li>
@@ -23,7 +24,12 @@
               </li>
               <li class="{% if _action == 'documetation' %}active{% endif %}">
                 <a href="/documetation">Documentation</a>
+              </li>-->
+              {% for menuItem in menu %}
+              <li class="{% if _action == menuItem['label'] %}active{% endif %}">
+                <a href="{{ menuItem['url'] }}">{{ menuItem['label'] }}</a>
               </li>
+              {% endfor %}
             </ul>
           </div>
         </div>

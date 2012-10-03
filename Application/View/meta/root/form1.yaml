@@ -1,19 +1,25 @@
 form:
-  attributes:
-    title:  My Form
-    action: save
-
+  title: My Test Form
+  action: save
   items:
     - textbox:
+        name: textbox1
         fieldLabel: text field
         placeholder: sample
 
     - textbox:
+        name: textbox2
         fieldLabel: password field
         placeholder: your password
         type: password
 
+    - textbox:
+        name: textbox3
+        fieldLabel: Multiline textbox field
+        multiline: true
+
     - listbox:
+        name: listbox1
         fieldLabel: listbox field
         items:
             - {value: 1, label: item1}
@@ -21,7 +27,8 @@ form:
             - {value: 3, label: item3}
 
     - listbox:
-        fieldLabel: listbox field (multiple)
+        name: listbox2
+        fieldLabel: Multiple listbox field
         multiple: true
         items:
             - {value: 1, label: item1}
@@ -29,10 +36,12 @@ form:
             - {value: 3, label: item3}
 
     - checkbox:
-        fieldLabel: single checkbox
+        name: checkbox1
+        fieldLabel: single checkbox field
         label: chk1
 
     - checkgroup:
+        name: checkgroup1
         fieldLabel: checkgroup field
         inline: false
         items:
@@ -40,13 +49,14 @@ form:
             - {name: two, value: 2, label: chk2}
             - {name: three, value: 3, label: chk3}
 
-    - textbox:
-        fieldLabel: Skills field
-        multiline: true
-
     - radiogroup:
+        name: radiogroup1
         fieldLabel: Radiogroup field
         inline: true
         items:
             - {value: 1, label: opt1}
             - {value: 2, label: opt2}
+
+  buttons:
+    - {label: Save, type: submit}
+    - {label: Cancel, url: /form1_edit}

@@ -11,18 +11,11 @@
           <a class="brand" href="/">Sandbox</a>
           <div class="nav-collapse collapse">
             <ul class="nav">
-              <li class="{% if _action == 'index' %}active{% endif %}">
-                <a href="/">Welcome</a>
+              {% for menuItem in _menu %}
+              <li class="{% if _action == menuItem['url'] %}active{% endif %}">
+                <a href="{{ menuItem['url'] }}">{{ menuItem['label'] }}</a>
               </li>
-              <li class="{% if _action == 'about' %}active{% endif %}">
-                <a href="/about">About</a>
-              </li>
-              <li class="{% if _action == 'data' %}active{% endif %}">
-                <a href="/data">Data Serving</a>
-              </li>
-              <li class="{% if _action == 'register' %}active{% endif %}">
-                <a href="/register">Register form</a>
-              </li>
+              {% endfor %}
             </ul>
           </div>
         </div>
