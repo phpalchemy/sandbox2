@@ -1,11 +1,9 @@
 <fieldset>
     <legend>{{ form.title }}</legend>
-    <form name="{{ form.name }}" action="{{ form.action }}" method="post" class="form-horizontal">
+    <form name="{{ form.name }}" id="{{ form.id }}" action="{{ form.action }}" method="post" class="form-horizontal">
         {% for widget in form.getWidgets() %}
         <div class="control-group">
-            <label class="control-label" for="{{ widget.getId() }}">
-                {{ widget.getFieldLabel() }}
-            </label>
+            <label class="control-label" for="{{ widget.getId() }}">{{ widget.getFieldLabel() }}</label>
             {{ widget.getGenerated('html') | raw }}
         </div>
         {% endfor %}
@@ -13,13 +11,15 @@
         <div class="form-actions">
             {% for button in form.getButtons() %}
             <button
-              {% if button['type'] == 'submit' %} type="submit" class="btn btn-primary"
+              {% if button['type'] == 'submit' %}
+                type="submit" class="btn btn-primary"
               {% else %} type="button" class="btn"
                 {% if button['url'] != '' %}
                 onclick="location.href='{{ button['url'] }}'"
                 {% endif %}
               {% endif %}
-            >{{ button['label'] }}
+            >
+              {{ button['label'] }}
             </button>
             {% endfor %}
         </div>

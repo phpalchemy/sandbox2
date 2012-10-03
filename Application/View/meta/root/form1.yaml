@@ -1,11 +1,14 @@
 form:
   title: My Test Form
   action: save
+  id: form1
+  name: form1
   items:
     - textbox:
         name: textbox1
         fieldLabel: text field
         placeholder: sample
+        required: true
 
     - textbox:
         name: textbox2
@@ -17,6 +20,10 @@ form:
         name: textbox3
         fieldLabel: Multiline textbox field
         multiline: true
+
+    - flipswitch:
+        name: flipswitch1
+        fieldLabel: flipswitch field
 
     - listbox:
         name: listbox1

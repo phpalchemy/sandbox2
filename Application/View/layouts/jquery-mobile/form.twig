@@ -17,7 +17,22 @@
         {% endif %}
         {% endfor %}
 
-        <button type="submit" data-theme="b" name="submit" value="submit-value">Submit</button>
-
+        <div class="ui-body ui-body-b">
+        <fieldset class="ui-grid-a">
+        {% for button in form.getButtons() %}
+          <div class="ui-block-b">
+          <button
+            {% if button['type'] == 'submit' %} type="submit" data-theme="a" name="submit" value="submit-value"
+            {% else %} type="button" data-theme="d"
+              {% if button['url'] != '' %}
+                onclick="location.href='{{ button['url'] }}'"
+              {% endif %}
+            {% endif %}
+          >{{ button['label'] }}
+          </button>
+          </div>
+        {% endfor %}
+        </fieldset>
+        </div>
     </form>
 

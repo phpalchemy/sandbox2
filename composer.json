@@ -28,6 +28,17 @@
         {
             "type": "package",
             "package": {
+                "name": "jquery/jquery-validation",
+                "version": "1.10.0",
+                "dist": {
+                    "url": "http://ajax.aspnetcdn.com/ajax/jquery.validate/1.10.0/jquery.validate.min.js",
+                    "type": "file"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
                 "name": "jquery/jquery-mobile",
                 "version": "1.1.1",
                 "dist": {
@@ -54,6 +65,7 @@
         "smarty/smarty"   : "3.1.11",
         "jquery/jquery"   : "1.8.1",
         "jquery/jquery-mobile": "1.1.1",
+        "jquery/jquery-validation": "1.10.0",
         "twitter/bootstrap": "2.1.1"
     }
 }
