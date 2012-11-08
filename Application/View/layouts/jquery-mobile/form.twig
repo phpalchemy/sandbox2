@@ -1,38 +1,30 @@
-    {{ form.title }}<br/>
-    <form name="{{ form.name }}" action="{{ form.action }}" method="post">
-        {% for widget in form.getWidgets() %}
-        {% if widget.xtype == 'checkbox' %}
-        <div data-role="fieldcontain">
-            <fieldset data-role="controlgroup">
-                <legend>{{ widget.getFieldLabel() }}:</legend>
-                <input type="checkbox" name="checkbox-2" id="checkbox-2" class="custom" />
-                <label for="checkbox-2">{{ widget.getLabel() }}</label>
-            </fieldset>
-        </div>
-        {% else %}
-        <div data-role="fieldcontain" class="ui-field-contain ui-body ui-br">
-          <label for="{{ widget.getId() }}" class="ui-input-text">{{ widget.getFieldLabel() }}:</label>
-          {{ widget.getGenerated('html') | raw }}
-        </div>
-        {% endif %}
-        {% endfor %}
+{{ form.title }}<br/>
+<form id="{{ form.id }}"
+    {% for at_name, at_value in form.getAttributes() %}
+    {{ at_name }}="{{ at_value }}"
+    {% endfor %}
+>
+    {% for widget in form.getWidgets() %}
+    <div data-role="fieldcontain" class="ui-field-contain ui-body ui-br">
+      <label for="{{ widget.getId() }}" class="ui-input-text">{{ widget.getFieldLabel() }}:</label>
+      {{ widget.getGenerated('html') | raw }}
+    </div>
+    {% endfor %}
 
-        <div class="ui-body ui-body-b">
-        <fieldset class="ui-grid-a">
-        {% for button in form.getButtons() %}
-          <div class="ui-block-b">
-          <button
-            {% if button['type'] == 'submit' %} type="submit" data-theme="a" name="submit" value="submit-value"
-            {% else %} type="button" data-theme="d"
-              {% if button['url'] != '' %}
-                onclick="location.href='{{ button['url'] }}'"
-              {% endif %}
-            {% endif %}
-          >{{ button['label'] }}
-          </button>
-          </div>
-        {% endfor %}
-        </fieldset>
-        </div>
-    </form>
+    <div class="ui-body ui-body-b">
+    <fieldset class="ui-grid-a">
+    {% for button in form.getButtons() %}
+      <div class="ui-block-b">
+      {% if button['type'] == 'submit' %}
+        <button type="submit" data-theme="a" name="submit" value="submit-value">
+      {% else %}
+        <button type="button" data-theme="d" {% if button['url'] != '' %}onclick="location.href='{{ button['url'] }}'"{% endif %}>
+      {% endif %}
+      {{ button['label'] }}
+        </button>
+      </div>
+    {% endfor %}
+    </fieldset>
+    </div>
+</form>
 
