@@ -11,9 +11,9 @@ if (empty($config)) {
     throw new Exception("Parse Error: '$appIniFile' is empty or has errors.");
 }
 
-if (empty($config['phpalchemy']['root_dir'])) {
+/*if (empty($config['phpalchemy']['root_dir'])) {
     throw new Exception("Configuration Missing: 'phpalchemy.root_dir' conf. is missing");
-}
+}*/
 
 if (substr($config['phpalchemy']['root_dir'], 0, 2) === '..') { // is relative path
     $phpalchemyRootDir = realpath(
@@ -23,12 +23,12 @@ if (substr($config['phpalchemy']['root_dir'], 0, 2) === '..') { // is relative p
     $phpalchemyRootDir = $config['phpalchemy']['root_dir'];
 }
 
-if (! isset($phpalchemyRootDir) || ! is_dir($phpalchemyRootDir)) {
+/*if (! isset($phpalchemyRootDir) || ! is_dir($phpalchemyRootDir)) {
     throw new Exception(
         "Configuration Error: phpalchemy root directory not found on: " .
         "'{$config['phpalchemy']['root_dir']}'"
     );
-}
+}*/
 
 empty($phpalchemyRootDir) || $config['phpalchemy']['root_dir'] = $phpalchemyRootDir;
 

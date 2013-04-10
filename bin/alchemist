@@ -1,0 +1,28 @@
+#!/usr/bin/env php
+<?php
+
+define('DS', DIRECTORY_SEPARATOR);
+$conf = array();
+$conf['phpalchemy']['root_dir'] = __DIR__.DS.'vendor'.DS.'phpalchemy'.DS.'phpalchemy';
+$conf['app']['root_dir'] = realpath(getcwd());
+
+try {
+
+    if (file_exists($conf['app']['root_dir'] . DIRECTORY_SEPARATOR . 'autoload.php')) {
+        include_once $conf['app']['root_dir'] . DIRECTORY_SEPARATOR . 'autoload.php';
+    } else {
+        //unset($conf['app']['root_dir']);
+        include_once $conf['phpalchemy']['root_dir'] . DIRECTORY_SEPARATOR . 'autoload.php';
+    }
+
+    $alchemist = new Alchemy\Console\Alchemist(
+        new Alchemy\Config($conf)
+    );
+
+    $alchemist->run();
+
+} catch (\Exception $e) {
+    echo $e->getMessage() . PHP_EOL . PHP_EOL;
+    echo $e->getTraceAsString() . PHP_EOL;
+}
+

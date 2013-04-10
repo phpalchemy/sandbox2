@@ -10,3 +10,4 @@ web/assets/lib/
 composer.lock
 composer.phar
 ._.DS_Store
+.idea
