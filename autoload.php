@@ -1,4 +1,15 @@
 <?php
+
+if (! file_exists(__DIR__ . '/vendor/autoload.php')) {
+    throw new Exception(sprintf(
+        "\n (!) Vendors are missing in this project.\n" .
+        "     Please execute the following command:\n" .
+        "         \$>curl -s http://getcomposer.org/installer | php\n" .
+        "         \$>php composer.phar install"
+    ));
+    exit(0);
+}
+
 $appIniFile = dirname(__FILE__) . '/application.ini';
 
 if (!file_exists($appIniFile)) {
