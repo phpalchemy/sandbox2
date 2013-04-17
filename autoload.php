@@ -10,6 +10,8 @@ if (! file_exists(__DIR__ . '/vendor/autoload.php')) {
     exit(0);
 }
 
+set_include_path(__DIR__ . DIRECTORY_SEPARATOR . 'vendor' . PATH_SEPARATOR . get_include_path());
+
 $appIniFile = dirname(__FILE__) . '/application.ini';
 
 if (!file_exists($appIniFile)) {
@@ -55,7 +57,5 @@ $config['app']['root_dir'] = realpath(__DIR__);
 
 require_once $config['phpalchemy']['root_dir'] . '/autoload.php';
 require_once __DIR__ . '/vendor/autoload.php';
-
-set_include_path(__DIR__ . DIRECTORY_SEPARATOR . 'vendor' . PATH_SEPARATOR . get_include_path());
 
 return $config;
