@@ -3,8 +3,8 @@
 
 define('DS', DIRECTORY_SEPARATOR);
 $conf = array();
-$conf['phpalchemy']['root_dir'] = __DIR__.DS.'vendor'.DS.'phpalchemy'.DS.'phpalchemy';
 $conf['app']['root_dir'] = realpath(__DIR__ . '/../');
+$conf['phpalchemy']['root_dir'] = $conf['app']['root_dir'].DS.'vendor'.DS.'phpalchemy'.DS.'phpalchemy';
 
 try {
     include_once $conf['app']['root_dir'] . DIRECTORY_SEPARATOR . 'autoload.php';
@@ -16,7 +16,6 @@ try {
     $alchemist->run();
 
 } catch (\Exception $e) {
-    echo $e->getMessage() . PHP_EOL . PHP_EOL;
-    //echo $e->getTraceAsString() . PHP_EOL;
+    echo $e->getMessage() . PHP_EOL;
 }
 

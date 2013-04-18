@@ -2,10 +2,15 @@
 /**
  * Application Bootstrap
  *
- * This applaication is using PHPAlchemy Web Framework
+ * This application is using PHPAlchemy Web Framework
  */
 
-$conf = include __DIR__ . '/../autoload.php';
+include __DIR__ . '/../autoload.php';
+
+$conf = array(
+	'app' => array('root_dir' => realpath(__DIR__.'/../'))
+);
+
 $app = new Alchemy\Application();
 $app->init($conf);
 
@@ -15,5 +20,9 @@ $app['dispatcher']->addSubscriber(new Sandbox\Application\EventListener\BeforeRe
 
 //$app->register(new Sandbox\Application\Service\SampleServiceProvider());
 
-$app->run();
+try {
+	$app->run();
+} catch (Exception $e) {
+	echo $e->getMessage();
+}
 
