@@ -8,7 +8,7 @@ class SampleController extends \Alchemy\Mvc\Controller
     /**
      * test passing the template file name to view() annotation (with complete path)
      *
-     * @view("Sample/index.tpl")
+     * @view("Sample/index.twig")
      */
     function indexAction()
     {

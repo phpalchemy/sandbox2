@@ -7,17 +7,14 @@
 
 include __DIR__ . '/../autoload.php';
 
-$conf = array(
-	'app' => array('root_dir' => realpath(__DIR__.'/../'))
-);
-
 $app = new Alchemy\Application();
-$app->init($conf);
+$app->setAppDir(realpath(__DIR__.'/../'));
+$app->init();
 
-//Sample, registering a event subscriber
+// Registering a event subscriber
 $app['dispatcher']->addSubscriber(new Sandbox\Application\EventListener\BeforeResponse());
-//$app['dispatcher']->addSubscriber(new Sandbox\Event\FilterRequestListener());
 
+//$app['dispatcher']->addSubscriber(new Sandbox\Event\FilterRequestListener());
 //$app->register(new Sandbox\Application\Service\SampleServiceProvider());
 
 try {
