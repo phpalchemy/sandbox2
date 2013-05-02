@@ -9,18 +9,8 @@ $mapper->connect(
     new Route(
         '/',
         array(
-            '_controller' => 'Root',
+            '_controller' => 'Sample',
             '_action' => 'index'
-        )
-    )
-);
-
-$mapper->connect(
-    'root_route',
-    new Route(
-        '/{_action}',
-        array(
-            '_controller' => 'Root'
         )
     )
 );

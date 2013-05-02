@@ -1,13 +1,17 @@
-
+<!-- navbar -->
 <div data-role="navbar" data-iconpos="top">
     <ul>
-        {% for menuItem in _menu %}
-            <li>
-                <a href="{{ menuItem['url'] }}" data-icon="home"
-                   class="{% if _action == menuItem['url'] %}ui-btn-active ui-state-persist{% endif %}"
-                >{{ menuItem['label'] }}</a>
-            </li>
-        {% endfor %}
+        <li>
+            <a href="/Sample/about" data-icon="home" class="{% if _action == 'about' %}ui-btn-active ui-state-persist{% endif %}">
+                About
+            </a>
+        </li>
+        <li>
+            <a href="/Sample/data" data-icon="home" class="{% if _action == 'data' %}ui-btn-active ui-state-persist{% endif %}">
+                Data Serving
+            </a>
+        </li>
     </ul>
-</div><!-- /navbar -->
+</div>
+<!-- /navbar -->
 

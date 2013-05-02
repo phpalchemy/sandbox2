@@ -14,10 +14,10 @@ class BeforeResponse implements EventSubscriberInterface
 
     public function onView(ViewEvent $event)
     {
-        $view = $event->getView();
+        //$view = $event->getView();
 
-        $menu = include(__DIR__.'/../../config/menu.php');
-        $view->assign('_menu', $menu);
+        //$menu = include(__DIR__.'/../../config/menu.php');
+        //$view->assign('_menu', $menu);
     }
 
     public static function getSubscribedEvents()
