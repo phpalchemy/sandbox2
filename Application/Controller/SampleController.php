@@ -88,6 +88,6 @@ class SampleController extends \Alchemy\Mvc\Controller
 
     function action4Action($lastname, $name)
     {
-        $this->getResponse()->setContent('sample #4 action - hello ' . $name . ' ' . $lastname);
+        return new Response('sample #4 action - hello ' . $name . ' ' . $lastname);
     }
 }

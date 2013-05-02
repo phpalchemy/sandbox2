@@ -18,7 +18,7 @@ if (! is_dir(__DIR__ . '/vendor/phpalchemy/')) {
 if (! file_exists(__DIR__ . '/vendor/phpalchemy/phpalchemy/autoload.php')) {
     throw new Exception(
         "PhpAlchemy File Not Found: Autoloader is missing, maybe phpalchemy is not installed properly."
-    );
+        );
     exit();
 }
 
@@ -26,21 +26,10 @@ set_include_path(__DIR__ . DIRECTORY_SEPARATOR . 'vendor' . PATH_SEPARATOR . get
 
 $appIniFile = dirname(__FILE__) . '/application.ini';
 
-if (!file_exists($appIniFile)) {
+if (! file_exists($appIniFile)) {
     throw new Exception("File '$appIniFile' is missing.");
 }
-
-$config = @parse_ini_file($appIniFile, true);
-
-if (empty($config)) {
-    throw new Exception("Parse Error: '$appIniFile' is empty or has errors.");
-}
-
-$config['app']['root_dir'] = realpath(__DIR__);
 
 require_once 'vendor/autoload.php';
 require_once 'phpalchemy/phpalchemy/autoload.php';
 
-function pr($v){echo "<pre>".print_r($v, true)."</pre>";}
-
-return $config;
