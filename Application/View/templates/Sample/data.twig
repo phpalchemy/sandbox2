@@ -5,19 +5,19 @@ Sample Data Serving with PhpAlchemy
 {% endblock %}
 
 {% block body %}
+  <div class="container">
+    <h2>Content Type Dispatch</h2>
+    <p>
+    This page shows how you can provide multiple pages
+    directly from the same controller method.  This page is generated
+    from the expose decorator with the template defintion provided.
+    You can provide a url with parameters and this page will display
+    the parameters as html, and the json version will express
+    the entries as JSON.  Here, try it out: <a href="/Sample/data?a=1&b=2">/Sample/data?a=1&b=2</a>
+    </p>
 
-<h2>Content Type Dispatch</h2>
-<p>
-This page shows how you can provide multiple pages
-directly from the same controller method.  This page is generated
-from the expose decorator with the template defintion provided.
-You can provide a url with parameters and this page will display
-the parameters as html, and the json version will express
-the entries as JSON.  Here, try it out: <a href="/Sample/data?a=1&b=2">/Sample/data?a=1&b=2</a>
-</p>
-
-<p>Click here for the <a href="/Sample/datajson?a=1&b=2">JSON request page.</a></p>
-<p>The data provided in the template call is:
+    <p>Click here for the <a href="/Sample/datajson?a=1&b=2">JSON request page.</a></p>
+    <p>The data provided in the template call is:
     <table>
         {% for key, value in params %}
             <tr>
@@ -26,5 +26,5 @@ the entries as JSON.  Here, try it out: <a href="/Sample/data?a=1&b=2">/Sample/d
             </tr>
         {% endfor %}
     </table>
-
+  </div>
 {% endblock %}

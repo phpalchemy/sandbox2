@@ -1,0 +1,22 @@
+{% extends 'master.twig' %}
+
+{% block title %}Personalized{% endblock %}
+
+{% block body %}
+  <div class="container">
+
+    <ul class="nav nav-pills">
+      <li><a href="/sample_ui"><i class="icon-home"></i> Start</a></li>
+      <li><a href="/sample_ui/basic_form"><i class="icon-list-alt"></i> Basic</a></li>
+      <li class="active"><a href="#">Filled Form</a></li>
+      <li><a href="#">More</a></li>
+    </ul>
+
+    <div class="row">
+      <div class="span12">
+        {{ form('form1') | raw }}
+      </div>
+    </div>
+  </div>
+
+{% endblock %}

@@ -11,14 +11,12 @@ if (! file_exists(__DIR__ . '/vendor/autoload.php')) {
 }
 
 if (! is_dir(__DIR__ . '/vendor/phpalchemy/')) {
-    throw new Exception("\n (!) PhpAlchemy Vendor is missing, you need add phpalchemy on composer.json\n");
+    throw new Exception("\nPhpAlchemy Vendor is missing: you need add phpalchemy on composer.json\n");
     exit();
 }
 
 if (! file_exists(__DIR__ . '/vendor/phpalchemy/phpalchemy/autoload.php')) {
-    throw new Exception(
-        "PhpAlchemy File Not Found: Autoloader is missing, maybe phpalchemy is not installed properly."
-        );
+    throw new Exception("File Not Found: Autoloader is missing, maybe phpalchemy is not installed properly.");
     exit();
 }
 
@@ -32,4 +30,3 @@ if (! file_exists($appIniFile)) {
 
 require_once 'vendor/autoload.php';
 require_once 'phpalchemy/phpalchemy/autoload.php';
-

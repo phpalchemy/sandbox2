@@ -1,7 +1,0 @@
-form:
-  attributes: {id: myForm, title: Sample Form No. 1, width: 350}
-  items:
-    - textbox: {id: name, fieldLabel: Name, width:200}
-    - textbox: {id: lastname, fieldLabel: Last Name}
-    - checkbox: {name: gratuated, fieldLabel: Gratuated?, label: Gratuated?}
-    - textbox: {id: skills, fieldLabel: Skills title sample, multiline: true}
