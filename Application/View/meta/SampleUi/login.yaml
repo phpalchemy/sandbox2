@@ -1,0 +1,18 @@
+form:
+    title: Login Form
+    action: /sample_ui/home
+    buttons:
+        - {label: Login, type: submit}
+        - {label: Cancel, url: /sample_ui}
+    items:
+        - textbox:
+            name: username
+            fieldLabel: Username
+            placeholder: Enter your User Name
+            required: true
+
+        - textbox:
+            name: password
+            type: password
+            fieldLabel: Password
+            placeholder: Enter your Password

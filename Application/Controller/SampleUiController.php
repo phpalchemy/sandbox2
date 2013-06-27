@@ -23,7 +23,8 @@ class SampleUiController extends Controller
 
     /**
      * Filling the form with data
-     * Note that now we're setting "form1=SampleUi/basicForm.yaml", so we're creating a form that we can pass data
+     * Note that now we're setting "form1=SampleUi/basicForm.yaml",
+     * so we're creating a form that we can pass data
      *
      * @ServeUi(form1=SampleUi/basicForm.yaml)
      * @View()
@@ -31,7 +32,8 @@ class SampleUiController extends Controller
     public function filledFormAction()
     {
         //
-        //NOTE that we're re-using the same meta-ui file "basicForm.yaml" at example above
+        //NOTE that we're re-using the same meta-ui file "basicForm.yaml"
+        // that is the same of Action above
         //
 
         // Setting data to form named "form1"
@@ -48,18 +50,38 @@ class SampleUiController extends Controller
     }
 
     /**
+     * Example of a login form
+     *
+     * Note that we're not using a @View() annotation to specify a view template
+     * PHPAlchemy supports that :) and the form will be rendered using a layout
+     * file named "form.twig" bundled in the current layout package
+     *
+     * @ServeUi(loginForm=SampleUi/login.yaml)
+     */
+    public function loginAction()
+    {
+    }
+
+    /**
      * @View()
      */
-    public function saveAction(
-        $textbox1,
-        $textbox2,
-        $textbox3
-    ) {
-        $formData = array(
-            'textbox1' => $textbox1,
-            'textbox2' => $textbox2,
-            'textbox3' => $textbox3,
-        );
-        $this->view->form_data = print_r($formData, true);
+    public function homeAction($username, $password)
+    {
+        $params = array('username' => $username, 'password' => $password);
+
+        if ($username == 'admin' && $password == 'admin') {
+            $loginSuccess = true;
+            $message = 'You are logged successfully!';
+        } else {
+            $loginSuccess = false;
+            $message = 'Login failed!';
+        }
+
+        $viewData = array();
+        $viewData['message'] = $message;
+        $viewData['params'] = print_r($params, true);
+        $viewData['login_success'] = $loginSuccess;
+
+        return $viewData;
     }
 }
