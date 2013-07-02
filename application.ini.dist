@@ -10,5 +10,6 @@
     default_engine = smarty
     cache_dir = "%app.cache_dir%/templates"
 
-[phpalchemy]
-    ;root_dir = "../phpalchemy"
+[dev_appserver]
+    name = built-in ;lighttpd
+

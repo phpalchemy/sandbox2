@@ -54,7 +54,7 @@ class SampleUiController extends Controller
      *
      * Note that we're not using a @View() annotation to specify a view template
      * PHPAlchemy supports that :) and the form will be rendered using a layout
-     * file named "form.twig" bundled in the current layout package
+     * file named "form_page.twig" bundled in the current layout package
      *
      * @ServeUi(loginForm=SampleUi/login.yaml)
      */
