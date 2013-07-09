@@ -1,5 +1,5 @@
 <?php
-namespace Sandbox\Application\Controller;
+namespace Sandbox\Controller;
 
 use Alchemy\Mvc\Controller;
 use Alchemy\Component\Http\Response;
