@@ -5,12 +5,16 @@
             "url": "https://github.com/phpalchemy/phpalchemy.git"
         },
         {
+            "type": "git",
+            "url": "https://github.com/crodas/Haanga.git"
+        },
+        {
             "type": "package",
             "package": {
                 "name": "jquery/jquery",
-                "version": "1.8.1",
+                "version": "2.1.0",
                 "dist": {
-                    "url": "http://code.jquery.com/jquery-1.8.1.js",
+                    "url": "http://code.jquery.com/jquery-2.1.0.min.js",
                     "type": "file"
                 }
             }
@@ -19,9 +23,9 @@
             "type": "package",
             "package": {
                 "name": "jquery/jquery-mobile",
-                "version": "1.1.1",
+                "version": "1.4.2",
                 "dist": {
-                    "url": "http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.zip",
+                    "url": "http://jquerymobile.com/resources/download/jquery.mobile-1.4.2.zip",
                     "type": "zip"
                 }
             }
@@ -30,20 +34,32 @@
             "type": "package",
             "package": {
                 "name": "twitter/bootstrap",
-                "version": "2.1.1",
+                "version": "3.1.1",
                 "dist": {
-                    "url": "http://twitter.github.com/bootstrap/assets/bootstrap.zip",
+                    "url": "https://github.com/twbs/bootstrap/releases/download/v3.1.1/bootstrap-3.1.1-dist.zip",
                     "type": "zip"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "datatables/datatables-bootstrap",
+                "version": "3.0",
+                "dist": {
+                    "url": "https://cdn.datatables.net/plug-ins/505bef35b56/integration/bootstrap/3/dataTables.bootstrap.js",
+                    "type": "file"
                 }
             }
         }
     ],
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "require": {
-        "phpalchemy/phpalchemy": "master",
-        "twig/twig"       : "1.12.3",
-        "jquery/jquery"   : "1.8.1",
-        "jquery/jquery-mobile": "1.1.1",
-        "twitter/bootstrap": "2.1.1"
+        "phpalchemy/phpalchemy": "1.0.x-dev",
+        "twig/twig"       : "1.15.1",
+        "jquery/jquery"   : "2.1.0",
+        "twitter/bootstrap": "3.1.1",
+        "datatables/datatables": "1.10.0-beta.2",
+        "datatables/datatables-bootstrap": "3.0"
     }
 }
