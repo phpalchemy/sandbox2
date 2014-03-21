@@ -1,6 +1,7 @@
 <?php
 namespace Sandbox\Controller;
 
+use Alchemy\Application;
 use Alchemy\Mvc\Controller;
 use Alchemy\Component\Http\Response;
 
@@ -67,27 +68,17 @@ class HomeController extends Controller
         return array('title' => 'Hello Test');
     }
 
-    function helloAction()
+    function test4Action(Application $app)
     {
-        $this->getResponse()->setContent('hello action');
+        var_dump($app->getAppDir());
     }
 
-    function action1Action(\Alchemy\Component\Http\Request $request)
-    {
-        $this->getResponse()->setContent('sample #1 action  - data' . $request->server->get('HTTP_USER_AGENT'));
-    }
-
-    function action2Action(\Alchemy\Component\Http\Request $request, $name)
-    {
-        $this->getResponse()->setContent('sample #2 action - hello ' . $name);
-    }
-
-    function action3Action($name, $lastname)
+    function test5Action($name, $lastname)
     {
         return new Response('sample #3 action - hello ' . $name . ' ' . $lastname);
     }
 
-    function action4Action($lastname, $name)
+    function test6Action($lastname, $name)
     {
         return new Response('sample #4 action - hello ' . $name . ' ' . $lastname);
     }
