@@ -1,14 +1,15 @@
 <?php
 namespace Sandbox\Controller;
 
+use Alchemy\Mvc\Controller;
 use Alchemy\Component\Http\Response;
 
-class SampleController extends \Alchemy\Mvc\Controller
+class HomeController extends Controller
 {
     /**
      * test passing the template file name to view() annotation (with complete path)
      *
-     * @view("Sample/index.twig")
+     * @view("home/index.twig")
      */
     function indexAction()
     {
@@ -19,7 +20,7 @@ class SampleController extends \Alchemy\Mvc\Controller
         return array('title' => 'Hello Word (smarty)');
     }
 
-    /** @view(Sample/about) */
+    /** @view(home/about) */
     public function aboutAction()
     {
     }
@@ -48,7 +49,7 @@ class SampleController extends \Alchemy\Mvc\Controller
     /**
      * Test passing template name to view() annotation (it is not the same action name)
      *
-     * @view("Sample/someTemplate.tpl")
+     * @view("home/someTemplate.tpl")
      */
     function test2Action()
     {
@@ -59,7 +60,7 @@ class SampleController extends \Alchemy\Mvc\Controller
      * Test passing the template file name to view() annotation (without extension)
      * it is provided by configuration (on application.ini)
      *
-     * @view("Sample/someTemplate")
+     * @view("home/someTemplate")
      */
     function test3Action()
     {

@@ -1,0 +1,31 @@
+<div class="container">
+  <fieldset>
+      <legend>{{ form.title }}</legend>
+      <form role="form"
+            class="col-sm-8 blog-main"
+            id="{{ form.id }}"
+            {% for at_name, at_value in form.getAttributes() %}
+            {{ at_name }}="{{ at_value }}"
+            {% endfor %}>
+
+          {% for widget in form.getItems() %}
+          <div class="form-group">
+              <label for="{{ widget.getId() }}">{{ widget.getFieldLabel() }}</label>
+              {{ widget.getGenerated('html') | raw }}
+          </div>
+          {% endfor %}
+
+
+          {% for button in form.getButtons() %}
+            {% if button.getType() == 'link' %}
+            <a href="{{ button.getUrl() }}" target="{{ button.getTarget() }}">{{ button.getLabel() }}</a>
+            {% else %}
+            <button type="{{ button.getType() }}" class="btn {% if button.getType() == 'submit' %}btn-primary{% else %}btn-default{% endif %}">
+                {{ button.getLabel() }}
+            </button>
+            {% endif %}
+          {% endfor %}
+
+      </form>
+  </fieldset>
+</div>

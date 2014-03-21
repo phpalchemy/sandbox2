@@ -9,7 +9,7 @@ $mapper->connect(
     new Route(
         '/',
         array(
-            '_controller' => 'Sample',
+            '_controller' => 'Home',
             '_action' => 'index'
         )
     )

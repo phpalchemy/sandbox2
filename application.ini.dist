@@ -3,13 +3,12 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 [app]
-    namespace = Sandbox
-    cache_dir = "%app.root_dir%/cache"
+namespace = Sandbox
+cache_dir = "%app.root_dir%/cache"
 
 [templating]
-    default_engine = smarty
-    cache_dir = "%app.cache_dir%/templates"
+default_engine = twig
+cache_dir = "%app.cache_dir%/views"
 
 [dev_appserver]
-    name = built-in ;lighttpd
-
+name = built-in ;lighttpd

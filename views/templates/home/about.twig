@@ -1,0 +1,97 @@
+{% extends 'master.twig' %}
+
+{% block title %}
+Learning PhpAlchemy: Quick guide to the Quickstart pages.
+{% endblock %}
+
+{% block body %}
+{% include 'navbar.twig' %}
+
+<div class="jumbotron">
+    <div class="container">
+        <h1>Hello, world!</h1>
+        <p>This is a PHP-Alchemy Sandbox project.</p>
+        <p><a class="btn btn-primary btn-lg" role="button">Learn more &raquo;</a></p>
+    </div>
+</div>
+
+<div class="container">
+<div class="row">
+  <div class="span12">
+    <div class="page-header">
+      <h2>Architectural basics of a quickstart PHPAlchemy project.</h2>
+    </div>
+
+    <p>Basis of a PHPAlchemy project. Here's how it works.</p>
+  </div>
+
+  <div class="span4">
+    <div class="well" style="padding: 8px 0;">
+      <ul class="nav nav-list">
+        <li class="nav-header">About Architecture</li>
+        <li><a href="#data-model">Data Model</a></li>
+        <li><a href="#url-structure">URL Structure</a></li>
+        <li><a href="#template-reuse">Web page element's reuse</a></li>
+        <li class="nav-header">Authentication</li>
+        <li><a href="#authentication">Authorization and Authentication</a></li>
+      </ul>
+    </div>
+
+    <div class="well" id="data-model">
+      <h3>Code my data model</h3>
+
+      <p>When you want a model for storing favorite links or wiki content, the
+      <code>/application/Sandbox/Model</code> folder in your site is ready to go.</p>
+
+      <p>You can build a dynamic site without any data model at all.</p>
+    </div>
+
+    <div class="well" id="url-structure">
+      <h3>Design my URL structure</h3>
+
+      <p>The "<code>/config/routes.yaml</code>" file has
+      your URLs, those are matched with a request like (<code><a href="/sample/about">/sample/about</a></code>) was made, and
+      it is resolved according the routing rules that are defined in routes.yaml. A controller resolver class
+      crates a Controller instance matched method is called.
+      <p>Those Php methods are responsible to create the dictionary of variables
+      that will be used in your web views (template).</p>
+    </div>
+  </div>
+
+  <div class="span8">
+    <img src="/assets/framework/img/project_skel.png" width="400" alt="PHPAlchemy quickstarted project" /></div>
+  </div>
+
+
+  <div class="span12" id="template-reuse">
+    <h3>Reuse the web page elements</h3>
+
+    <p>A web page viewed by user could be constructed by single or several reusable
+    templates under <code>/application/Sandbox/View/templates</code> and <code>/application/Sandbox/View/layouts</code>. Take 'about' page for example, each
+    reusable templates generating a part of the page. We'll cover them in the order of
+    where they are found, listed near the top of the about.twig template</p>
+
+    <div class="row">
+      <div class="span6">
+        <p><strong><span class="label label-info">navbar.twig</span></strong> - The
+        "navbar.html" template contains the HTML code to display the site 'navigation bar'.
+      </div>
+
+      <div class="span6">
+        <p><strong><span class="label label-info">footer.twig</span></strong> - The
+        "footer.twig" block is simple, just show in the footer the copyright message.
+      </div>
+      <div class="span6">
+        <p><strong><span class="label label-info">master.twig</span></strong> - The
+        "master.twig" template is called last, by design. The "master.twig" template
+        controls the overall design of the page we're looking at, calling first the
+        "navbar", then the putting everything from this "about.twig"
+        template into the body, and then calling the "footer" template at
+        the end. Thus the "master.twig" template provides the overall architecture for
+        each page in this site.</p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+{% endblock %}

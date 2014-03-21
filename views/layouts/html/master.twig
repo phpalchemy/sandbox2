@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    {% block main_assets_header %}
+    {%block main_assets_header %}
     <!-- Le styles -->
     <link href="{{ asset('file: bootstrap/css/bootstrap.css', 'import: twitter/bootstrap/*') }}" rel="stylesheet" />
     <link href="{{ asset('bootstrap/css/bootstrap-responsive.css') }}" rel="stylesheet" />
@@ -16,16 +16,16 @@
     <script src="{{ asset('file: jquery/jquery-1.8.1.js', 'import: jquery/jquery/*.js') }}"></script>
     <script src="{{ asset('bootstrap/js/bootstrap.min.js') }}"></script>
     {% endblock %}
-
-    <style> body { padding-top: 50px; } </style>
-
   </head>
 
   <body data-spy="scroll" data-target=".subnav" data-offset="50">
     {% include 'navbar.twig' %}
+    <div class="" style="height:35px">&nbsp;</div>
+    <br/>
 
-    {% block body %}{% endblock %}
-
+    <div class="container">
+        {% block body %}{% endblock %}
+    </div>
     {% include 'footer.twig' %}
   </body>
 </html>
