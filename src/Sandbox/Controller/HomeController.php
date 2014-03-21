@@ -49,7 +49,7 @@ class HomeController extends Controller
     /**
      * Test passing template name to view() annotation (it is not the same action name)
      *
-     * @view("home/someTemplate.tpl")
+     * @view("home/someTemplate.twig")
      */
     function test2Action()
     {

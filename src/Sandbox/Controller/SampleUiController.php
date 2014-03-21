@@ -14,7 +14,7 @@ class SampleUiController extends Controller
     }
 
     /**
-     * @ServeUi(SampleUi/basicForm.yaml)
+     * @ServeUi(sample_ui/basicForm.yaml)
      * @View()
      */
     public function basicFormAction()
@@ -23,10 +23,10 @@ class SampleUiController extends Controller
 
     /**
      * Filling the form with data
-     * Note that now we're setting "form1=SampleUi/basicForm.yaml",
+     * Note that now we're setting "form1=sample_ui/basicForm.yaml",
      * so we're creating a form that we can pass data
      *
-     * @ServeUi(form1=SampleUi/basicForm.yaml)
+     * @ServeUi(form1=sample_ui/basicForm.yaml)
      * @View()
      */
     public function filledFormAction()
@@ -56,7 +56,7 @@ class SampleUiController extends Controller
      * PHPAlchemy supports that :) and the form will be rendered using a layout
      * file named "form_page.twig" bundled in the current layout package
      *
-     * @ServeUi(loginForm=SampleUi/login.yaml)
+     * @ServeUi(loginForm=sample_ui/login.yaml)
      */
     public function loginAction()
     {
