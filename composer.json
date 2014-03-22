@@ -45,7 +45,7 @@
             }
         }
     ],
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "require": {
         "phpalchemy/phpalchemy": "1.0.*@dev",
         "phpalchemy/propel-service-provider": "1.0.*@dev",

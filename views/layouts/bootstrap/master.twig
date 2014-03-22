@@ -8,7 +8,9 @@
     {% block header %}
     <!-- Bootstrap -->
     <link href="{{ asset('file: bootstrap/css/bootstrap.min.css', 'import: twitter/bootstrap/*') }}" rel="stylesheet">
+    <link href="{{ asset('file: datatables/media/css/jquery.dataTables.css', 'import: datatables/datatables/*') }}" rel="stylesheet">
     <link href="{{ asset('css/styles.css') }}" rel="stylesheet">
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -24,6 +26,11 @@
 <script src="{{ asset('file: jquery/jquery-2.1.0.min.js', 'import: jquery/jquery/*.js') }}"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="{{ asset('bootstrap/js/bootstrap.min.js') }}"></script>
+<script src="{{ asset('datatables/media/js/jquery.dataTables.js') }}"></script>
+<script src="{{ asset('js/app.js') }}"></script>
+
+{% block js %}{% endblock %}
+
 </body>
 </html>
 

@@ -1,4 +1,5 @@
 form:
+    id: login_form
     title: Login Form
     action: /sample_ui/home
     buttons:

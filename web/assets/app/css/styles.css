@@ -37,3 +37,36 @@ body > .container {
 code {
     font-size: 80%;
 }
+
+
+/*
+ * DataTables extension styles to use with Bootstrap 3
+ */
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+    box-sizing: border-box;
+    display: inline-block;
+    min-width: 0;
+    padding: 0;
+    margin-right: 0;
+    margin-left: 0;
+    text-align: center;
+    text-decoration: none !important;
+    cursor: pointer;
+    color: #333333 !important;
+    border: 0;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+    color: white !important;
+    border: 0;
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.disabled, .dataTables_wrapper .dataTables_paginate .paginate_button.disabled:hover, .dataTables_wrapper .dataTables_paginate .paginate_button.disabled:active {
+    cursor: default;
+    color: #666 !important;
+    border: 0;
+    background: transparent;
+    box-shadow: none;
+}

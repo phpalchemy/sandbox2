@@ -1,9 +1,10 @@
 <?php
 namespace Sandbox\Controller;
 
-use Alchemy\Component\Http\Request;
+use Alchemy\Application;
 use Alchemy\Mvc\Controller;
-use Alchemy\Component\Http\Response;
+use Alchemy\Component\Http\Request;
+
 
 class SampleUiController extends Controller
 {
@@ -25,7 +26,7 @@ class SampleUiController extends Controller
     public function basicFormAction(Request $httpRequest)
     {
         if (! empty($httpRequest->request->data)) {
-            // Setting data to form with id "basic_form1"
+            // Setting data to form with id "basic_form1", that id was set below in @ServeUi annotation
             $this->view->basic_form1 = $httpRequest->request->data;
             $this->view->postData = print_r($httpRequest->request->data, true);
         }
@@ -38,9 +39,10 @@ class SampleUiController extends Controller
      * PHPAlchemy supports that :) and the form will be rendered using a layout
      * file named "form_page.twig" bundled in the current layout package
      *
-     * @ServeUi(loginForm=sample_ui/login.yaml)
+     * @ServeUi(loginForm=sample_ui/loginForm.yaml)
+     * @View()
      */
-    public function loginAction()
+    public function loginFormAction()
     {
     }
 
@@ -50,20 +52,42 @@ class SampleUiController extends Controller
     public function homeAction($username, $password)
     {
         $params = array('username' => $username, 'password' => $password);
+        $loginSuccess = $username == 'admin' && $password == 'admin';
 
-        if ($username == 'admin' && $password == 'admin') {
-            $loginSuccess = true;
+        if ($loginSuccess) {
             $message = 'You are logged successfully!';
         } else {
-            $loginSuccess = false;
-            $message = 'Login failed!';
+            $message = 'Login failed! try with user: admin and password: admin';
         }
 
+        // other way to set variables to view is creating an array, set its data and return it.
         $viewData = array();
         $viewData['message'] = $message;
         $viewData['params'] = print_r($params, true);
         $viewData['login_success'] = $loginSuccess;
 
         return $viewData;
+    }
+
+    /**
+     * @ServeUi(table1=sample_ui/list1.yaml)
+     * @View()
+     */
+    public function list1Action(Application $app)
+    {
+        $data = file($app->getAppDir()."/mixed/example_data.txt");
+        $dataList = array("data" => array());
+
+        foreach ($data as $row) {
+            $dataList["data"][] = array(
+                "lastname" => substr($row, 0, 16),
+                "name" => substr($row, 16, 15),
+                "rand1" => substr($row, 31,4),
+                "rand2" => substr($row, 37, 6),
+                "code" => substr($row, 47, 3)
+            );
+        }
+
+        $this->view->table1 = $dataList;
     }
 }
