@@ -1,8 +1,7 @@
 form:
+    id: basic_form1
     title: Basic Form
     action: /sample_ui/basic_form
-    id: form1
-    name: form1
 
     buttons:
         - {label: Save, type: submit}
@@ -56,7 +55,7 @@ form:
         - checkgroup:
             name: checkgroup1
             fieldLabel: checkgroup field
-            inline: false
+            inline: true
             items:
                 - {name: one, value: 1, label: chk1}
                 - {name: two, value: 2, label: chk2}

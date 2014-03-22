@@ -12,7 +12,12 @@
 
     <div class="row">
       <div class="span12">
-        {{ form('form1') | raw }}
+        {{ form('basic_form1') | raw }}
       </div>
     </div>
+
+    <br />
+    {% if postData %}
+    <pre>{{ postData }}</pre>
+    {% endif %}
 {% endblock %}

@@ -1,6 +1,7 @@
 <?php
 namespace Sandbox\Controller;
 
+use Alchemy\Component\Http\Request;
 use Alchemy\Mvc\Controller;
 use Alchemy\Component\Http\Response;
 
@@ -14,39 +15,20 @@ class SampleUiController extends Controller
     }
 
     /**
-     * @ServeUi(sample_ui/basicForm.yaml)
-     * @View()
-     */
-    public function basicFormAction()
-    {
-    }
-
-    /**
-     * Filling the form with data
-     * Note that now we're setting "form1=sample_ui/basicForm.yaml",
-     * so we're creating a form that we can pass data
+     * We can fill the form with data and submit it
+     * Note that we're setting "basic_form1=sample_ui/basicForm.yaml",
+     * so we're creating a form with id "basic_form1" and we can pass data to it
      *
-     * @ServeUi(form1=sample_ui/basicForm.yaml)
+     * @ServeUi(basic_form1=sample_ui/basicForm.yaml)
      * @View()
      */
-    public function filledFormAction()
+    public function basicFormAction(Request $httpRequest)
     {
-        //
-        //NOTE that we're re-using the same meta-ui file "basicForm.yaml"
-        // that is the same of Action above
-        //
-
-        // Setting data to form named "form1"
-        $this->view->form1 = array(
-            'textbox1' => 'sample value for textbox1',
-            'textbox2' => 'sample value for textbox2',
-            'textbox3' => 'sample value for textbox3',
-            'listbox1' => 2,
-            'listbox2' => array(1, 3),
-            'checkbox1' => true,
-            'checkgroup1' => array(true, false, true),
-            'radiogroup1' => 2
-        );
+        if (! empty($httpRequest->request->data)) {
+            // Setting data to form with id "basic_form1"
+            $this->view->basic_form1 = $httpRequest->request->data;
+            $this->view->postData = print_r($httpRequest->request->data, true);
+        }
     }
 
     /**
