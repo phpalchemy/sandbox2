@@ -3,10 +3,10 @@ namespace Sandbox\Controller;
 
 use Alchemy\Application;
 use Alchemy\Mvc\Controller;
-use Alchemy\Component\Http\Request;
+use Alchemy\Component\Http;
 
 
-class SampleUiController extends Controller
+class DemoController extends Controller
 {
     /**
      * @view()
@@ -17,13 +17,13 @@ class SampleUiController extends Controller
 
     /**
      * We can fill the form with data and submit it
-     * Note that we're setting "basic_form1=sample_ui/basicForm.yaml",
+     * Note that we're setting "basic_form1=demo/basicForm.yaml",
      * so we're creating a form with id "basic_form1" and we can pass data to it
      *
-     * @ServeUi(basic_form1=sample_ui/basicForm.yaml)
+     * @ServeUi(basic_form1=demo/basicForm.yaml)
      * @View()
      */
-    public function basicFormAction(Request $httpRequest)
+    public function basicFormAction(Http\Request $httpRequest)
     {
         if (! empty($httpRequest->request->data)) {
             // Setting data to form with id "basic_form1", that id was set below in @ServeUi annotation
@@ -39,7 +39,7 @@ class SampleUiController extends Controller
      * PHPAlchemy supports that :) and the form will be rendered using a layout
      * file named "form_page.twig" bundled in the current layout package
      *
-     * @ServeUi(loginForm=sample_ui/loginForm.yaml)
+     * @ServeUi(loginForm=demo/loginForm.yaml)
      * @View()
      */
     public function loginFormAction()
@@ -70,7 +70,7 @@ class SampleUiController extends Controller
     }
 
     /**
-     * @ServeUi(list1=sample_ui/list1.yaml)
+     * @ServeUi(list1=demo/list1.yaml)
      * @View()
      */
     public function list1Action()
@@ -80,7 +80,7 @@ class SampleUiController extends Controller
     }
 
     /**
-     * @ServeUi(list2=sample_ui/list2.yaml)
+     * @ServeUi(list2=demo/list2.yaml)
      * @View()
      */
     public function list2Action()
@@ -88,8 +88,8 @@ class SampleUiController extends Controller
     }
 
     /**
-     * @ServeUi(sample_ui/employeesList.yaml)
-     * @View(sample_ui/employeesList.twig)
+     * @ServeUi(demo/employeesList.yaml)
+     * @View(demo/employeesList.twig)
      */
     public function employeesAction()
     {
@@ -106,9 +106,17 @@ class SampleUiController extends Controller
     /**
      * @JsonResponse()
      */
-    public function getData2Action()
+    public function employeesDataAction(Http\Request $httpRequest)
     {
-        return array("data" => self::getDemoData());
+        $start = $httpRequest->query->get("start", 0);
+        $limit = $httpRequest->query->get("limit", 10);
+
+        $data["data"] = self::getDemoData();
+        $data["recordsTotal"] = count($data["data"]);
+        $data["recordsFiltered"] = count($data["data"]);
+        $data["data"] = array_slice($data["data"], $start, $limit);
+
+        return $data;
     }
 
     /* Private function just used in examples */

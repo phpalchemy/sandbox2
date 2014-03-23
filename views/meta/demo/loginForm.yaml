@@ -1,7 +1,7 @@
 form:
     id: login_form
     title: Login Form
-    action: /sample_ui/login_home
+    action: /demo/login_home
     buttons:
         - {label: Login, type: submit}
         - {label: Cancel, type: link, url: /sample_ui}

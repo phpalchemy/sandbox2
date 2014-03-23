@@ -1,7 +1,7 @@
 form:
     id: basic_form1
     title: Basic Form
-    action: /sample_ui/basic_form
+    action: /demo/basic_form
 
     buttons:
         - {label: Save, type: submit}

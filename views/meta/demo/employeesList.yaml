@@ -1,7 +1,7 @@
 datatable:
   id: employeesList
   title: Test Datatable
-  data_source_uri: /sample_ui/get_data
+  data_source_uri: /demo/employees_data
   data_source_type: object
   server_side: true
 
