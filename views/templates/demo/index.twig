@@ -6,14 +6,7 @@
 
 {% block content %}
 <div class="row">
-    <ul class="nav nav-tabs">
-        <li class="active"><a href="/demo"><span class="glyphicon glyphicon-home"></span> Start</a></li>
-        <li><a href="/demo/basic_form"><span class="glyphicon glyphicon-tasks"></span> Basic Form</a></li>
-        <li><a href="/demo/login_form"><span class="glyphicon glyphicon-tasks"></span> Login Form Example</a></li>
-        <li><a href="/demo/list1"><span class="glyphicon glyphicon-list-alt"></span> List #1Example</a></li>
-        <li><a href="/demo/list2"><span class="glyphicon glyphicon-list-alt"></span> List #2 Example</a></li>
-        <li><a href="/demo/employees"><span class="glyphicon glyphicon-list-alt"></span> List #3 Example</a></li>
-    </ul>
+    {% include 'nav_demo.twig' %}
 
     <div class="span12">
         <h3>User Interface Generation Examples.</h3>
@@ -26,7 +19,7 @@
         <ul><li><a href="/demo/login_form">Login Form Example</a> Example of a login form</li></ul>
         <ul><li><a href="/demo/list1">Data Table #1 Example</a> Example using static data</li></ul>
         <ul><li><a href="/demo/list2">Data Table #2 Example</a> Example using async data (Ajax loading data)</li></ul>
-        <ul><li><a href="/demo/employees">Data Table #3 Example</a> Example using async data (Ajax loading data) - Server Side Processing</li></ul>
+        <ul><li><a href="/demo/employees_list">Data Table #3 Example</a> Example using async data (Ajax loading data) - Server Side Processing</li></ul>
     </div>
 </div>
 {% endblock %}

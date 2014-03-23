@@ -16,6 +16,14 @@ class DemoController extends Controller
     }
 
     /**
+     * @ServeUi(basic_form1=demo/basicForm.yaml)
+     * @View()
+     */
+    public function basicFormAction()
+    {
+    }
+
+    /**
      * We can fill the form with data and submit it
      * Note that we're setting "basic_form1=demo/basicForm.yaml",
      * so we're creating a form with id "basic_form1" and we can pass data to it
@@ -23,7 +31,7 @@ class DemoController extends Controller
      * @ServeUi(basic_form1=demo/basicForm.yaml)
      * @View()
      */
-    public function basicFormAction(Http\Request $httpRequest)
+    public function saveBasicFormAction(Http\Request $httpRequest)
     {
         if (! empty($httpRequest->request->data)) {
             // Setting data to form with id "basic_form1", that id was set below in @ServeUi annotation
@@ -89,9 +97,9 @@ class DemoController extends Controller
 
     /**
      * @ServeUi(demo/employeesList.yaml)
-     * @View(demo/employeesList.twig)
+     * @View()
      */
-    public function employeesAction()
+    public function employeesListAction()
     {
     }
 
@@ -117,6 +125,27 @@ class DemoController extends Controller
         $data["data"] = array_slice($data["data"], $start, $limit);
 
         return $data;
+    }
+
+    /** @view() */
+    public function viewCodeAction($target, Application $app)
+    {
+        $target = \Alchemy\Util\String::toCamelCase($target, true);
+        $metaUiFile = "/views/meta/demo/$target.yaml";
+
+        $reflector = new \ReflectionClass(__CLASS__);
+        $func = $reflector->getMethod($target."Action");
+        $filename = $func->getFileName();
+        $start_line = $func->getStartLine() - 5; // it's actually - 1, otherwise you wont get the function() block
+        $end_line = $func->getEndLine();
+        $length = $end_line - $start_line;
+        $source = file($filename);
+
+        $this->view->controllerMethod = __CLASS__."::".$target."()";
+        $this->view->controllerCode = implode("", array_slice($source, $start_line, $length));
+        $this->view->metaUiFile = $metaUiFile;
+        $this->view->metaUiCode = file_get_contents($app->getAppDir().$metaUiFile);
+        $this->view->title = "MetaUI File: $metaUiFile";
     }
 
     /* Private function just used in examples */

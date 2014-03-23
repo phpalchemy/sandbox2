@@ -4,14 +4,8 @@
 
 {% block content %}
 <div class="row">
-    <ul class="nav nav-tabs">
-        <li><a href="/demo"><span class="glyphicon glyphicon-home"></span> Start</a></li>
-        <li><a href="/demo/basic_form"><span class="glyphicon glyphicon-tasks"></span> Basic Form</a></li>
-        <li><a href="/demo/login_form"><span class="glyphicon glyphicon-tasks"></span> Login Form Example</a></li>
-        <li><a href="/demo/list1"><span class="glyphicon glyphicon-list-alt"></span> List #1 Example</a></li>
-        <li class="active"><a href="/demo/list2"><span class="glyphicon glyphicon-list-alt"></span> List #2 Example</a></li>
-        <li><a href="/demo/employees"><span class="glyphicon glyphicon-list-alt"></span> List #3 Example</a></li>
-    </ul>
+    {% include 'nav_demo.twig' %}
+
     <div class="span12">
         {{ datatable.list2.getGenerated('html')|raw }}
     </div>
