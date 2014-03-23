@@ -42,6 +42,9 @@ code {
 /*
  * DataTables extension styles to use with Bootstrap 3
  */
+.dataTables_wrapper {
+    padding-top: 10px;
+}
 .dataTables_wrapper .dataTables_paginate .paginate_button {
     box-sizing: border-box;
     display: inline-block;
