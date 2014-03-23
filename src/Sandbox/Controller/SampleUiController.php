@@ -88,13 +88,30 @@ class SampleUiController extends Controller
     }
 
     /**
+     * @ServeUi(sample_ui/employeesList.yaml)
+     * @View(sample_ui/employeesList.twig)
+     */
+    public function employeesAction()
+    {
+    }
+
+    /**
      * @JsonResponse()
      */
-    public function getDataAction(Application $app)
+    public function getDataAction()
     {
         return array("data" => self::getDemoData());
     }
 
+    /**
+     * @JsonResponse()
+     */
+    public function getData2Action()
+    {
+        return array("data" => self::getDemoData());
+    }
+
+    /* Private function just used in examples */
     private static function getDemoData()
     {
         return array (
