@@ -3,21 +3,24 @@
 {% block title %}Basic Form{% endblock %}
 
 {% block content %}
+
+<div class="row">
     <ul class="nav nav-tabs">
-      <li><a href="/sample_ui"><i class="icon-home"></i> Start</a></li>
-      <li class="active"><a href="/sample_ui/basic_form"><i class="icon-list-alt"></i> Basic Form</a></li>
-      <li><a href="/sample_ui/login_form"> Login Form Example</a></li>
-      <li><a href="/sample_ui/list1"> List Example</a></li>
+        <li><a href="/sample_ui"><span class="glyphicon glyphicon-home"></span> Start</a></li>
+        <li class="active"><a href="/sample_ui/basic_form"><span class="glyphicon glyphicon-tasks"></span> Basic Form</a></li>
+        <li><a href="/sample_ui/login_form"><span class="glyphicon glyphicon-tasks"></span> Login Form Example</a></li>
+        <li><a href="/sample_ui/list1"><span class="glyphicon glyphicon-list-alt"></span> List #1 Example</a></li>
+        <li><a href="/sample_ui/list2"><span class="glyphicon glyphicon-list-alt"></span> List #2 Example</a></li>
     </ul>
 
-    <div class="row">
-      <div class="span12">
+    <div class="span12">
         {{ form('basic_form1') | raw }}
-      </div>
     </div>
+</div>
 
-    <br />
-    {% if postData %}
-    <pre>{{ postData }}</pre>
-    {% endif %}
+<br />
+{% if postData %}
+<pre>{{ postData }}</pre>
+{% endif %}
+
 {% endblock %}

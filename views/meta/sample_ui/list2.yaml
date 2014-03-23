@@ -1,6 +1,8 @@
 datatable:
-  id: list1
+  id: list2
   title: Test Datatable
+  data_source_uri: /sample_ui/get_data
+  data_source_type: object
 
   filters:
     - {id: name, type: text, placeholder: Name}
