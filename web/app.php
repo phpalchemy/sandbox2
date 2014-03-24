@@ -17,7 +17,8 @@ $app->init();
 //$app['dispatcher']->addSubscriber(new Sandbox\Event\FilterRequestListener());
 //$app->register(new Sandbox\Application\Service\SampleServiceProvider());
 //
-$app->register(new Alchemy\Service\ActiveRecordServiceProvider());
+
+$app->register(new Alchemy\Service\PropelServiceProvider());
 
 try {
 	$app->run();
