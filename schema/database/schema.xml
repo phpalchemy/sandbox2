@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<database name="sandbox" defaultIdMethod="native">
+<database name="Sandbox" defaultIdMethod="native" namespace="Sandbox\Model">
     <table name="book" phpName="Book">
         <column name="id" type="integer" required="true" primaryKey="true" autoIncrement="true"/>
         <column name="title" type="varchar" size="255" required="true" />
