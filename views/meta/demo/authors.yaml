@@ -1,0 +1,8 @@
+datatable:
+  id: authors_list
+  title: Authors List
+
+  columns:
+    - {id: id, label: ID}
+    - {id: first_name, label: Name}
+    - {id: last_name, label: Position}

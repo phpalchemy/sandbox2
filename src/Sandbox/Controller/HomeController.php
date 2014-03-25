@@ -14,12 +14,6 @@ class HomeController extends Controller
      */
     function indexAction()
     {
-        $a = new \Sandbox\Model\Author();
-        $a->setFirstName("erik");
-        $a->save();
-
-        die("id: ".$a->getId());
-
         //1st option.- setting controller attribute
         //$this->view->title = 'Hello Word';
 

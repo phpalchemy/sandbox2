@@ -1,0 +1,18 @@
+form:
+    id: author_form
+    title: Register New Author
+    action: /demo/save_author
+    buttons:
+        - {label: Save, type: submit}
+        - {label: Cancel, type: link, url: /demo/author}
+    items:
+        - textbox:
+            name: first_name
+            fieldLabel: First Name
+            placeholder: Enter Author Name
+            required: true
+
+        - textbox:
+            name: last_name
+            fieldLabel: Last Name
+            placeholder: Enter Author Last Name

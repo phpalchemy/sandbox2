@@ -127,6 +127,39 @@ class DemoController extends Controller
         return $data;
     }
 
+    /**
+     * @serveUi(authors_list=demo/authors.yaml)
+     * @view()
+     */
+    public function authorsAction()
+    {
+        $authors = \Sandbox\Model\AuthorQuery::create()->find()->toArray(null, false, \Propel\Runtime\Map\TableMap::TYPE_FIELDNAME);
+
+        $this->view->authors_list = array("data" => $authors);
+    }
+
+    /**
+     * @serveUi(demo/author.yaml)
+     * @view()
+     */
+    public function authorAction()
+    {
+    }
+
+    /**
+     * @view()
+     */
+    public function saveAuthorAction($first_name, $last_name)
+    {
+        $author = new \Sandbox\Model\Author();
+        $author->setFirstName($first_name);
+        $author->setLastName($last_name);
+        $author->save();
+
+        $response = new Http\Response("", 200, array("location"=>"/demo/authors"));
+        $response->send();
+    }
+
     /** @view() */
     public function viewCodeAction($target, Application $app)
     {
@@ -143,9 +176,11 @@ class DemoController extends Controller
 
         $this->view->controllerMethod = __CLASS__."::".$target."()";
         $this->view->controllerCode = implode("", array_slice($source, $start_line, $length));
-        $this->view->metaUiFile = $metaUiFile;
-        $this->view->metaUiCode = file_get_contents($app->getAppDir().$metaUiFile);
-        $this->view->title = "MetaUI File: $metaUiFile";
+
+        if (file_exists($metaUiFile)) {
+            $this->view->metaUiFile = $metaUiFile;
+            $this->view->metaUiCode = file_get_contents($app->getAppDir().$metaUiFile);
+        }
     }
 
     /* Private function just used in examples */

@@ -6,8 +6,10 @@
     <p>
         <h3>Controller: {{ controllerMethod }}</h3>
         <pre>{{ controllerCode }}</pre>
+        {% if metaUiFile %}
         <h3>MetaUI File: {{ metaUiFile }}</h3>
         <pre>{{ metaUiCode }}</pre>
+        {% endif %}
     </p>
 </div>
 <div class="modal-footer">

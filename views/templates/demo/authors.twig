@@ -1,0 +1,21 @@
+{% extends 'page.twig' %}
+
+{% block title %}Authors List{% endblock %}
+
+{% block content %}
+<div class="row">
+    {% include 'nav_demo.twig' %}
+
+    <div class="span12"><br /><br />
+        <a href="/demo/author">Add New Author</a><br />
+        {{ datatable.authors_list.getGenerated('html')|raw }}
+    </div>
+</div>
+
+{% endblock %}
+
+{% block js %}
+    <script language="JavaScript">
+        {{ datatable.authors_list.getGenerated('js')|raw }}
+    </script>
+{% endblock %}

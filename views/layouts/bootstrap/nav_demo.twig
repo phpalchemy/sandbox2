@@ -17,6 +17,9 @@
     <li{% if _action == 'employees_list' %} class="active"{% endif %}>
         <a href="/demo/employees_list"><span class="glyphicon glyphicon-list-alt"></span> List #3 Example</a>
     </li>
+    <li{% if _action == 'authors' or _action == 'author' %} class="active"{% endif %}>
+        <a href="/demo/authors"><span class="glyphicon glyphicon-list-alt"></span> Authors</a>
+    </li>
 </ul>
 
 <p class="text-muted pull-right">
