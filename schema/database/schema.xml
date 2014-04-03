@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<database name="Sandbox" defaultIdMethod="native" namespace="Sandbox\Model">
+<database name="sandbox" defaultIdMethod="native" namespace="Sandbox\Model">
     <table name="book" phpName="Book">
         <column name="id" type="integer" required="true" primaryKey="true" autoIncrement="true"/>
         <column name="title" type="varchar" size="255" required="true" />
@@ -21,52 +21,5 @@
     <table name="publisher" phpName="Publisher">
         <column name="id" type="integer" required="true" primaryKey="true" autoIncrement="true" />
         <column name="name" type="varchar" size="128" required="true" />
-    </table>
-
-    <!-- Cerberus Module -->
-    <table name="user">
-        <column name="usr_id" type="integer" required="true" primaryKey="true" autoIncrement="true"/>
-        <column name="usr_first_name" type="varchar" size="128" required="true"/>
-        <column name="usr_last_name" type="varchar" size="128" required="true"/>
-        <column name="usr_create_date" type="timestamp"/>
-        <column name="usr_update_date" type="timestamp"/>
-        <column name="usr_status" type="varchar" size="64" default="ACTIVE"/>
-    </table>
-    <table name="permission">
-        <column name="prm_id" type="integer" required="true" primaryKey="true" autoIncrement="true"/>
-        <column name="prm_name" type="varchar" size="256" required="true"/>
-        <column name="prm_create_date" type="timestamp"/>
-        <column name="prm_update_date" type="timestamp"/>
-        <column name="prm_status" type="varchar" size="64" default="ACTIVE"/>
-    </table>
-    <table name="rol">
-        <column name="rol_id" type="integer" required="true" primaryKey="true" autoIncrement="true"/>
-        <column name="rol_name" type="varchar" size="128" required="true"/>
-        <column name="rol_description" type="varchar" size="128" required="true"/>
-        <column name="rol_create_date" type="timestamp"/>
-        <column name="rol_update_date" type="timestamp"/>
-        <column name="rol_status" type="varchar" size="64" default="ACTIVE"/>
-    </table>
-    <table name="user_rol">
-        <column name="usr_id" type="integer" required="true" primaryKey="true"/>
-        <column name="rol_id" type="integer" required="true" primaryKey="true"/>
-
-        <foreign-key foreignTable="user" onDelete="cascade">
-            <reference local="usr_id" foreign="usr_id"/>
-        </foreign-key>
-        <foreign-key foreignTable="rol" onDelete="cascade">
-            <reference local="rol_id" foreign="rol_id"/>
-        </foreign-key>
-    </table>
-    <table name="rol_permission">
-        <column name="rol_id" type="integer" required="true" primaryKey="true"/>
-        <column name="prm_id" type="integer" required="true" primaryKey="true"/>
-
-        <foreign-key foreignTable="rol" onDelete="cascade">
-            <reference local="rol_id" foreign="rol_id"/>
-        </foreign-key>
-        <foreign-key foreignTable="permission" onDelete="cascade">
-            <reference local="prm_id" foreign="prm_id"/>
-        </foreign-key>
     </table>
 </database>

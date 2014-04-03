@@ -59,7 +59,7 @@ abstract class AuthorQuery extends ModelCriteria
      * @param     string $modelName The phpName of a model, e.g. 'Book'
      * @param     string $modelAlias The alias for the model in this query, e.g. 'b'
      */
-    public function __construct($dbName = 'Sandbox', $modelName = '\\Sandbox\\Model\\Author', $modelAlias = null)
+    public function __construct($dbName = 'sandbox', $modelName = '\\Sandbox\\Model\\Author', $modelAlias = null)
     {
         parent::__construct($dbName, $modelName, $modelAlias);
     }

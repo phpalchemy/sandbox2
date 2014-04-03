@@ -37,7 +37,7 @@ class PublisherTableMap extends TableMap
     /**
      * The default database name for this class
      */
-    const DATABASE_NAME = 'Sandbox';
+    const DATABASE_NAME = 'sandbox';
 
     /**
      * The table name for this class
