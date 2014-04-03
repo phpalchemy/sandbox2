@@ -49,6 +49,7 @@
     "prefer-stable": true,
     "require": {
         "phpalchemy/phpalchemy": "1.0.*@dev",
+        "phpalchemy/cerberus": "1.0.*@dev",
         "twig/twig"       : "1.15.1",
         "jquery/jquery"   : "2.1.0",
         "twitter/bootstrap": "3.1.1",

@@ -19,6 +19,7 @@ $app->init();
 //
 
 $app->register(new Alchemy\Service\PropelServiceProvider());
+$app->register(new Alchemy\Service\CerberusServiceProvider());
 
 try {
 	$app->run();
