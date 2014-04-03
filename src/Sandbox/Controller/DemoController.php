@@ -155,6 +155,8 @@ class DemoController extends Controller
 
         $response = new Http\Response("", 200, array("location"=>"/demo/authors"));
         $response->send();
+
+        return $response;
     }
 
     /** @view() */
