@@ -169,7 +169,7 @@ class DemoController extends Controller
         $reflector = new \ReflectionClass(__CLASS__);
         $func = $reflector->getMethod($target."Action");
         $filename = $func->getFileName();
-        $start_line = $func->getStartLine() - 5; // it's actually - 1, otherwise you wont get the function() block
+        $start_line = $func->getStartLine() - 5;
         $end_line = $func->getEndLine();
         $length = $end_line - $start_line;
         $source = file($filename);
@@ -177,7 +177,7 @@ class DemoController extends Controller
         $this->view->controllerMethod = __CLASS__."::".$target."()";
         $this->view->controllerCode = implode("", array_slice($source, $start_line, $length));
 
-        if (file_exists($metaUiFile)) {
+        if (file_exists($app->getAppDir().$metaUiFile)) {
             $this->view->metaUiFile = $metaUiFile;
             $this->view->metaUiCode = file_get_contents($app->getAppDir().$metaUiFile);
         }
