@@ -146,9 +146,6 @@ class DemoController extends Controller
     {
     }
 
-    /**
-     * @view()
-     */
     public function saveAuthorAction($first_name, $last_name)
     {
         $author = new \Sandbox\Model\Author();
