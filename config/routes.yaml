@@ -3,14 +3,19 @@
 # Specify routes to match all url requests
 #
 
-home_route:
-    pattern: "/"
-    defaults: {_controller: main, _action: index}
+mapping:
+  - _controller: Sandbox\Controller\{_controller}Controller
+  - _action: {_action}Action
 
-to_index_route:
+routes:
+  home_route:
+    pattern: "/"
+    defaults: {_controller: home, _action: index}
+
+  to_index_route:
     pattern: "/{_controller}"
     defaults: {_action: index}
 
-complete_route:
+  complete_route:
     pattern: "/{_controller}/{_action}"
     defaults: {}
